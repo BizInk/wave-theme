@@ -1,0 +1,150 @@
+/*Common CSS START*/
+html,
+body {
+  width: 100%;
+  height: 100%; 
+  font-size: 62.5%;
+  // 10px = 1rem
+}
+
+ul, 
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  cursor: pointer;
+  @include transition(all 0.4s ease-in-out);
+
+  &:hover {}
+ 
+  &:focus {
+    outline: none;
+  }
+}
+
+.slick-slide {
+  outline: none;
+}
+.slick-dots li.slick-active button{
+  
+  &:hover{
+  }
+
+  &::before{
+  }
+}
+
+// background
+.bg {
+  padding: 80px 0;
+
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0;
+  }
+}
+
+.navyblue-bg {
+}
+
+.navyblue {
+}
+
+.dark {
+}
+
+.light-blue {
+}
+
+.white {
+}
+
+.dark-bg {
+}
+
+.white-bg {
+  background-color: $white;
+}
+
+.light-blue-bg {
+}
+
+.editor-design {
+  font-size: 20px;
+  line-height: 32px;
+
+  ul {
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-top: 10px;
+    text-align: left;
+
+    li {
+      position: relative;
+      list-style-type: none;
+      margin-bottom: 10px;
+      text-indent: 40px;
+      @include background-set(unset, contain, no-repeat);
+
+      &::before {
+        position: absolute;
+        left: 0;
+        background-image: url(http://luca.test/wp-content/uploads/2022/07/32px.png);
+        content: '';
+        width: 30px;
+        height: 30px;
+        @include background-set(unset, contain, no-repeat);
+      }
+
+      ul {
+        margin-bottom: 0;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  ol {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left:30px;
+    text-align: left;
+
+    li {
+      margin-bottom: 10px;
+      list-style: lower-roman;
+      ol {
+        margin-bottom: 0;
+        list-style: lower-roman;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  }
+
+  blockquote {
+    padding-left: 20px;
+    text-align: left;
+  }
+
+}
+
+@include media-breakpoint-down(md) {
+  .btn{
+    padding: 10px 55px;
+    font-size: 2rem;
+  }
+}
+

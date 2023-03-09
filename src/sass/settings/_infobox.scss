@@ -1,0 +1,44 @@
+.infobox-section{
+  .editor-design{
+    h2{
+      color:$white;
+    }
+    p{
+      color:rgba($white, 0.8);
+    }
+  }
+  .info-box {
+    background-color:$white;
+    h4{
+      color:$primary;
+    }
+    p{
+      color:rgba($primary, 0.8);
+    }
+    &:hover{
+      background-color:$yellow;
+    }
+  }
+}
+
+.infobox-section.resource-infobox{ 
+  .editor-design{   
+    h2,p{
+      color:$primary;
+    }    
+  } 
+  .info-box{
+    box-shadow:0 5px 20px rgba($dark, 0.2);
+    }
+  }
+.checklist-infobox{
+  .info-box{
+    &:hover{
+    .btn{
+        background-color: $primary;
+        color:$white;
+        border-color:$primary;
+      }
+    }
+  }
+}

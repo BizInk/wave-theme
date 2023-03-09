@@ -1,0 +1,26 @@
+.call-to-action-section {
+  padding: 260px 0 345px;
+  @include background-set(center, cover, no-repeat);
+
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0px;
+  }
+
+  .full-width-wysiwyg {
+    margin-bottom: 20px;
+    .editor-design {
+      max-width: 100%;
+      h1{
+        margin-bottom:4rem;
+      }
+      p {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
+
+.comman-callto-action {
+  max-width: 770px;
+  margin: 0 auto;
+}

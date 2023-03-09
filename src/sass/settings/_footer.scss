@@ -1,0 +1,47 @@
+
+.footer-wrap{
+	.footer-logo{
+		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(257deg) brightness(105%) contrast(102%);
+	}
+	.footer-content{
+		p{
+			color:rgba($white, 0.8);
+		}
+	}
+	nav li a {		
+		color: rgba($white, 0.8);
+		&:hover{
+			color: $yellow;			
+		}
+	}	
+	h5{
+		color:$white;
+	}	
+	.social-nav ul li a img{
+		&:hover{
+			filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(257deg) brightness(105%) contrast(102%);			
+		}
+	}
+}
+
+.social-wrap{	
+	.container{
+		border-top: 1px solid rgba($dark, 0.5);	
+		ul li {	
+			a {
+				color: $neutral-blue;			
+				&:hover{
+					color: $primary;			
+				}
+			}
+		}	
+		.copyright-wrap {
+			color:rgba($white, 0.8);
+		}
+	}
+}
+nav.contact-details ul li a{
+	&:hover {
+		color:$yellow;		
+	}
+}

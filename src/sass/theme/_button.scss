@@ -1,0 +1,39 @@
+.btn {
+  padding: 14px 72px;
+  font-size: 2.30rem;
+  border-radius: 3px;
+  font-weight: $font-weight-semibold;
+  @include transition(all 0.3s ease-in-out);
+
+  @include media-breakpoint-down(md) {
+    padding: 10px 55px;
+    font-size: 2rem;
+  }
+
+  &.btn-outline-navyblue {
+    &:hover{
+    }
+  }
+}
+
+.btn-sm{
+  padding: 7px 33px;
+  font-size:1.4rem;  
+  line-height:2.4rem;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+.navyblue-btn {
+  
+  &:hover {
+  }
+}
+
+.dark-btn {
+  
+  &:hover {
+  }
+}

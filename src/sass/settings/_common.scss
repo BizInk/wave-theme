@@ -1,0 +1,69 @@
+/*Common CSS START*/
+
+.slick-dots li.slick-active button{
+  &:hover{
+    color:$primary;
+  }
+  &::before{
+    color:$primary;
+  }
+}
+
+// background
+.navyblue-bg {
+  background-color: $primary;
+  color: $white;
+}
+
+.yellow{
+  color:$yellow;
+}
+
+.yellow-bg{
+  background-color:$yellow;
+}
+
+.primary {
+  color: $primary;
+}
+
+.primary-bg{
+  background-color:$primary;
+}
+
+.dark {
+  color: $dark;
+}
+
+.light-blue {
+  color: $light-blue;
+}
+
+.white {
+  color: $white;
+}
+
+.dark-bg {
+  background-color: $dark;
+  color: $white;
+}
+
+.white-bg {
+  background-color: $white;
+}
+
+.light-blue-bg {
+  background-color: $light-blue;
+}
+
+.editor-design {
+  blockquote {
+    border-left: 2px solid $primary;
+  }
+}
+.inner-banner-section{
+  h1{
+    color:$white;
+  }
+}
+

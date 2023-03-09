@@ -1,0 +1,51 @@
+.testimonial-section{
+    .testimonial-bg{
+        background-color:$primary;
+    }
+    .testimonial-slider {       
+        .testimonial-slide > div {          
+            .client-text-wrap {
+                color:$white;
+                span{
+                    color: rgba($white, 0.5);
+                }            
+                a{
+                    color:$white;                   
+                }
+            }
+        }
+    }
+}
+.testimonial-list{    
+    .row{        
+        .our-word{     
+            p,span{   
+                color:rgba($dark, 0.8);
+            }
+            .card-wrap{                              
+                .star-wrap {
+                    color:$yellow;                    
+                }   
+                .client-details h5{
+                    color:$dark;
+                }               
+            }
+        }       
+    }    
+} 
+.single-testimonial{
+    .single-testimonial-section{
+        .img-wrp {
+            &:before {
+                background-color:$yellow;
+                color:$dark;
+            }
+        }        
+        p,i{
+            color:rgba($dark,0.8);
+        }
+        .rate i{
+            color:$yellow;
+        }
+    }
+}

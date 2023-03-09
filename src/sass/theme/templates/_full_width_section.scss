@@ -1,0 +1,15 @@
+.full-width-section {
+  padding: 80px 0;
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0px;
+  }
+  .container{
+    padding: 0 250px;
+    @include media-breakpoint-down(lg) {
+      padding: 0 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 0 20px;
+    }
+  }
+}

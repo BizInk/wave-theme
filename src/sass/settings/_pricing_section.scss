@@ -1,0 +1,27 @@
+.pricing-section {
+  .card {
+      border:1px solid rgba($neutral-blue, 0.3);
+    .card-header {
+      border-bottom: 1px solid rgba(35, 35, 35, 0.2);
+      h5{
+        color:$primary;
+      }
+      h2{
+        small{
+          color:$dark;
+        }
+      }
+    }
+    .card-body{
+      ul {
+        color: $dark;              
+      }
+    }
+    &:hover{
+      background-color:$neutral-light-blue;
+    }
+    @media(max-width:767px){
+      background-color:$neutral-light-blue;
+    }
+  }
+}

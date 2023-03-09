@@ -1,0 +1,96 @@
+.single, .archive {
+	.wrapper {		
+		.entry-title {						
+			color:$black;			
+		}				
+		.content-area a{			
+			color:$primary;
+		}		
+		.entry-meta {		
+			a {
+				color: $primary;				
+				&:hover {
+					color:$neutral-blue;
+				}
+			}
+		}									
+		button.wp-block-search__button.wp-element-button  {			
+			&:before{				
+				color:$yellow;				
+			}
+			&:hover{
+				&:before{				
+					color:$primary;				
+				}
+			}
+		}
+		
+		input#wp-block-search__input-1 {			
+			border: 1px solid  rgba($dark, 0.08);			
+		}	
+		.post-navigation {	
+			.nav-previous,
+			.nav-next {		
+				a {
+					background:$dark;
+					color:$white;			
+		 			&:hover{
+						background:$primary;
+						color:$white;
+						border-color:$primary;
+					}
+				}
+			}	
+		}
+
+		.tag-single {
+			a {		
+				&:hover {
+					color: $primary;
+				}
+			}
+		}	
+	}
+	.comments-area {		
+		.comment-reply-title {
+			color: $primary;
+		}
+	}
+	#right-sidebar {						
+		.widget {			
+			&.widget_categories{
+				ul {					
+					li {						 															
+						a {
+							color: $dark;							
+							&::before {									
+								color:$yellow;								
+							}
+							&:hover {
+								color: $primary;
+								&::before{
+									color: $primary;								
+								}
+							}												
+						}						
+					}
+				}
+			}			
+			&.widget_recent_entries{
+				a.wp-block-latest-posts__post-title {					
+					color:$dark;					
+					&:hover{
+						color:$primary;
+					}
+				}
+				.wp-block-latest-posts__post-author {
+					color: #9FA4AF;					
+				}
+			}
+		}			
+	}		
+}
+
+
+
+
