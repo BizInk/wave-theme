@@ -414,3 +414,13 @@ function fetch_blog_posts() {
 
 die();
 }
+
+
+// Theme Updater
+require 'plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+$myUpdateChecker = PucFactory::buildUpdateChecker('https://github.com/BizInk/wave-theme',__FILE__,'wave-theme');
+// Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
+// Using a private repository, specify the access token 
+$myUpdateChecker->setAuthentication('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');
