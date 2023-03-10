@@ -1,4 +1,4 @@
-@import "settings/child_settings_variables";
+/*@import "settings/child_settings_variables";*/
 /*Common CSS START*/
 .slick-dots li.slick-active button:hover {
   color: #272343; }

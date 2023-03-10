@@ -187,18 +187,11 @@ if ( !function_exists('base_rss_feed') ) {
 			 
 			}
 			// echo '</ul>';
-           
             $html .= "</ul>";
 
-             
-
 		} else {
- 
 			$html = "An error occurred while parsing your RSS feed. Check that it's a valid XML file.";
- 
 		}
- 
-
 		return $html;
 
 	}
