@@ -17,11 +17,8 @@ $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
 $company_phone = get_field('company_phone', 'options');
 $company_email = get_field('company_email', 'options');
 
-$facebook_icon = get_field('facebook_icon', 'options'); 
 $facebook = get_field('facebook', 'options'); 
-$twitter_icon = get_field('twitter_icon', 'options'); 
 $twitter = get_field('twitter', 'options'); 
-$linkedin_icon = get_field('linkedin_icon', 'options'); 
 $linkedin = get_field('linkedin', 'options'); 
 ?>
 <!DOCTYPE html>
@@ -49,31 +46,40 @@ $linkedin = get_field('linkedin', 'options');
 						<ul>
 							<?php if( !empty($company_phone) ){ ?>
 								
-								<li><a href="tel:<?= $company_phone; ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Icon ionic-ios-call.png" class="img-fluid" alt=""><?= $company_phone; ?></a></li>						
+								<li><a href="tel:<?= $company_phone; ?>" target="_blank"><!-- <img src="<?php // echo get_stylesheet_directory_uri(); ?>/images/Icon ionic-ios-call.png" class="img-fluid" alt=""> --><i class="fa fa-phone" aria-hidden="true"></i><?= $company_phone; ?></a></li>						
 							<?php }
 							
 							if( !empty($company_email) ){ ?>
 							
-								<li><a href="mailto:<?= $company_email; ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mail-ic.png" class="img-fluid" alt=""><?= $company_email; ?></a></li>
+								<li><a href="mailto:<?= $company_email; ?>" target="_blank"><!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/mail-ic.png" class="img-fluid" alt=""> --><i class="fa fa-envelope" aria-hidden="true"></i><?= $company_email; ?></a></li>
 							<?php } ?>
 						</ul>
 					</div>
 
 					<nav class="social-nav">
 						<ul>
-							<?php if( !empty($facebook) && !empty($facebook_icon['url']) ){ ?>
-								
-								<li><a href="<?= $facebook; ?>" target="_blank"><img src="<?php echo $facebook_icon['url']; ?>" class="img-fluid" alt="<?php echo $facebook_icon['alt']; ?>"></a></li>
+							<?php if( !empty($facebook) ){ ?>
+								<li>
+									<a href="<?= $facebook; ?>" target="_blank">
+										<i class="fa fa-facebook-square" aria-hidden="true"></i>
+									</a>
+								</li>		
 							<?php }
 
-							if( !empty($twitter) && !empty($twitter_icon['url']) ){ ?>
-								
-								<li><a href="<?= $twitter; ?>" target="_blank"><img src="<?php echo $twitter_icon['url']; ?>" class="img-fluid" alt="<?php echo $twitter_icon['alt']; ?>"></a></li>
+							if( !empty($twitter) ){ ?>
+								<li>
+									<a href="<?= $twitter; ?>" target="_blank">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</a>
+								</li>
 							<?php }
 
-							if( !empty($linkedin) && !empty($linkedin_icon['url']) ){ ?>
-								
-								<li><a href="<?= $linkedin; ?>" target="_blank"><img src="<?php echo $linkedin_icon['url']; ?>" class="img-fluid" alt="<?php echo $linkedin_icon['alt']; ?>"></a></li>
+							if( !empty($linkedin) ){ ?>
+								<li>
+									<a href="<?= $linkedin; ?>" target="_blank">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+									</a>
+								</li>
 							<?php } ?>
 						</ul>
 					</nav>					

@@ -30,6 +30,9 @@ if( $background_imagecolor == 'Image' && !empty($background_image_url) ){
 
 <!-- call-to-action-section-start -->
 <section class="call-to-action-section<?= $general_class; ?>" <?= $background_html; ?>>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="939.724" viewBox="0 0 1920 939.724" class="call-to-action-shape">
+  <path id="Path_236" data-name="Path 236" d="M0,879.5s176.422,49.927,673.333,0S1920,909.785,1920,909.785V-29.939H0Z" transform="translate(0 29.939)" fill="#ffd803"/>
+</svg>
     <div class="full-width-wysiwyg text-center">
         <div class="container">
             <div class="editor-design">

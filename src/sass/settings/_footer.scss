@@ -17,9 +17,19 @@
 	h5{
 		color:$white;
 	}	
-	.social-nav ul li a img{
-		&:hover{
-			filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(257deg) brightness(105%) contrast(102%);			
+	.contact-details{
+		ul li a {		     
+			i{
+               color:$yellow;			   
+			}			
+		}
+	}
+	.social-nav ul li a {
+		i{
+		  color:$yellow;
+		  &:hover{
+		   color:$white;
+		  }
 		}
 	}
 }

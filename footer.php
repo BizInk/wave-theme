@@ -22,11 +22,8 @@ $footer_shape_color_2 = get_field('footer_shape_color_2', 'options');
 $company_phone = get_field('company_phone', 'options');
 $company_email = get_field('company_email', 'options');
 
-$facebook_icon = get_field('facebook_icon', 'options'); 
 $facebook = get_field('facebook', 'options'); 
-$twitter_icon = get_field('twitter_icon', 'options'); 
-$twitter = get_field('twitter', 'options'); 
-$linkedin_icon = get_field('linkedin_icon', 'options'); 
+$twitter = get_field('twitter', 'options');
 $linkedin = get_field('linkedin', 'options');
 
 $copyright_information = get_field('copyright_information', 'options'); ?>
@@ -56,12 +53,12 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 					<ul>
 						<?php if( !empty($company_phone) ){ ?>
 								
-							<li><a href="tel:<?= $company_phone; ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Icon ionic-ios-call.png" alt=""><?= $company_phone; ?></a></li>						
+							<li><a href="tel:<?= $company_phone; ?>" target="_blank"><!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/Icon ionic-ios-call.png" alt=""> --><i class="fa fa-phone" aria-hidden="true"></i><?= $company_phone; ?></a></li>						
 						<?php }
 						
 						if( !empty($company_email) ){ ?>
 						
-							<li><a href="mailto:<?= $company_email; ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mail-ic.png" alt=""><?= $company_email; ?></a></li>
+							<li><a href="mailto:<?= $company_email; ?>" target="_blank"><!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/mail-ic.png" alt=""> --> <i class="fa fa-globe" aria-hidden="true"></i> <?= $company_email; ?></a></li>
 						<?php } ?>
 					</ul>
 				</nav>
@@ -70,19 +67,28 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 				<h5><?= $column_3_title; ?></h5>
 				<nav class="social-nav">
 					<ul>
-						<?php if( !empty($facebook) && !empty($facebook_icon['url']) ){ ?>
-								
-							<li><a href="<?= $facebook; ?>" target="_blank"><img src="<?php echo $facebook_icon['url']; ?>" alt="<?php echo $facebook_icon['alt']; ?>"></a></li>
+						<?php if( !empty($facebook) ){ ?>
+							<li>
+								<a href="<?= $facebook; ?>" target="_blank">
+									<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								</a>
+							</li>		
 						<?php }
 
-						if( !empty($twitter) && !empty($twitter_icon['url']) ){ ?>
-							
-							<li><a href="<?= $twitter; ?>" target="_blank"><img src="<?php echo $twitter_icon['url']; ?>" alt="<?php echo $twitter_icon['alt']; ?>"></a></li>
+						if( !empty($twitter) ){ ?>
+							<li>
+								<a href="<?= $twitter; ?>" target="_blank">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
+							</li>
 						<?php }
 
-						if( !empty($linkedin) && !empty($linkedin_icon['url']) ){ ?>
-							
-							<li><a href="<?= $linkedin; ?>" target="_blank"><img src="<?php echo $linkedin_icon['url']; ?>" alt="<?php echo $linkedin_icon['alt']; ?>"></a></li>
+						if( !empty($linkedin) ){ ?>
+							<li>
+								<a href="<?= $linkedin; ?>" target="_blank">
+									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+								</a>
+							</li>
 						<?php } ?>
 					</ul>
 				</nav>
@@ -174,6 +180,8 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 			fetch_blog_posts(jQuery('.filter-wrap li.active').attr('data-cat'), jQuery(this).attr('data-pagenumber'));
 		});
 </script>
+
+
 
 </body>
 </html>
