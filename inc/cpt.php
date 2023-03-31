@@ -499,18 +499,18 @@ function cptui_register_my_taxes() {
 		"show_in_menu" => true,
 		"show_in_nav_menus" => true,
 		"query_var" => true,
-		"rewrite" => [ 'slug' => 'content_topic', 'with_front' => true, ],
+		"rewrite" => [ 'slug' => 'content-topic', 'with_front' => true, ],
 		"show_admin_column" => false,
 		"show_in_rest" => true,
 		"show_tagcloud" => false,
-		"rest_base" => "content_topic",
+		"rest_base" => "content-topic",
 		"rest_controller_class" => "WP_REST_Terms_Controller",
 		"rest_namespace" => "wp/v2",
 		"show_in_quick_edit" => false,
 		"sort" => false,
 		"show_in_graphql" => false,
 	];
-	register_taxonomy( "content_topic", [ "resource" ], $args );
+	register_taxonomy( "content-topic", [ "resource" ], $args );
 
 	/**
 	 * Taxonomy: Content Types.
@@ -555,18 +555,18 @@ function cptui_register_my_taxes() {
 		"show_in_menu" => true,
 		"show_in_nav_menus" => true,
 		"query_var" => true,
-		"rewrite" => [ 'slug' => 'content_type', 'with_front' => true, ],
+		"rewrite" => [ 'slug' => 'content-type', 'with_front' => true, ],
 		"show_admin_column" => false,
 		"show_in_rest" => true,
 		"show_tagcloud" => false,
-		"rest_base" => "content_type",
+		"rest_base" => "content-type",
 		"rest_controller_class" => "WP_REST_Terms_Controller",
 		"rest_namespace" => "wp/v2",
 		"show_in_quick_edit" => false,
 		"sort" => false,
 		"show_in_graphql" => false,
 	];
-	register_taxonomy( "content_type", [ "resource" ], $args );
+	register_taxonomy( "content-type", [ "resource" ], $args );
 
     /**
 	 * Taxonomy: Content Region.

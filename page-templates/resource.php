@@ -22,7 +22,7 @@ $content_types_content = get_field('content_types_content');
 
 $ppp = 3;
 $content_topics = get_terms(array(
-    'taxonomy' => 'content_topic',
+    'taxonomy' => 'content-topic',
     'hide_empty' => false,
 ));
 
@@ -110,7 +110,7 @@ if( !empty($content_topics) ){ ?>
 <?php }
 
 $content_types = get_terms(array(
-    'taxonomy' => 'content_type',
+    'taxonomy' => 'content-type',
     'hide_empty' => false,
 ));
 
