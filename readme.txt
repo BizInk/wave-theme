@@ -3,8 +3,8 @@ Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 6.0
 Tested up to: 6.1.1
-Stable tag: 1.1
-Version: 1.1
+Stable tag: 1.2
+Version: 1.2
 Requires PHP: 7.4
 
 The Wave theme
@@ -13,6 +13,12 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.2 =
+* ACF Fields In theme
+* Custom Post Types In theme
+* Social Icon color change with theme
+* Social Icons are icons and not images
 
 = 1.1 =
 * Ajax Fix

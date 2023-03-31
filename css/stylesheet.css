@@ -1,4 +1,4 @@
-/*@import "settings/child_settings_variables";*/
+@import "settings/child_settings_variables";
 /*Common CSS START*/
 .slick-dots li.slick-active button:hover {
   color: #272343; }
@@ -98,18 +98,24 @@ h6 {
   background-color: #272343;
   color: #fff; }
   .top-nav .container .social-nav ul li a {
-    color: #fff; }
-    .top-nav .container .social-nav ul li a:hover img {
-      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(257deg) brightness(105%) contrast(102%); }
+    color: #ffdf35; }
+    .top-nav .container .social-nav ul li a:hover {
+      color: #fff; }
     .top-nav .container .header-contact ul li a {
       color: #fff; }
+      .top-nav .container .header-contact ul li a i {
+        color: #ffdf35; }
       .top-nav .container .header-contact ul li a:hover {
         color: #ffdf35; }
   .top-nav .social-nav ul li a {
     color: #fff; }
 
-header.fixed {
+header {
   background: #fff; }
+  header.fixed {
+    background: #fff; }
+  header button:hover {
+    background: transparent; }
 
 @media (max-width: 991px) {
     .navbar-dark .navbar-collapse {
@@ -181,8 +187,12 @@ header.fixed {
       color: #ffdf35; }
   .footer-wrap h5 {
     color: #fff; }
-  .footer-wrap .social-nav ul li a img:hover {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(257deg) brightness(105%) contrast(102%); }
+  .footer-wrap .contact-details ul li a i {
+    color: #ffdf35; }
+  .footer-wrap .social-nav ul li a i {
+    color: #ffdf35; }
+    .footer-wrap .social-nav ul li a i:hover {
+      color: #fff; }
 
 .social-wrap .container {
   border-top: 1px solid rgba(0, 0, 0, 0.5); }
@@ -458,10 +468,10 @@ nav.contact-details ul li a:hover {
 
 .member-details-section h3 {
   color: #272343; }
-  .member-details-section ul.social-nav li a img {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(0%) saturate(10%) hue-rotate(158deg) brightness(99%) contrast(100%); }
-  .member-details-section ul.social-nav li a:hover img {
-    filter: brightness(0) saturate(100%) invert(90%) sepia(28%) saturate(4183%) hue-rotate(349deg) brightness(104%) contrast(112%); }
+  .member-details-section ul.social-nav li a {
+    color: #ffdf35; }
+  .member-details-section ul.social-nav li a:hover {
+    color: #272343; }
 
 .get-in-touch:before {
   background-color: rgba(0, 0, 0, 0.18); }

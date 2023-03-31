@@ -4,11 +4,9 @@
   .container{          
     .social-nav ul li{
       a {
-        color:$white;       
+        color:$yellow;       
         &:hover{              
-          img{
-            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(257deg) brightness(105%) contrast(102%);
-          }            
+          color:$white;           
         }
       }
     }
@@ -16,6 +14,9 @@
       ul li{
         a {
           color:$white;
+          i{
+            color:$yellow;
+          }          
           &:hover{  
             color:$yellow;
           }
@@ -35,9 +36,14 @@
 }
 
 header {
+    background: $white;  
   &.fixed {
     background: $white;
   } 
+  
+  button:hover {
+    background: transparent;
+  }
 }
 
 .navbar-dark {

@@ -34,17 +34,17 @@ $gravity_forms = get_field('gravity_forms', 'option');
                             
                             <?php if( !empty($member_facebook) ){ ?>
 
-                                <li><a href="<?= $member_facebook; ?>" target="_blank"><img src="<?= get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="Facebook"></a></li>
+                                <li><a href="<?= $member_facebook; ?>" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                             <?php }
 
                             if( !empty($member_twitter) ){ ?>
 
-                                <li><a href="<?= $member_twitter; ?>" target="_blank"><img src="<?= get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="Twitter"></a></li>
+                                <li><a href="<?= $member_twitter; ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             <?php }
 
                             if( !empty($member_linkedin) ){ ?>
 
-                                <li><a href="<?= $member_linkedin; ?>" target="_blank"><img src="<?= get_stylesheet_directory_uri(); ?>/images/Linkedin.png" alt="Linkedin"></a></li>
+                                <li><a href="<?= $member_linkedin; ?>" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                             <?php } ?>
                         </ul>
                     </div>
