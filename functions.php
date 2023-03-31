@@ -7,9 +7,7 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
 define('DEFAULT_IMG', get_stylesheet_directory_uri().'/images/default.jpg');
-
 
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
@@ -22,8 +20,6 @@ function understrap_remove_scripts() {
 	wp_deregister_script( 'understrap-scripts' );
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
-
-
 
 /**
  * Enqueue our stylesheet and javascript file
@@ -47,8 +43,6 @@ function theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
-
-
 /**
  * Load the child theme's text domain
  */
@@ -56,8 +50,6 @@ function add_child_theme_textdomain() {
 	load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
-
-
 
 /**
  * Overrides the theme_mod to default to Bootstrap 5
@@ -72,8 +64,6 @@ function understrap_default_bootstrap_version( $current_mod ) {
 	return 'bootstrap5';
 }
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
-
-
 
 /**
  * Loads javascript for showing customizer warning dialog.
@@ -129,8 +119,7 @@ function wpdocs_add_dashboard_widgets() {
 }
 add_action( 'wp_dashboard_setup', 'wpdocs_add_dashboard_widgets' );
 
-
-  /*
+/*
 *	Re-usable RSS feed reader with shortcode
 */
 if ( !function_exists('base_rss_feed') ) {
@@ -194,7 +183,9 @@ if ( !function_exists('base_rss_feed') ) {
 
 		} else {
  
+ 
 			$html = "An error occurred while parsing your RSS feed. Check that it's a valid XML file.";
+ 
  
 		}
  
@@ -278,17 +269,13 @@ function luca_acf_populate_gf_forms_ids( $field ) {
 // Function to show star rating
 function luca_star_rating($rating){
 	if( $rating > 0 && $rating <= 5 ){
-
 	    $rating_round = (int)$rating;
 	    $half = $rating - $rating_round;
 	    $half = $half > 0 ? true : false;
-
 	    while( $rating_round > 0 ){
 	    	echo '<i class="fa fa-star" aria-hidden="true"></i>';
-
 	    	$rating_round--;
 	    }
-
 	    echo $half ? '<i class="fa fa-star-half-o" aria-hidden="true"></i>' : null;
 	}
 }
@@ -311,18 +298,14 @@ function current_year_cb(){
     return date('Y');
 }
 
-
-
 // Ajax callback function to fetch and load more posts on blog page
 add_action("wp_ajax_fetch_blog_posts", "fetch_blog_posts");
 add_action("wp_ajax_nopriv_fetch_blog_posts", "fetch_blog_posts");
 
 function fetch_blog_posts() {
-
 	$category = $_POST['category'];
 	$pagenumber = $_POST['pagenumber'];
     $ppp = 3;
-
 	$posts_args = array(
 	    'post_status' => 'publish', 
 	    'order' => 'DESC',
@@ -336,57 +319,41 @@ function fetch_blog_posts() {
 	}
 
 	$posts_loop = new WP_Query( $posts_args );
-
 	$return_content = array('content' => '', 'load_more' => '');
-
 	if( $posts_loop->have_posts() ){
-
 		ob_start();
-
 		if( $pagenumber == 1 ){ ?>
-
 			<div class="row g-lg-5">
 		<?php }
 			while( $posts_loop->have_posts() ){
 				$posts_loop->the_post();
-
 				$post_image = has_post_thumbnail() ? get_the_post_thumbnail_url() : DEFAULT_IMG; ?>
-
 				<div class="col-md-6 col-xl-4 team-member">
 	                    <div class="team-member-wrap">
-	                        
 	                        <a href="<?php the_permalink(); ?>" class="member-img">
 	                        	<img src="<?= $post_image; ?>" alt="blog-post-img">
 	                        </a>
 	                        <div class="member-details">
-	                        	
 	                            <a href="<?php the_permalink(); ?>" class="member-name"><h4><?php the_title(); ?></h4></a>
 	                            <p><?php the_excerpt(); ?></p>
-	   
 	                            <a href="<?php the_permalink(); ?>" >Read More</a>                           
 	                        </div>
 	                    </div>
 	            </div>
 			<?php }
 		if( $pagenumber == 1 ){ ?>
-			
 			</div>
 		<?php }
 		$return_content['content'] = ob_get_contents();
 		ob_end_clean();
-
 		if( $posts_loop->found_posts > ($ppp*$pagenumber) ){
-			
 			$return_content['load_more'] = ' <div class="d-flex justify-content-center"><a href="#" class="btn blue-btn load-more" data-pagenumber="'. ($pagenumber+1) .'">Load More<img src="'. get_stylesheet_directory_uri() .'/images/arrow-right.png" class="img-fluid btn-arrow" alt=""></a></div>';
 		}
 
 	}
-
 	wp_reset_query();
-
 	echo json_encode($return_content);
-
-die();
+	die();
 }
 
 // Theme Updater

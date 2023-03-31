@@ -31,17 +31,12 @@ if ( $testimonial_query->have_posts() ) { ?>
 		<div class="full-width-wysiwyg text-center">
 			<div class="container">
 				<div class="editor-design">
-
 					<?php if( !empty($testimonial_section_small_title) ){ ?>
-						
 						<h6><?= $testimonial_section_small_title; ?></h6>
 					<?php }
-
 					if( !empty($testimonial_section_title) ){ ?>
-
 						<h2><?= $testimonial_section_title; ?></h2>
 					<?php }
-
 					echo $testimonial_section_content; ?>
 				</div>
 			</div>
