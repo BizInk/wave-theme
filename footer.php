@@ -143,12 +143,10 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 <?php wp_footer(); ?>
 
 <script type="text/javascript">
-
-	var bizinklucaAjax = {"ajaxurl":"https:\/\/bizinknewtheme.betatesting87.com\/wp-admin\/admin-ajax.php"};
+	var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
 
 	function fetch_blog_posts(category='', pagenumber=1){
         
-        console.log(bizinklucaAjax.ajaxurl);
 		// Check if we are on correct page
 		if( jQuery('.blog-posts-cont').length ){
 
@@ -161,7 +159,7 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
            
 			jQuery.ajax({
 				type : "post",
-				url  :  "https://bizinknewtheme.betatesting87.com/wp-admin/admin-ajax.php",
+				url  :  ajaxurl,
 				data : {action: "fetch_blog_posts", category: category, pagenumber: pagenumber},
 				success: function(response) {
 					var result = JSON.parse(response);
