@@ -76,20 +76,8 @@ $linkedin = get_field('linkedin', 'options');
 										<i class="fa fa-twitter" aria-hidden="true"></i>
 									</a>
 								</li>
-							if( !empty($twitter) ){ ?>
-								<li>
-									<a href="<?= $twitter; ?>" target="_blank">
-										<i class="fa fa-twitter" aria-hidden="true"></i>
-									</a>
-								</li>
 							<?php }
 
-							if( !empty($linkedin) ){ ?>
-								<li>
-									<a href="<?= $linkedin; ?>" target="_blank">
-										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-									</a>
-								</li>
 							if( !empty($linkedin) ){ ?>
 								<li>
 									<a href="<?= $linkedin; ?>" target="_blank">

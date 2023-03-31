@@ -87,20 +87,8 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 									<i class="fa fa-twitter" aria-hidden="true"></i>
 								</a>
 							</li>
-						if( !empty($twitter) ){ ?>
-							<li>
-								<a href="<?= $twitter; ?>" target="_blank">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
-								</a>
-							</li>
 						<?php }
 
-						if( !empty($linkedin) ){ ?>
-							<li>
-								<a href="<?= $linkedin; ?>" target="_blank">
-									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-								</a>
-							</li>
 						if( !empty($linkedin) ){ ?>
 							<li>
 								<a href="<?= $linkedin; ?>" target="_blank">
@@ -144,12 +132,9 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 
 <script type="text/javascript">
 	var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-
 	function fetch_blog_posts(category='', pagenumber=1){
-        
 		// Check if we are on correct page
 		if( jQuery('.blog-posts-cont').length ){
-
 			if( pagenumber == 1 ){
 
 				jQuery('.blog-posts-cont').html('Loading...');
@@ -198,10 +183,5 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 			fetch_blog_posts(jQuery('.filter-wrap li.active').attr('data-cat'), jQuery(this).attr('data-pagenumber'));
 		});
 </script>
-
-
-
-
-
 </body>
 </html>
