@@ -17,23 +17,21 @@
 }
 
 
-.member-details-section {
+.member-details-section{
     h3{
         color:$primary;
     }
     ul.social-nav {      
         li{  
-            li{  
-                a{  
-                    color:$yellow;
-                    &:hover{
-                        color:$primary; 
-                    }
-                                            
+            a{  
+                color:$yellow;
+                &:hover{
+                    color:$primary; 
                 }
+                                        
             }
-        } 
-    }
+        }
+    }  
 }
 
 .get-in-touch{    

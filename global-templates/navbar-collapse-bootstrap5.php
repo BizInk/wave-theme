@@ -57,9 +57,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 				'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 			)
 		);
+
+		$header_client_button = get_field('header_client_button', 'option');
+
+		if( !empty($header_client_button['url']) && !empty($header_client_button['title']) ){
 		?>
 
-	<a href="#" class="btn">I'm a client</a>
+		<a href="<?= $header_client_button['url']; ?>" class="btn" target="<?= $header_client_button['target']; ?>"><?= $header_client_button['title']; ?></a>
+	<?php } ?>
  
 	</div><!-- .container(-fluid) -->
 
