@@ -41,15 +41,13 @@ $linkedin = get_field('linkedin', 'options');
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 	<?php do_action('wp_body_open'); ?>
 	<div class="site" id="page">
-
 		<!-- ******************* The Navbar Area ******************* -->
 		<header id="wrapper-navbar" class="">
-
-
 			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
 			<div class="top-nav">
 				<div class="container">
-					<div class="client-area-wrap">						
+					<div class="client-area-wrap">
+						<?php if(has_nav_menu('client-area')): ?>
 						<div class="dropdown">
 							<button class="dropdown-toggle client-area-anchor" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 								Client Area <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -62,6 +60,7 @@ $linkedin = get_field('linkedin', 'options');
 								'theme_location' => 'client-area', 
 							) ); ?> 
 						</div>
+						<?php endif; ?>
 					</div>
 					
 					<div class="header-contact">
@@ -82,35 +81,39 @@ $linkedin = get_field('linkedin', 'options');
 								</li>
 							<?php } ?>
 						</ul>
+
+						<!-- Social icons -->
+						<nav class="social-nav">
+							<ul>
+								<?php if( !empty($facebook) ){ ?>
+									<li>
+										<a href="<?= $facebook; ?>" target="_blank">
+											<i class="fa fa-facebook-square" aria-hidden="true"></i>
+										</a>
+									</li>
+								<?php }
+
+								if( !empty($twitter) ){ ?>
+									<li>
+										<a href="<?= $twitter; ?>" target="_blank">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+									</li>
+								<?php }
+
+								if( !empty($linkedin) ){ ?>
+									<li>
+										<a href="<?= $linkedin; ?>" target="_blank">
+											<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										</a>
+									</li>
+								<?php } ?>
+							</ul>
+						</nav>
+
 					</div>
 
-					<nav class="social-nav">
-						<ul>
-							<?php if( !empty($facebook) ){ ?>
-								<li>
-									<a href="<?= $facebook; ?>" target="_blank">
-										<i class="fa fa-facebook-square" aria-hidden="true"></i>
-									</a>
-								</li>
-							<?php }
-
-							if( !empty($twitter) ){ ?>
-								<li>
-									<a href="<?= $twitter; ?>" target="_blank">
-										<i class="fa fa-twitter" aria-hidden="true"></i>
-									</a>
-								</li>
-							<?php }
-
-							if( !empty($linkedin) ){ ?>
-								<li>
-									<a href="<?= $linkedin; ?>" target="_blank">
-										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-									</a>
-								</li>
-							<?php } ?>
-						</ul>
-					</nav>						
+											
 				</div>
 			</div>
 			<?php get_template_part('global-templates/navbar', $navbar_type . '-' . $bootstrap_version); ?>

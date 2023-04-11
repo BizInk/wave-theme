@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<?php
 		} else { ?>
-			<a href="https://bizinkluca.betatesting87.com/"> <img src="<?php echo $main_logo; ?>"> </a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php echo $main_logo; ?>"> </a>
 	<?php	}
 		?>
 		<!-- end custom logo -->
