@@ -13,10 +13,6 @@ defined('ABSPATH') || exit;
 
 $bootstrap_version = get_theme_mod('understrap_bootstrap_version', 'bootstrap5');
 $navbar_type       = get_theme_mod('understrap_navbar_type', 'collapse');
-
-$company_phone = get_field('company_phone', 'options');
-$company_email = get_field('company_email', 'options');
-
 $company_phone = get_field('company_phone', 'options');
 $company_email = get_field('company_email', 'options');
 $facebook = get_field('facebook', 'options'); 

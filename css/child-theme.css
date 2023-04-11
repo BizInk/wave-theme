@@ -17494,6 +17494,7 @@ button:focus {
 
 .top-nav .client-area-wrap {
   flex-wrap: wrap;
+  order: 3;
 }
 .top-nav .client-area-wrap ul {
   padding: 10px;
@@ -17512,6 +17513,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
+  position: relative;
 }
 @media (max-width: 767.98px) {
   .top-nav .container {
@@ -17541,11 +17543,16 @@ button:focus {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
 }
-.top-nav .social-nav {
-  display: none;
-}
 .top-nav .social-nav ul li a {
   font-size: 23px;
+}
+.top-nav .header-contact {
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .top-nav .header-contact {
+    flex-wrap: wrap;
+  }
 }
 .top-nav .header-contact ul {
   display: flex;
@@ -17563,7 +17570,16 @@ button:focus {
 .top-nav .header-contact ul li a:hover {
   text-decoration: underline;
 }
-
+@media (max-width: 767.98px) {
+  .top-nav .header-contact .social-nav {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+  }
+}
+.top-nav .header-contact .social-nav ul {
+  flex-direction: row;
+}
 header {
   transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
