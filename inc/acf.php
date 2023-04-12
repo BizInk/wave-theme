@@ -497,7 +497,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'taxonomy',
 				'operator' => '==',
-				'value' => 'content_topic',
+				'value' => 'content-topic',
 			),
 		),
 	),
