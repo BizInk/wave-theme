@@ -19029,46 +19029,25 @@ section.infobox-section.resource-infobox {
 
 .call-to-action-section {
   padding: 180px 0 180px;
-  background-position: bottom;
+  overflow: hidden;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media (max-width: 1440px) {
-  .call-to-action-section {
-    padding: 100px 0 295px;
-  }
+.call-to-action-section:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
 }
 .call-to-action-section .call-to-action-shape {
   position: absolute;
   left: 0;
-  z-index: -1;
-  top: -150px;
-  width: 100%;
-}
-@media (max-width: 1440px) {
-  .call-to-action-section .call-to-action-shape {
-    top: -110px;
-  }
-}
-@media (max-width: 1400px) {
-  .call-to-action-section .call-to-action-shape {
-    top: -20px;
-  }
-}
-@media (max-width: 991.98px) {
-  .call-to-action-section .call-to-action-shape {
-    top: -190px;
-  }
-}
-@media (max-width: 767.98px) {
-  .call-to-action-section .call-to-action-shape {
-    top: -110px;
-  }
-}
-@media (max-width: 575.98px) {
-  .call-to-action-section .call-to-action-shape {
-    top: -40px;
-  }
+  z-index: 1;
+  bottom: -20px;
 }
 @media (max-width: 991.98px) {
   .call-to-action-section {
@@ -19143,6 +19122,7 @@ section.infobox-section.resource-infobox {
 .comman-callto-action {
   max-width: 770px;
   margin: 0 auto;
+  position: relative;
 }
 
 .user-avtar {
