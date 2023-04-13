@@ -26,7 +26,7 @@ get_template_part('global-templates/inner-banner');
                 'posts_per_page' => -1,
                 'tax_query' => array(
                     array(
-                        'taxonomy' => 'content_topic',
+                        'taxonomy' => 'content-topic',
                         'field'    => 'term_id',
                         'terms'    => array($current_term),
                         'operator' => 'IN',
