@@ -13,9 +13,9 @@
                 }
             }   
             a{
-                color:$neutral-blue;
+                color:$yellow;
                 &:hover{
-                  color:$yellow;
+                  color:$primary;
                 }
             }                
         }   
@@ -31,20 +31,23 @@
 }
 
 .blog-listing-section{
-    .filter-wrap {       
+    .filter-wrap {      
+        h4{
+            color:$primary;
+        } 
         span{                     
-            background:$primary;           
-            color:$white;                       
+            background:$yellow;           
+            color:$primary;                       
         }
         ul {
             li {               
                 &:hover {
-                    background:$primary;
-                    color:$white;
+                    background:$yellow;
+                    color:$primary;
                 }
                 &.active{
-                    background:$primary;
-                    color:$white;
+                    background:$yellow;
+                    color:$primary;
                     @media(max-width:767px) {            
                         background:transparent; 
                         color:$primary;

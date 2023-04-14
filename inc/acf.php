@@ -66,7 +66,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_62ed01c37e22d',
-			'label' => 'Global Theme Color1',
+			'label' => 'Primary Color',
 			'name' => 'global_theme_color1',
 			'aria-label' => '',
 			'type' => 'color_picker',
@@ -84,7 +84,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_62ed01e07e22e',
-			'label' => 'Global Theme Color2',
+			'label' => 'Secondary Color',
 			'name' => 'global_theme_color2',
 			'aria-label' => '',
 			'type' => 'color_picker',

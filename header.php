@@ -43,14 +43,18 @@ $linkedin = get_field('linkedin', 'options');
 	<div class="site" id="page">
 		<!-- ******************* The Navbar Area ******************* -->
 		<header id="wrapper-navbar" class="">
-			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
+			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'wave-theme'); ?></a>
 			<div class="top-nav">
 				<div class="container">
 					<div class="client-area-wrap">
 						<?php if(has_nav_menu('client-area')): ?>
 						<div class="dropdown">
+							<?php
+								$locations = get_nav_menu_locations();
+								$menu = wp_get_nav_menu_object( $locations['client-area'] );
+							?>
 							<button class="dropdown-toggle client-area-anchor" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-								Client Area <i class="fa fa-angle-down" aria-hidden="true"></i>
+								<?php echo $menu->name ? $menu->name : "Client Area"; ?> <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</button>							
 							<?php 
 							wp_nav_menu( array(
