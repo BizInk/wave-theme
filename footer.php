@@ -148,7 +148,7 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="copyright-wrap">
-						<?= do_shortcode($copyright_information); ?>
+						<?= do_shortcode($copyright_information); ?> | <a href="https://www.bizinkonline.com"><?php _e('Website By Bizink','wave-theme');?></a>
 					</div>
 				</div>
 			</div>
