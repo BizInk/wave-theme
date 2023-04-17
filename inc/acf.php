@@ -1,4 +1,5 @@
 <?php
+
 if ( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
@@ -497,7 +498,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'taxonomy',
 				'operator' => '==',
-				'value' => 'content-topic',
+				'value' => 'content_topic',
 			),
 		),
 	),
@@ -5035,6 +5036,57 @@ acf_add_local_field_group(array(
 			'key' => 'field_63d75a15c4e1e',
 			'label' => 'Linkedin',
 			'name' => 'linkedin',
+			'aria-label' => '',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
+		array(
+			'key' => 'field_64393b9b5d72f',
+			'label' => 'Instagram',
+			'name' => 'instagram',
+			'aria-label' => '',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
+		array(
+			'key' => 'field_64393bc55d730',
+			'label' => 'YouTube',
+			'name' => 'youtube',
+			'aria-label' => '',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
+		array(
+			'key' => 'field_64393bee5d731',
+			'label' => 'Google My Business',
+			'name' => 'google_my_business',
 			'aria-label' => '',
 			'type' => 'url',
 			'instructions' => '',
