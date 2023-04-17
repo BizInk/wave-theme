@@ -215,6 +215,8 @@ header {
       color: #d33; }
   .social-wrap .container .copyright-wrap {
     color: rgba(255, 255, 255, 0.8); }
+  .social-wrap .container .copyright-wrap a{
+      color: rgba(255, 255, 255, 0.8); }
 
 nav.contact-details ul li a:hover {
   color: #1e73be; }

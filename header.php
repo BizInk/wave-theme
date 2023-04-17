@@ -18,6 +18,7 @@ $company_email = get_field('company_email', 'options');
 $facebook = get_field('facebook', 'options'); 
 $twitter = get_field('twitter', 'options'); 
 $linkedin = get_field('linkedin', 'options');
+$instagram = get_field('instagram', 'options');
 $youtube = get_field('youtube', 'options');
 $google_my_business = get_field('google_my_business', 'options');
 ?>
@@ -110,6 +111,14 @@ $google_my_business = get_field('google_my_business', 'options');
 										</a>
 									</li>
 								<?php } 
+
+								if( !empty($instagram) ){ ?>
+									<li>
+										<a href="<?= $instagram; ?>" target="_blank">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+									</li>
+								<?php }
 
 								if( !empty($youtube) ){ ?>
 									<li>
