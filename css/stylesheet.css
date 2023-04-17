@@ -94,10 +94,13 @@ h6 {
     color: #d33;
     border-color: #1e73be; }
 
-.top-nav .client-area-wrap ul li a {
-  color: #000; }
-  .top-nav .client-area-wrap ul li a:hover {
+.top-nav .client-area-wrap ul {
+  box-shadow: -1px 1px 7px 3px rgba(0, 0, 0, 0.12); }
+  .top-nav .client-area-wrap ul li a {
     color: #d33; }
+    .top-nav .client-area-wrap ul li a:hover {
+      color: #fff;
+      background-color: #d33; }
 
 button#dropdownMenuButton1 {
   background: transparent;
@@ -310,7 +313,7 @@ nav.contact-details ul li a:hover {
       color: #fff; }
 
 .default-content ul li:before {
-  color: #d93; }
+  color: #d33; }
 
 .default-content blockquote {
   color: #000;
@@ -349,6 +352,13 @@ nav.contact-details ul li a:hover {
   background-color: #d33;
   color: #fff;
   border-color: #d33; }
+
+.accordion-item .accordion-button {
+  background-color: #d33;
+  color: #fff; }
+
+.accordion .accordion-item .accordion-body {
+  background-color: rgba(0, 0, 0, 0.08); }
 
 .responsive-tabs .nav-tabs .nav-link {
   color: #000; }

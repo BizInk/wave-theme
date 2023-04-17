@@ -1,9 +1,13 @@
    .top-nav .client-area-wrap{
-    ul li a {
-       color:$dark;
-       &:hover{
+    ul {
+        box-shadow: -1px 1px 7px 3px rgba($dark, 0.12);
+      li a {
          color:$primary;
-       }
+         &:hover{
+           color:$white;
+           background-color:$primary;
+         }
+      }
     }
   }
 

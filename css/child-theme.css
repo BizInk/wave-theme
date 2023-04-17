@@ -17497,14 +17497,20 @@ button:focus {
   order: 3;
 }
 .top-nav .client-area-wrap ul {
-  padding: 10px;
-  min-width: 150px;
+  padding: 0;
+  min-width: 260px;
+  border: 0;
 }
 .top-nav .client-area-wrap ul li {
   margin: 0;
 }
 .top-nav .client-area-wrap ul li a {
-  padding: 10px 0;
+  font-weight: 500;
+  padding: 7px 10px;
+  margin-bottom: 0;
+  white-space: normal;
+  display: block;
+  transition: all 0.3s ease-in-out;
 }
 .top-nav .client-area-wrap .dropdown-toggle::after {
   display: none;
@@ -17529,12 +17535,17 @@ button:focus {
   }
 }
 .top-nav ul li {
-  margin: 0 5px;
+  margin: 0 2px;
 }
 .top-nav ul li a {
   padding: 5px;
   font-size: 15px;
   text-decoration: none;
+}
+@media (max-width: 767.98px) {
+  .top-nav ul li a {
+    padding: 5px 0;
+  }
 }
 .top-nav ul li a img {
   max-width: 20px;
@@ -19606,16 +19617,16 @@ section.infobox-section.resource-infobox {
   margin-bottom: 10px;
 }
 .default-content ul li:before, .editor-design ul li:before {
-  background-image: url(../images/check-icon.svg);
-  content: "";
+  font-family: "Fontawesome";
+  content: "\f058";
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 800;
   width: 20px;
   height: 20px;
   position: absolute;
   left: 0;
   top: 0.2rem;
-  background-position: unset;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .default-content ol, .editor-design ol {
   margin: 0px 0 1rem;

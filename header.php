@@ -17,7 +17,9 @@ $company_phone = get_field('company_phone', 'options');
 $company_email = get_field('company_email', 'options');
 $facebook = get_field('facebook', 'options'); 
 $twitter = get_field('twitter', 'options'); 
-$linkedin = get_field('linkedin', 'options'); 
+$linkedin = get_field('linkedin', 'options');
+$youtube = get_field('youtube', 'options');
+$google_my_business = get_field('google_my_business', 'options');
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -26,15 +28,11 @@ $linkedin = get_field('linkedin', 'options');
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
 	<?php
 	$header_custom_css = get_field('header_custom_css', 'option');
-	
 	if( !empty($header_custom_css) ){
-
 		echo '<style>'. $header_custom_css .'</style>';
 	} ?>
-
 	<?php wp_head(); ?>
 </head>
 
@@ -111,7 +109,24 @@ $linkedin = get_field('linkedin', 'options');
 											<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 										</a>
 									</li>
+								<?php } 
+
+								if( !empty($youtube) ){ ?>
+									<li>
+										<a href="<?= $youtube; ?>" target="_blank">
+											<i class="fa fa-youtube-square" aria-hidden="true"></i>
+										</a>
+									</li>
+								<?php }
+		
+								if( !empty($google_my_business) ){ ?>
+									<li>
+										<a href="<?= $google_my_business; ?>" target="_blank">
+											<i class="fa fa-building" aria-hidden="true"></i>
+										</a>
+									</li>
 								<?php } ?>
+
 							</ul>
 						</nav>
 

@@ -42,3 +42,12 @@
     }
   }
 }
+
+
+.accordion-item .accordion-button{
+    background-color:$primary;
+    color:$white;    
+}
+.accordion .accordion-item .accordion-body {
+    background-color:rgba($dark, 0.08);
+}
