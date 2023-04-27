@@ -500,6 +500,11 @@ acf_add_local_field_group(array(
 				'operator' => '==',
 				'value' => 'content_topic',
 			),
+			array(
+				'param' => 'taxonomy',
+				'operator' => '==',
+				'value' => 'content-topic',
+			),
 		),
 	),
 	'menu_order' => 0,
