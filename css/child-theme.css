@@ -19422,7 +19422,6 @@ section.infobox-section.resource-infobox {
 }
 .team-section .team-wrap .team-member .team-member-wrap .member-details {
   padding: 2rem;
-  word-break: break-all;
 }
 .team-section .team-wrap .team-member .team-member-wrap .member-details h4, .team-section .team-wrap .team-member .team-member-wrap .member-details .h4 {
   color: #212529;
@@ -20322,7 +20321,6 @@ section.infobox-section.resource-infobox {
 }
 .teamlist-section .team-member .team-member-wrap .member-details {
   padding: 4rem 2rem;
-  word-break: break-all;
   transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
