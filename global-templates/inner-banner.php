@@ -99,11 +99,16 @@ if( !empty($inner_banner_image) ){
     <div class="full-width-wysiwyg text-center">
         <div class="container">
             <div class="editor-design">
-
-                <?php if( !empty($inner_banner_title) ) { ?>
+                <?php 
+                if( !empty($inner_banner_title) ): ?>
 
                     <h1><?php echo do_shortcode($inner_banner_title); ?></h1>
-                <?php }
+                <?php
+                else:
+                ?>
+                    <h1><?php the_title(); ?></h1>
+                <?php
+                endif;
 
                 if( !empty($inner_banner_content) && !is_singular('resource') ) { ?>
 
