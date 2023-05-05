@@ -1,9 +1,7 @@
 .teamlist-section {
     .team-member-wrap{
-        &:hover{
-            .member-details {
-                background-color:$yellow;
-            }
+        &:hover{          
+            background-color:$yellow;            
         }
         .member-details {
             h4 {

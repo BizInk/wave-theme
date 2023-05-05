@@ -481,7 +481,7 @@ nav.contact-details ul li a:hover {
   .newsletter-section .shape-color {
     background-color: #f9f9f9; }
 
-.teamlist-section .team-member-wrap:hover .member-details {
+.teamlist-section .team-member-wrap:hover {
   background-color: #1e73be; }
   .teamlist-section .team-member-wrap .member-details h4 {
     color: #d33; }

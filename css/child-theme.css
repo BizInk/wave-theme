@@ -17492,6 +17492,12 @@ button:focus {
   box-shadow: none !important;
 }
 
+.top-nav {
+  padding: 5px 0;
+  transition: 0.5s ease-in-out all;
+  -ms-transition: 0.5s ease-in-out all;
+  -o-transition: 0.5s ease-in-out all;
+}
 .top-nav .client-area-wrap {
   flex-wrap: wrap;
   order: 3;
@@ -17550,9 +17556,9 @@ button:focus {
 .top-nav ul li a img {
   max-width: 20px;
   margin-right: 5px;
-  transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out all;
+  -ms-transition: all 0.5s ease-in-out all;
+  -o-transition: all 0.5s ease-in-out all;
 }
 .top-nav .social-nav ul li a {
   font-size: 23px;
@@ -17613,6 +17619,30 @@ header.fixed {
   -o-box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.12);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.12);
   z-index: 99;
+}
+header.fixed .top-nav {
+  padding: 0;
+  transition: all 0.5s ease-in-out all;
+  -ms-transition: all 0.5s ease-in-out all;
+  -o-transition: all 0.5s ease-in-out all;
+}
+header.fixed img {
+  max-width: 80%;
+  transition: all 0.5s ease-in-out all;
+  -ms-transition: all 0.5s ease-in-out all;
+  -o-transition: all 0.5s ease-in-out all;
+}
+header.fixed .navbar {
+  padding: 15px 0;
+  transition: all 0.5s ease-in-out all;
+  -ms-transition: all 0.5s ease-in-out all;
+  -o-transition: all 0.5s ease-in-out all;
+}
+header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message header.fixed a.button, header.fixed .woocommerce-info a.button, .woocommerce-info header.fixed a.button, header.fixed .wpcf7 input[type=submit], .wpcf7 header.fixed input[type=submit] {
+  padding: 12px 22px;
+  transition: all 0.5s ease-in-out all;
+  -ms-transition: all 0.5s ease-in-out all;
+  -o-transition: all 0.5s ease-in-out all;
 }
 
 .navbar-dark .navbar-nav .menu-item-has-children.nav-item {
@@ -17681,6 +17711,9 @@ header.fixed {
 }
 .navbar-dark .btn, .navbar-dark .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .navbar-dark a.button, .navbar-dark .woocommerce-info a.button, .woocommerce-info .navbar-dark a.button, .navbar-dark .wpcf7 input[type=submit], .wpcf7 .navbar-dark input[type=submit] {
   margin-left: 30px;
+  transition: all 0.5s ease-in-out all;
+  -ms-transition: all 0.5s ease-in-out all;
+  -o-transition: all 0.5s ease-in-out all;
 }
 @media (max-width: 1199.98px) {
   .navbar-dark .btn, .navbar-dark .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .navbar-dark a.button, .navbar-dark .woocommerce-info a.button, .woocommerce-info .navbar-dark a.button, .navbar-dark .wpcf7 input[type=submit], .wpcf7 .navbar-dark input[type=submit] {
@@ -17688,6 +17721,11 @@ header.fixed {
     font-size: 1.6rem;
     margin: 10px 0 0 15px;
   }
+}
+.navbar-dark img {
+  transition: all 0.5s ease-in-out all;
+  -ms-transition: all 0.5s ease-in-out all;
+  -o-transition: all 0.5s ease-in-out all;
 }
 @media (max-width: 1400px) {
   .navbar-dark img {
@@ -17824,6 +17862,9 @@ header.fixed {
 
 .navbar {
   padding: 30px 0 30px;
+  transition: 0.5s ease-in-out all;
+  -ms-transition: 0.5s ease-in-out all;
+  -o-transition: 0.5s ease-in-out all;
 }
 @media (max-width: 991.98px) {
   .navbar {
