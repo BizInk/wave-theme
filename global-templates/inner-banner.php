@@ -35,7 +35,10 @@
 
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-    $inner_banner_title = single_cat_title( '', false ); 
+    $inner_banner_title = single_cat_title( '', false );
+    if(empty($inner_banner_title) && is_post_type_archive()){
+        $inner_banner_title = post_type_archive_title( '', false );
+    }
     $inner_banner_content = '';
     $inner_banner_image = get_field('inner_banner_image', 'option');
 }else if( is_404() ){

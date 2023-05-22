@@ -7,12 +7,12 @@ function cptui_register_my_cpts() {
 	 * Post Type: Weekly Digests
 	 */
 	$labels = array(
-		'name'                  => _x( 'Weekly Digests', 'Post Type General Name', 'wave-theme' ),
-		'singular_name'         => _x( 'Weekly Digest', 'Post Type Singular Name', 'wave-theme' ),
+		'name'                  => _x( 'Weekly Digests', 'Weekly Digest General Name', 'wave-theme' ),
+		'singular_name'         => _x( 'Weekly Digest', 'Weekly Digest Singular Name', 'wave-theme' ),
 		'menu_name'             => __( 'Weekly Digests', 'wave-theme' ),
 		'name_admin_bar'        => __( 'Weekly Digest', 'wave-theme' ),
 		'archives'              => __( 'Weekly Digest Archives', 'wave-theme' ),
-		'attributes'            => __( 'igest Attributes', 'wave-theme' ),
+		'attributes'            => __( 'Digest Attributes', 'wave-theme' ),
 		'parent_item_colon'     => __( 'Parent Digest:', 'wave-theme' ),
 		'all_items'             => __( 'All Digests', 'wave-theme' ),
 		'add_new_item'          => __( 'Add New Weekly Digest', 'wave-theme' ),
@@ -37,7 +37,7 @@ function cptui_register_my_cpts() {
 	);
 	$args = array(
 		'label'                 => __( 'Weekly Digest', 'wave-theme' ),
-		'description'           => __( 'Post Type Description', 'wave-theme' ),
+		'description'           => __( 'Weekly Digests', 'wave-theme' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'post-formats' ),
 		'taxonomies'            => array(),
@@ -60,8 +60,8 @@ function cptui_register_my_cpts() {
 	register_post_type( 'weekly-digest', $args );
 
 	$labels = array(
-		'name'                       => _x( 'Topics', 'Topics', 'wave-theme' ),
-		'singular_name'              => _x( 'Topic', 'Topic', 'wave-theme' ),
+		'name'                       => _x( 'Topics', 'Topics General Name', 'wave-theme' ),
+		'singular_name'              => _x( 'Topic', 'Topic Singular Name', 'wave-theme' ),
 		'menu_name'                  => __( 'Topic', 'wave-theme' ),
 		'all_items'                  => __( 'All Topics', 'wave-theme' ),
 		'parent_item'                => __( 'Parent Topic', 'wave-theme' ),
@@ -94,8 +94,8 @@ function cptui_register_my_cpts() {
 	register_taxonomy( 'weekly-digest-topic', array( 'weekly-digest' ), $args );
 
 	$labels = array(
-		'name'                       => _x( 'Types', 'Types', 'wave-theme' ),
-		'singular_name'              => _x( 'Type', 'Type', 'wave-theme' ),
+		'name'                       => _x( 'Types', 'Types General Name', 'wave-theme' ),
+		'singular_name'              => _x( 'Type Singular Name', 'Type', 'wave-theme' ),
 		'menu_name'                  => __( 'Type', 'wave-theme' ),
 		'all_items'                  => __( 'All Types', 'wave-theme' ),
 		'parent_item'                => __( 'Parent Type', 'wave-theme' ),
