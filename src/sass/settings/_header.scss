@@ -176,7 +176,9 @@ header {
       &::after {
         background: $primary;
       }
-
+    }
+    &:after {
+      background: $primary;
     }
   }
 }

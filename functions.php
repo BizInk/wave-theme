@@ -96,12 +96,14 @@ if( function_exists('acf_add_options_sub_page') ) {
 		'page_title'  => __('Website Settings'),
         'menu_title'  => __('Website Settings'),
 		'capability' => 'edit_posts',
+		'icon_url' => 'dashicons-info'
 	));
 
 	acf_add_options_page(array(
 		'page_title'  => __('Admin Settings'),
         'menu_title'  => __('Admin Settings'),
 		'capability' => 'manage_options',
+		'icon_url' => 'dashicons-carrot'
 	));
 
 	/*
@@ -397,12 +399,9 @@ function fetch_blog_posts() {
 		}
 
 	}
-
 	wp_reset_query();
-
 	echo json_encode($return_content);
-
-die();
+	die();
 }
 
 

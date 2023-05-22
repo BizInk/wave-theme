@@ -20,7 +20,7 @@ $content_types_small_title = get_field('content_types_small_title');
 $content_types_title = get_field('content_types_title');
 $content_types_content = get_field('content_types_content');
 
-$ppp = 12;
+$ppp = 90;
 $content_topics = get_terms(array(
     'taxonomy' => 'content-topic',
     'hide_empty' => false,
@@ -81,7 +81,7 @@ if( !empty($content_topics) ){ ?>
 
                 <?php if( count($content_topics) > $ppp ){ ?>
 
-                    <a href="javascript:void(0);" class="btn red-btn topics-load-more" data-pagenumber="1"><?php _e('Load More','wave-theme'); ?></a>
+                    <a href="javascript:void(0);" class="btn red-btn topics-load-more" data-pagenumber="1">Load More</a>
                 <?php } ?>
 
                 <script>
@@ -159,7 +159,7 @@ if( !empty($content_types) ){ ?>
                                         <p><?= do_shortcode($content_type->description); ?></p>
                                     <?php } ?>
                                 </div>
-                                <a href="<?= get_term_link($content_type); ?>" class="btn"><?php _e('View more','wave-theme');?></a>
+                                <a href="<?= get_term_link($content_type); ?>" class="btn">View more</a>
                             </div>
                         </div>
                     <?php $types_counter++;
@@ -168,7 +168,7 @@ if( !empty($content_types) ){ ?>
 
                 <?php if( count($content_types) > $ppp ){ ?>
 
-                    <a href="javascript:void(0);" class="btn red-btn types-load-more" data-pagenumber="1"><?php _e('Load More','wave-theme'); ?></a>
+                    <a href="javascript:void(0);" class="btn red-btn types-load-more" data-pagenumber="1">Load More</a>
                 <?php } ?>
 
                 <script>

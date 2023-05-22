@@ -1,6 +1,166 @@
 <?php
 function cptui_register_my_cpts() {
 
+
+	
+	/**
+	 * Post Type: Weekly Digests
+	 */
+	$labels = array(
+		'name'                  => _x( 'Weekly Digests', 'Post Type General Name', 'wave-theme' ),
+		'singular_name'         => _x( 'Weekly Digest', 'Post Type Singular Name', 'wave-theme' ),
+		'menu_name'             => __( 'Weekly Digests', 'wave-theme' ),
+		'name_admin_bar'        => __( 'Weekly Digest', 'wave-theme' ),
+		'archives'              => __( 'Weekly Digest Archives', 'wave-theme' ),
+		'attributes'            => __( 'igest Attributes', 'wave-theme' ),
+		'parent_item_colon'     => __( 'Parent Digest:', 'wave-theme' ),
+		'all_items'             => __( 'All Digests', 'wave-theme' ),
+		'add_new_item'          => __( 'Add New Weekly Digest', 'wave-theme' ),
+		'add_new'               => __( 'Add New', 'wave-theme' ),
+		'new_item'              => __( 'New Digest', 'wave-theme' ),
+		'edit_item'             => __( 'Edit Digest', 'wave-theme' ),
+		'update_item'           => __( 'Update Digest', 'wave-theme' ),
+		'view_item'             => __( 'View Weekly Digest', 'wave-theme' ),
+		'view_items'            => __( 'View Weekly Digests', 'wave-theme' ),
+		'search_items'          => __( 'Search Weekly Digest', 'wave-theme' ),
+		'not_found'             => __( 'Not found', 'wave-theme' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'wave-theme' ),
+		'featured_image'        => __( 'Featured Image', 'wave-theme' ),
+		'set_featured_image'    => __( 'Set featured image', 'wave-theme' ),
+		'remove_featured_image' => __( 'Remove featured image', 'wave-theme' ),
+		'use_featured_image'    => __( 'Use as featured image', 'wave-theme' ),
+		'insert_into_item'      => __( 'Insert into Digest', 'wave-theme' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'wave-theme' ),
+		'items_list'            => __( 'Weekly Digests list', 'wave-theme' ),
+		'items_list_navigation' => __( 'Digests list navigation', 'wave-theme' ),
+		'filter_items_list'     => __( 'Filter Digests list', 'wave-theme' ),
+	);
+	$args = array(
+		'label'                 => __( 'Weekly Digest', 'wave-theme' ),
+		'description'           => __( 'Post Type Description', 'wave-theme' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'post-formats' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 25,
+		'menu_icon'             => 'dashicons-book-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+		'show_in_rest'          => true,
+		'rest_base'             => 'weekly_digests',
+	);
+	register_post_type( 'weekly-digest', $args );
+
+	$labels = array(
+		'name'                       => _x( 'Topics', 'Topics', 'wave-theme' ),
+		'singular_name'              => _x( 'Topic', 'Topic', 'wave-theme' ),
+		'menu_name'                  => __( 'Topic', 'wave-theme' ),
+		'all_items'                  => __( 'All Topics', 'wave-theme' ),
+		'parent_item'                => __( 'Parent Topic', 'wave-theme' ),
+		'parent_item_colon'          => __( 'Parent Topic:', 'wave-theme' ),
+		'new_item_name'              => __( 'New Topic Name', 'wave-theme' ),
+		'add_new_item'               => __( 'Add New Topic', 'wave-theme' ),
+		'edit_item'                  => __( 'Edit Topic', 'wave-theme' ),
+		'update_item'                => __( 'Update Topic', 'wave-theme' ),
+		'view_item'                  => __( 'View Topic', 'wave-theme' ),
+		'separate_items_with_commas' => __( 'Separate Topics with commas', 'wave-theme' ),
+		'add_or_remove_items'        => __( 'Add or remove Topics', 'wave-theme' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'wave-theme' ),
+		'popular_items'              => __( 'Popular Topics', 'wave-theme' ),
+		'search_items'               => __( 'Search Topics', 'wave-theme' ),
+		'not_found'                  => __( 'Not Found', 'wave-theme' ),
+		'no_terms'                   => __( 'No Topics', 'wave-theme' ),
+		'items_list'                 => __( 'Topics list', 'wave-theme' ),
+		'items_list_navigation'      => __( 'Topics list navigation', 'wave-theme' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+		'show_in_rest'               => true,
+	);
+	register_taxonomy( 'weekly-digest-topic', array( 'weekly-digest' ), $args );
+
+	$labels = array(
+		'name'                       => _x( 'Types', 'Types', 'wave-theme' ),
+		'singular_name'              => _x( 'Type', 'Type', 'wave-theme' ),
+		'menu_name'                  => __( 'Type', 'wave-theme' ),
+		'all_items'                  => __( 'All Types', 'wave-theme' ),
+		'parent_item'                => __( 'Parent Type', 'wave-theme' ),
+		'parent_item_colon'          => __( 'Parent Type:', 'wave-theme' ),
+		'new_item_name'              => __( 'New Type Name', 'wave-theme' ),
+		'add_new_item'               => __( 'Add New Type', 'wave-theme' ),
+		'edit_item'                  => __( 'Edit Type', 'wave-theme' ),
+		'update_item'                => __( 'Update Type', 'wave-theme' ),
+		'view_item'                  => __( 'View Type', 'wave-theme' ),
+		'separate_items_with_commas' => __( 'Separate Types with commas', 'wave-theme' ),
+		'add_or_remove_items'        => __( 'Add or remove Types', 'wave-theme' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'wave-theme' ),
+		'popular_items'              => __( 'Popular Types', 'wave-theme' ),
+		'search_items'               => __( 'Search Types', 'wave-theme' ),
+		'not_found'                  => __( 'Not Found', 'wave-theme' ),
+		'no_terms'                   => __( 'No Types', 'wave-theme' ),
+		'items_list'                 => __( 'Types list', 'wave-theme' ),
+		'items_list_navigation'      => __( 'Types list navigation', 'wave-theme' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+		'show_in_rest'               => true,
+	);
+	register_taxonomy( 'weekly-digest-type', array( 'weekly-digest' ), $args );
+
+	$labels = array(
+		'name'                       => _x( 'Regions', 'Regions', 'wave-theme' ),
+		'singular_name'              => _x( 'Region', 'Region', 'wave-theme' ),
+		'menu_name'                  => __( 'Region', 'wave-theme' ),
+		'all_items'                  => __( 'All Regions', 'wave-theme' ),
+		'parent_item'                => __( 'Parent Region', 'wave-theme' ),
+		'parent_item_colon'          => __( 'Parent Region:', 'wave-theme' ),
+		'new_item_name'              => __( 'New Region Name', 'wave-theme' ),
+		'add_new_item'               => __( 'Add New Region', 'wave-theme' ),
+		'edit_item'                  => __( 'Edit Region', 'wave-theme' ),
+		'update_item'                => __( 'Update Region', 'wave-theme' ),
+		'view_item'                  => __( 'View Region', 'wave-theme' ),
+		'separate_items_with_commas' => __( 'Separate Regions with commas', 'wave-theme' ),
+		'add_or_remove_items'        => __( 'Add or remove Regions', 'wave-theme' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'wave-theme' ),
+		'popular_items'              => __( 'Popular Regions', 'wave-theme' ),
+		'search_items'               => __( 'Search Regions', 'wave-theme' ),
+		'not_found'                  => __( 'Not Found', 'wave-theme' ),
+		'no_terms'                   => __( 'No Regions', 'wave-theme' ),
+		'items_list'                 => __( 'Regions list', 'wave-theme' ),
+		'items_list_navigation'      => __( 'Regions list navigation', 'wave-theme' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => false,
+		'show_in_rest'               => true,
+	);
+	register_taxonomy( 'weekly-digest-region', array( 'weekly-digest' ), $args );
+
 	/**
 	 * Post Type: Fixed Price Packages.
 	 */
