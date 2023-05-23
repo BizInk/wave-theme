@@ -16,6 +16,7 @@ The Wave theme
 = 1.4.5 =
 * Hero Slider
 * Hero Mobile Padding
+* Updateing updater
 
 = 1.4.4 =
 * Weekly Digest Archive Page
