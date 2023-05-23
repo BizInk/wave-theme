@@ -78,6 +78,8 @@ if( have_rows('page_flexible_content') ):
         get_template_part('page-templates/template-parts/form-block');
       elseif( get_row_layout() == 'call_to_action' ):
           get_template_part('page-templates/template-parts/call-to-action');
+      elseif( get_row_layout() == 'hero_slider' ):
+          get_template_part('page-templates/template-parts/hero_slider');
       elseif( get_row_layout() == 'testimonial' ):
           get_template_part('page-templates/template-parts/testimonial');
       elseif( get_row_layout() == 'full_width_section' ):

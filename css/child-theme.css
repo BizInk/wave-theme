@@ -19115,6 +19115,11 @@ section.infobox-section.resource-infobox {
     padding: 140px 0px;
   }
 }
+@media (max-width: 575.98px) {
+  .call-to-action-section {
+    padding: 40px 0px;
+  }
+}
 .call-to-action-section .btn, .call-to-action-section .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .call-to-action-section a.button, .call-to-action-section .woocommerce-info a.button, .woocommerce-info .call-to-action-section a.button, .call-to-action-section .wpcf7 input[type=submit], .wpcf7 .call-to-action-section input[type=submit] {
   font-size: 2.5rem;
   padding: 24px 62px;
@@ -19184,6 +19189,38 @@ section.infobox-section.resource-infobox {
   max-width: 770px;
   margin: 0 auto;
   position: relative;
+}
+
+.hero-slider-section .call-to-action-section {
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .hero-slider-section .call-to-action-section .container {
+    max-width: 90%;
+  }
+}
+.hero-slider-section .slick-next, .hero-slider-section .slick-prev {
+  z-index: 9;
+}
+.hero-slider-section .slick-next {
+  right: 3rem;
+}
+@media (max-width: 991.98px) {
+  .hero-slider-section .slick-next {
+    right: 2rem;
+  }
+}
+.hero-slider-section .slick-prev {
+  left: 2rem;
+}
+@media (max-width: 991.98px) {
+  .hero-slider-section .slick-prev {
+    left: 1rem;
+  }
+}
+.hero-slider-section .slick-next:before, .hero-slider-section .slick-prev:before {
+  opacity: 1;
+  font-size: 3rem;
 }
 
 .user-avtar {

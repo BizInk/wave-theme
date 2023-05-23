@@ -3,7 +3,7 @@ Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 6.0
 Tested up to: 6.2.2
-Stable tag: 1.4.4
+Stable tag: 1.4.5
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,10 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.4.5 =
+* Hero Slider
+* Hero Mobile Padding
 
 = 1.4.4 =
 * Weekly Digest Archive Page

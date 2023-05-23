@@ -11609,7 +11609,7 @@
 	  $(window).scroll(function () {
 	    var fixedtop = $('header');
 
-	    if ($(this).scrollTop() > 100) {
+	    if ($(this).scrollTop() > 0) {
 	      fixedtop.addClass('fixed');
 	    } else {
 	      fixedtop.removeClass('fixed');
@@ -11741,6 +11741,18 @@
 	          dots: true
 	        }
 	      }]
+	    });
+	  } // two-testimonial-slider-start
+
+
+	  if (jQuery(document).find('.hero-slider-wrap').length > 0) {
+	    $('.hero-slider-wrap').slick({
+	      dots: false,
+	      arrows: true,
+	      infinite: false,
+	      speed: 300,
+	      slidesToShow: 1,
+	      slidesToScroll: 1
 	    });
 	  } // two-testimonial-slider-end
 	  // Counter START
