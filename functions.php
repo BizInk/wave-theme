@@ -7,9 +7,10 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
 define('DEFAULT_IMG', get_stylesheet_directory_uri().'/images/default.jpg');
 
+require_once 'inc/acf.php';
+require_once 'inc/cpt.php';
 
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
@@ -23,7 +24,11 @@ function understrap_remove_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
-
+/** Force Showing of ACF Meta Boxes */
+function my_acf_init() {
+    acf_update_setting('remove_wp_meta_box', false);
+}
+add_action('acf/init', 'my_acf_init');
 
 /**
  * Enqueue our stylesheet and javascript file
@@ -47,8 +52,6 @@ function theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
-
-
 /**
  * Load the child theme's text domain
  */
@@ -56,8 +59,6 @@ function add_child_theme_textdomain() {
 	load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
-
-
 
 /**
  * Overrides the theme_mod to default to Bootstrap 5
@@ -73,8 +74,6 @@ function understrap_default_bootstrap_version( $current_mod ) {
 }
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
 
-
-
 /**
  * Loads javascript for showing customizer warning dialog.
  */
@@ -89,7 +88,7 @@ function understrap_child_customize_controls_js() {
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
 
-/*Website Settings*/
+/* Website Settings */
 if( function_exists('acf_add_options_sub_page') ) {
 	
 	acf_add_options_page(array(
@@ -147,8 +146,7 @@ function wpdocs_add_dashboard_widgets() {
 }
 add_action( 'wp_dashboard_setup', 'wpdocs_add_dashboard_widgets' );
 
-
-  /*
+/*
 *	Re-usable RSS feed reader with shortcode
 */
 if ( !function_exists('base_rss_feed') ) {
@@ -251,9 +249,6 @@ function dashboard_widget_function( $post, $callback_args ) {
 }
 
 add_filter( 'gform_enable_password_field', '__return_true' );
-
-include_once 'inc/acf.php';
-include_once 'inc/cpt.php';
 
 add_action( 'init', 'wpdocs_custom_init' );
 function wpdocs_custom_init() {

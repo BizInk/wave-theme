@@ -44,7 +44,7 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 		<div class="row footer-wrap">
 			<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
 				<div class="footer-logo">
-					<a href="<?= site_url(); ?>"><img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>"></a>
+					<?php if($footer_logo): ?><a href="<?= site_url(); ?>"><img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>"></a><?php endif; ?>
 				</div>				
 				<div class="footer-content">
 					<?= $footer_text; ?>
