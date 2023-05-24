@@ -15,11 +15,11 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 get_template_part('global-templates/inner-banner');
 
+// 'order'  => 'ASC',
+// 'orderby' => 'date',
 $posts_args = array(
     'post_status' => 'publish',
     'posts_per_page' => -1,
-    'order'  => 'DESC',
-    'orderby' => 'date',
     'post_type' => 'weekly-digest',
 	'cat' => get_queried_object()->term_id,
 );
