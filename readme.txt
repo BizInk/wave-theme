@@ -3,7 +3,7 @@ Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 6.0
 Tested up to: 6.2.2
-Stable tag: 1.4.7
+Stable tag: 1.4.6
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,9 +12,6 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
-
-= 1.4.7 =
-* Change Digests to be in date order
 
 = 1.4.6 =
 * Change Digests to be in date order
