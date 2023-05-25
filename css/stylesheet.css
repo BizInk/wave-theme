@@ -471,12 +471,8 @@ nav.contact-details ul li a:hover {
     background: #1e73be;
     color: #30d36c; }
   .blog-listing-section .filter-wrap ul li.active {
-    background: #1e73be;
+    background: transparent;
     color: #30d36c; }
-  @media (max-width: 767px) {
-          .blog-listing-section .filter-wrap ul li.active {
-            background: transparent;
-            color: #30d36c; } }
 
 .newsletter-section:before {
   background-color: rgba(48, 211, 108, 0.15); }

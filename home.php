@@ -20,7 +20,7 @@ $categories = get_terms([
 
               <div class="filter-wrap">
                   <h4>Select Category</h4>
-                  <span class="d-flex justify-content-between align-items-center d-md-none dropdown">Select</span>
+                  <span class="d-flex justify-content-between align-items-center dropdown">Select</span>
                   <ul>
                     <li class="active" data-cat="">ALL</li>
                     <?php foreach( $categories as $category ){ ?>

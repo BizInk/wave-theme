@@ -14,12 +14,8 @@
                     color:$white;
                 }
                 &.active{
-                    background:$primary;
-                    color:$white;
-                    @media(max-width:767px) {            
-                        background:transparent; 
-                        color:$primary;
-                    }
+                    background:transparent; 
+                    color:$primary;
                 }
             }
         }        

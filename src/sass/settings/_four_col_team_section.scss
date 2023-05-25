@@ -46,12 +46,8 @@
                     color:$primary;
                 }
                 &.active{
-                    background:$yellow;
+                    background:transparent; 
                     color:$primary;
-                    @media(max-width:767px) {            
-                        background:transparent; 
-                        color:$primary;
-                    }
                 }
             }
         }        

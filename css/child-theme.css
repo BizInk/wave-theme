@@ -17494,7 +17494,7 @@ button:focus {
 
 .top-nav {
   padding: 5px 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .top-nav .client-area-wrap {
   flex-wrap: wrap;
@@ -17594,7 +17594,7 @@ button:focus {
   flex-direction: row;
 }
 header {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 @media (max-width: 1199.98px) {
   header .btn, header .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message header a.button, header .woocommerce-info a.button, .woocommerce-info header a.button, header .wpcf7 input[type=submit], .wpcf7 header input[type=submit] {
@@ -17616,11 +17616,11 @@ header.fixed {
 }
 header.fixed .top-nav {
   padding: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 header.fixed img {
   max-width: 90%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 @media (max-width: 991.98px) {
   header.fixed img {
@@ -17629,11 +17629,11 @@ header.fixed img {
 }
 header.fixed .navbar {
   padding: 15px 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message header.fixed a.button, header.fixed .woocommerce-info a.button, .woocommerce-info header.fixed a.button, header.fixed .wpcf7 input[type=submit], .wpcf7 header.fixed input[type=submit] {
   padding: 12px 52px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .navbar-dark .navbar-nav .menu-item-has-children.nav-item {
@@ -19606,9 +19606,9 @@ section.infobox-section.resource-infobox {
 }
 .blog-listing-section .filter-wrap span {
   position: relative;
-  padding: 5px 10px;
+  padding: 12px 20px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin: 15px 0 25px;
 }
@@ -19642,13 +19642,9 @@ section.infobox-section.resource-infobox {
   line-height: 1;
   margin: 0 10px;
   cursor: pointer;
-}
-@media (max-width: 767.98px) {
-  .blog-listing-section .filter-wrap ul li {
-    margin: 0;
-    width: 100%;
-    text-align: left;
-  }
+  margin: 0;
+  width: 100%;
+  text-align: left;
 }
 .blog-listing-section .btn, .blog-listing-section .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .blog-listing-section a.button, .blog-listing-section .woocommerce-info a.button, .woocommerce-info .blog-listing-section a.button, .blog-listing-section .wpcf7 input[type=submit], .wpcf7 .blog-listing-section input[type=submit] {
   display: table;

@@ -1,9 +1,9 @@
 === Wave ===
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
-Requires at least: 6.0
+Requires at least: 5.6
 Tested up to: 6.2.2
-Stable tag: 1.4.6
+Stable tag: 1.4.7
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,9 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.4.7 =
+* Header smooth scrolling
 
 = 1.4.6 =
 * Change Digests to be in date order
