@@ -19617,9 +19617,11 @@ section.infobox-section.resource-infobox {
   font-family: "fontawesome";
   right: 20px;
   position: absolute;
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
 }
 .blog-listing-section .filter-wrap ul {
-  display: flex;
+  display: none;
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px 0 60px;

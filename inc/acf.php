@@ -5612,5 +5612,55 @@ acf_add_local_field_group(array(
 	'show_in_rest' => 0,
 ));
 
-endif;
+acf_add_local_field_group( array(
+	'key' => 'group_6476f1cbc22f7',
+	'title' => 'Select Team Members',
+	'fields' => array(
+		array(
+			'key' => 'field_6476f1cc64c81',
+			'label' => 'Team Members',
+			'name' => 'our_members',
+			'aria-label' => '',
+			'type' => 'post_object',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'post_type' => array(
+				0 => 'team-member',
+			),
+			'post_status' => array(
+				0 => 'publish',
+			),
+			'taxonomy' => '',
+			'return_format' => 'object',
+			'multiple' => 1,
+			'allow_null' => 0,
+			'ui' => 1,
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'page_template',
+				'operator' => '==',
+				'value' => 'page-templates/our-team.php',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+));
 
+endif;
