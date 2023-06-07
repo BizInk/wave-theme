@@ -252,7 +252,6 @@ add_filter( 'gform_enable_password_field', '__return_true' );
 
 add_action( 'init', 'wpdocs_custom_init' );
 function wpdocs_custom_init() {
-	remove_post_type_support('post','excerpt');
 	remove_post_type_support('fixed-price-packages','excerpt');
 	remove_post_type_support('testimonial','excerpt');
 	remove_post_type_support('team-member','excerpt');
