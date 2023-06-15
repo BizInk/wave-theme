@@ -52,9 +52,11 @@ if( $posts_loop->have_posts() ){ ?>
 
                         <div class="col-md-6 col-xl-4 team-member" <?= $posts_counter > $ppp ? 'style="display:none;"' : ''; ?> data-pagenumber="posts<?= ceil($posts_counter/$ppp); ?>">
                             <div class="team-member-wrap">
+                                <?php if(has_post_thumbnail()): ?>
                                 <a href="<?php the_permalink(); ?>" class="member-img">
                                     <img src="<?= $post_image; ?>" alt="post-img">
                                 </a>
+                                <?php endif; ?>
                                 <div class="member-details">
                                     <a href="<?php the_permalink(); ?>">
                                         <h4 class="member-name"><?php the_title(); ?></h4>
