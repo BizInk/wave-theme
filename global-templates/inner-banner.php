@@ -4,7 +4,10 @@
 	$inner_banner_shape_2_color = get_field('inner_banner_shape_2_color');
 	$inner_banner_title = get_field('inner_banner_title');
 	$inner_banner_content = get_field('inner_banner_content'); 
-    $inner_banner_image = get_field('inner_banner_image'); 
+    $inner_banner_image = get_field('inner_banner_image');
+    if(empty($inner_banner_title)){
+        $inner_banner_title = get_the_title();
+    }
 }else if( is_singular('team-member') ){
 
 	$inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
@@ -28,7 +31,7 @@
 
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-    $inner_banner_title = 'Blogs'; 
+    $inner_banner_title = __('Blogs','wave-theme');
     $inner_banner_content = get_field('inner_banner_content', 'option');
     $inner_banner_image = get_field('inner_banner_image', 'option');
 }else if( is_archive() ){
@@ -48,6 +51,9 @@
     $inner_banner_title = get_field('404_banner_title', 'option'); 
     $inner_banner_content = get_field('404_banner_content', 'option');
     $inner_banner_image = get_field('inner_banner_image', 'option');
+    if(empty($inner_banner_title)){
+        $inner_banner_title = __('Error 404','wave-theme');
+    }
 }else if( is_search() ){
 
     $search_term = $_GET['s'];
@@ -102,12 +108,11 @@ if( !empty($inner_banner_image) ){
     <div class="full-width-wysiwyg text-center">
         <div class="container">
             <div class="editor-design">
-                <?php if( !empty($inner_banner_title) ): ?>
+
+                <?php if( !empty($inner_banner_title) ) { ?>
+
                     <h1><?php echo do_shortcode($inner_banner_title); ?></h1>
-                <?php else: ?>
-                    <h1><?php the_title(); ?></h1>
-                <?php
-                endif;
+                <?php }
 
                 if( !empty($inner_banner_content) && !is_singular('resource') ) { ?>
 

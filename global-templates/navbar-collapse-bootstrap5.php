@@ -59,12 +59,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 		);
 
 		$header_client_button = get_field('header_client_button', 'option');
+		$header_client_button2 = get_field('header_client_button2', 'option');
 
 		if( !empty($header_client_button['url']) && !empty($header_client_button['title']) ){
 		?>
 
-		<a href="<?= $header_client_button['url']; ?>" class="btn" target="<?= $header_client_button['target']; ?>"><?= $header_client_button['title']; ?></a>
-	<?php } ?>
+			<a href="<?= $header_client_button['url']; ?>" class="btn" target="<?= $header_client_button['target']; ?>"><?= $header_client_button['title']; ?></a>
+		<?php }
+
+		if( !empty($header_client_button2['url']) && !empty($header_client_button2['title']) ){
+		?>
+
+			<a href="<?= $header_client_button2['url']; ?>" class="btn" target="<?= $header_client_button2['target']; ?>"><?= $header_client_button2['title']; ?></a>
+		<?php } ?>
  
 	</div><!-- .container(-fluid) -->
 
