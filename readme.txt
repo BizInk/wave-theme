@@ -13,6 +13,9 @@ The Wave theme
 
 == Changelog ==
 
+= 1.5.3 =
+* Fix Pricing Buttons
+
 = 1.5.2 =
 * FIX ACF Fields
 
