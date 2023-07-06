@@ -42,7 +42,7 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 	</div>
 	<div class="container">
 		<div class="row footer-wrap">
-			<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+			<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
 				<div class="footer-logo">
 					<?php if($footer_logo): ?><a href="<?= site_url(); ?>"><img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>"></a><?php endif; ?>
 				</div>				
@@ -50,7 +50,7 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 					<?= $footer_text; ?>
 				</div>
 			</div>
-			<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+			<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
 				<h5><?= $column_2_title; ?></h5>
 				<nav class="contact-details">
 					<ul>

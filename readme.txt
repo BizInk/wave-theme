@@ -3,7 +3,7 @@ Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 5.6
 Tested up to: 6.2.2
-Stable tag: 1.5.2
+Stable tag: 1.5.4
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,9 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.5.4 =
+* Fix Footer Spacing for contact section
 
 = 1.5.3 =
 * Fix Pricing Buttons
