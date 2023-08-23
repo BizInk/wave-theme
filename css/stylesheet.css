@@ -362,6 +362,14 @@ nav.contact-details ul li a:hover {
 .accordion .accordion-item .accordion-body {
   background-color: rgba(0, 0, 0, 0.08); }
 
+.video-wrap:before {
+  background: rgba(0, 0, 0, 0.50); }
+  .video-wrap i.fa {
+    color: #30d36c; }
+
+.four-col-team-section.video-section .team-member-wrap .member-details h4:hover {
+  color: #30d36c; }
+
 .responsive-tabs .nav-tabs .nav-link {
   color: #000; }
   .responsive-tabs .card-header {

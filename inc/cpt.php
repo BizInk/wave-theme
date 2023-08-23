@@ -1,5 +1,5 @@
 <?php
-function cptui_register_my_cpts() {
+function wave_register_my_cpts() {
 
 
 	
@@ -472,9 +472,9 @@ function cptui_register_my_cpts() {
 	register_post_type( "resource", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts' );
+add_action( 'init', 'wave_register_my_cpts' );
 
-function cptui_register_my_cpts_fixed_price_packages() {
+function wave_register_my_cpts_fixed_price_packages() {
 
 	/**
 	 * Post Type: Fixed Price Packages.
@@ -517,9 +517,9 @@ function cptui_register_my_cpts_fixed_price_packages() {
 	register_post_type( "fixed-price-packages", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_fixed_price_packages' );
+add_action( 'init', 'wave_register_my_cpts_fixed_price_packages' );
 
-function cptui_register_my_cpts_testimonial() {
+function wave_register_my_cpts_testimonial() {
 
 	/**
 	 * Post Type: Testimonials.
@@ -563,9 +563,9 @@ function cptui_register_my_cpts_testimonial() {
 	register_post_type( "testimonial", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_testimonial' );
+add_action( 'init', 'wave_register_my_cpts_testimonial' );
 
-function cptui_register_my_cpts_team_member() {
+function wave_register_my_cpts_team_member() {
 
 	/**
 	 * Post Type: Team Members.
@@ -608,9 +608,9 @@ function cptui_register_my_cpts_team_member() {
 	register_post_type( "team-member", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_team_member' );
+add_action( 'init', 'wave_register_my_cpts_team_member' );
 
-function cptui_register_my_cpts_mail_template() {
+function wave_register_my_cpts_mail_template() {
 
 	/**
 	 * Post Type: Mail Templates.
@@ -653,9 +653,9 @@ function cptui_register_my_cpts_mail_template() {
 	register_post_type( "mail-template", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_mail_template' );
+add_action( 'init', 'wave_register_my_cpts_mail_template' );
 
-function cptui_register_my_cpts_checklist() {
+function wave_register_my_cpts_checklist() {
 
 	/**
 	 * Post Type: Checklists.
@@ -698,9 +698,9 @@ function cptui_register_my_cpts_checklist() {
 	register_post_type( "checklist", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_checklist' );
+add_action( 'init', 'wave_register_my_cpts_checklist' );
 
-function cptui_register_my_cpts_landing_page() {
+function wave_register_my_cpts_landing_page() {
 
 	/**
 	 * Post Type: Landing Pages.
@@ -743,9 +743,9 @@ function cptui_register_my_cpts_landing_page() {
 	register_post_type( "landing-page", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_landing_page' );
+add_action( 'init', 'wave_register_my_cpts_landing_page' );
 
-function cptui_register_my_cpts_resource() {
+function wave_register_my_cpts_resource() {
 
 	/**
 	 * Post Type: Resources.
@@ -817,9 +817,9 @@ function cptui_register_my_cpts_resource() {
 	register_post_type( "resource", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts_resource' );
+add_action( 'init', 'wave_register_my_cpts_resource' );
 
-function cptui_register_my_taxes() {
+function wave_register_my_taxes() {
 
 	/**
 	 * Taxonomy: Mail Template Region.
@@ -1073,8 +1073,8 @@ function cptui_register_my_taxes() {
 	];
 	register_taxonomy( "content-type", [ "resource" ], $args );
 }
-add_action( 'init', 'cptui_register_my_taxes' );
-function cptui_register_my_taxes_mail_template_region() {
+add_action( 'init', 'wave_register_my_taxes' );
+function wave_register_my_taxes_mail_template_region() {
 
 	/**
 	 * Taxonomy: Mail Template Region.
@@ -1111,9 +1111,9 @@ function cptui_register_my_taxes_mail_template_region() {
 	];
 	register_taxonomy( "mail_template_region", [ "mail-template" ], $args );
 }
-add_action( 'init', 'cptui_register_my_taxes_mail_template_region' );
+add_action( 'init', 'wave_register_my_taxes_mail_template_region' );
 
-function cptui_register_my_taxes_mail_template_type() {
+function wave_register_my_taxes_mail_template_type() {
 
 	/**
 	 * Taxonomy: Mail Template Type.
@@ -1150,9 +1150,9 @@ function cptui_register_my_taxes_mail_template_type() {
 	];
 	register_taxonomy( "mail_template_type", [ "mail-template" ], $args );
 }
-add_action( 'init', 'cptui_register_my_taxes_mail_template_type' );
+add_action( 'init', 'wave_register_my_taxes_mail_template_type' );
 
-function cptui_register_my_taxes_checklist_type() {
+function wave_register_my_taxes_checklist_type() {
 
 	/**
 	 * Taxonomy: Checklist type.
@@ -1189,9 +1189,9 @@ function cptui_register_my_taxes_checklist_type() {
 	];
 	register_taxonomy( "checklist_type", [ "checklist" ], $args );
 }
-add_action( 'init', 'cptui_register_my_taxes_checklist_type' );
+add_action( 'init', 'wave_register_my_taxes_checklist_type' );
 
-function cptui_register_my_taxes_checklist_region() {
+function wave_register_my_taxes_checklist_region() {
 
 	/**
 	 * Taxonomy: Checklist region.
@@ -1228,9 +1228,9 @@ function cptui_register_my_taxes_checklist_region() {
 	];
 	register_taxonomy( "checklist_region", [ "checklist" ], $args );
 }
-add_action( 'init', 'cptui_register_my_taxes_checklist_region' );
+add_action( 'init', 'wave_register_my_taxes_checklist_region' );
 
-function cptui_register_my_taxes_content_topic() {
+function wave_register_my_taxes_content_topic() {
 
 	/**
 	 * Taxonomy: Content Topics.
@@ -1288,9 +1288,9 @@ function cptui_register_my_taxes_content_topic() {
 	];
 	register_taxonomy( "content-topic", [ "resource" ], $args );
 }
-add_action( 'init', 'cptui_register_my_taxes_content_topic' );
+add_action( 'init', 'wave_register_my_taxes_content_topic' );
 
-function cptui_register_my_taxes_content_type() {
+function cpt_register_content_type() {
 
 	/**
 	 * Taxonomy: Content Types.
@@ -1348,4 +1348,68 @@ function cptui_register_my_taxes_content_type() {
 	];
 	register_taxonomy( "content-type", [ "resource" ], $args );
 }
-add_action( 'init', 'cptui_register_my_taxes_content_type' );
+add_action( 'init', 'cpt_register_content_type' );
+
+function wave_register_videos(){
+	// CPT registration
+	$videos_labels = array(
+		'name'                  => _x( 'Videos', 'Post type general name', 'wave-theme' ),
+		'singular_name'         => _x( 'Video', 'Post type singular name', 'wave-theme' ),
+		'menu_name'             => _x( 'Videos', 'Admin Menu text', 'wave-theme' ),
+		'name_admin_bar'        => _x( 'Video', 'Add New on Toolbar', 'wave-theme' ),
+		'add_new'               => __( 'Add New', 'wave-theme' ),
+		'add_new_item'          => __( 'Add New Video', 'wave-theme' ),
+		'new_item'              => __( 'New Video', 'wave-theme' ),
+		'edit_item'             => __( 'Edit Video', 'wave-theme' ),
+		'view_item'             => __( 'View Video', 'wave-theme' ),
+		'all_items'             => __( 'All Videos', 'wave-theme' ),
+		'search_items'          => __( 'Search Videos', 'wave-theme' ),
+		'parent_item_colon'     => __( 'Parent Videos:', 'wave-theme' ),
+		'not_found'             => __( 'No videos found.', 'wave-theme' ),
+		'not_found_in_trash'    => __( 'No videos found in Trash.', 'wave-theme' )
+	);
+
+	$videos_args = array(
+		'labels'             => $videos_labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'menu_icon'			 => 'dashicons-video-alt3',
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'video' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'thumbnail' )
+	);
+
+	register_post_type( 'video', $videos_args );
+
+	$videos_cat = array(
+		'name'              => _x( 'Categories', 'taxonomy general name', 'wave-theme' ),
+		'singular_name'     => _x( 'Category', 'taxonomy singular name', 'wave-theme' ),
+		'search_items'      => __( 'Search Categories', 'wave-theme' ),
+		'all_items'         => __( 'All Categories', 'wave-theme' ),
+		'parent_item'       => __( 'Parent Category', 'wave-theme' ),
+		'parent_item_colon' => __( 'Parent Category:', 'wave-theme' ),
+		'edit_item'         => __( 'Edit Category', 'wave-theme' ),
+		'update_item'       => __( 'Update Category', 'wave-theme' ),
+		'add_new_item'      => __( 'Add New Category', 'wave-theme' ),
+		'new_item_name'     => __( 'New Category Name', 'wave-theme' ),
+		'menu_name'         => __( 'Category', 'wave-theme' ),
+	);
+
+	$videos_cat_args = array(
+		'hierarchical'      => true,
+		'labels'            => $videos_cat,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'video_cat' ),
+	);
+
+	register_taxonomy( 'video_cat', array( 'video' ), $videos_cat_args );
+}
+add_action( 'init', 'wave_register_videos' );

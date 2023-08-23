@@ -1,7 +1,8 @@
 .page-not-found {
   height:calc(100vh - 94px);
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
+  padding: 70px 0;
   h1{
    font-weight:$font-weight-bold;
   }

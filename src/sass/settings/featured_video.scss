@@ -1,0 +1,14 @@
+.video-wrap {    
+	&:before {
+	  background:rgba($dark, 0.50);    
+	}
+	i.fa {        
+	  color:$primary;
+	}
+}
+
+.four-col-team-section.video-section{
+    .team-member-wrap .member-details h4:hover{
+        color:$primary;
+    }
+}

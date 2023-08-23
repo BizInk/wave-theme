@@ -28,6 +28,7 @@ $linkedin = get_field('linkedin', 'options');
 $instagram = get_field('instagram', 'options');
 $youtube = get_field('youtube', 'options');
 $google_my_business = get_field('google_my_business', 'options');
+$threads = get_field('threads', 'options');
 
 $copyright_information = get_field('copyright_information', 'options'); ?>
 

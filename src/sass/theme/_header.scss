@@ -138,6 +138,9 @@ header {
         &:hover {
           @include transition(all 0.3s ease-in-out);
         }
+        @include media-breakpoint-down(md) {
+          padding: 7px 15px;
+        }
       }
       &:first-child .dropdown-item{
         &:hover{
@@ -158,7 +161,7 @@ header {
 
   .dropdown-toggle::after {
     border: 0;
-    font-family: 'fontawesome';
+    font-family: 'fontawesome', 'Font Awesome 6 Free';
     content: '\f107';
     position: absolute;
     @include transition(all 0.3s ease-in-out);
@@ -212,6 +215,67 @@ header {
         opacity: 1;
         filter: unset;
         margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  header .btn, header .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message header a.button, header .woocommerce-info a.button, .woocommerce-info header a.button, header .wpcf7 input[type=submit], .wpcf7 header input[type=submit] {
+    min-width: 170px;
+  }
+  header .container {
+    max-width: 1070px;
+  }
+}
+header.fixed .top-nav {
+  padding: 0;
+  transition: all 0.8s ease-in-out;
+}
+header.fixed img {
+  max-width: 90%;
+  transition: all 0.8s ease-in-out;
+}
+@media (max-width: 991.98px) {
+  header.fixed img {
+    max-width: 150px;
+  }
+}
+header.fixed .navbar {
+  padding: 15px 0;
+  transition: all 0.8s ease-in-out;
+}
+header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message header.fixed a.button, header.fixed .woocommerce-info a.button, .woocommerce-info header.fixed a.button, header.fixed .wpcf7 input[type=submit], .wpcf7 header.fixed input[type=submit] {
+  transition: all 0.8s ease-in-out;
+}
+.navbar-dark .navbar-nav .menu-item-has-children.nav-item {
+  margin-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-item {
+  margin: 0 3px;
+  padding: 0 3px;
+}
+@media (max-width: 1400px) {
+  .navbar-dark .navbar-nav .nav-item {
+    margin: 0 3px;
+    padding: 0 3px;
+  }
+}
+
+.menu-open {
+  overflow: hidden;
+  .navbar{
+    .navbar-collapse {
+      right: 0;
+    }
+    .navbar-toggler{
+      .navbar-toggler-icon{
+        &:before{
+          transform: rotate(45deg);
+        }
+      }
+      &:after{
+        display: none;
       }
     }
   }

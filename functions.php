@@ -7,11 +7,10 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+
 define('DEFAULT_IMG', get_stylesheet_directory_uri().'/images/default.jpg');
 
-require_once 'inc/acf.php';
 require_once 'inc/cpt.php';
-
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
  */
@@ -51,6 +50,8 @@ function theme_enqueue_styles() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
+
 
 /**
  * Load the child theme's text domain
@@ -242,13 +243,42 @@ if( function_exists('base_rss_feed') && !function_exists('base_rss_shortcode') )
  * Output the contents of the dashboard widget
  */
 function dashboard_widget_function( $post, $callback_args ) {
-    // esc_html_e( "Hello World, this is my first Dashboard Widget!", "textdomain" );
+    // esc_html_e( "Hello World, this is my first Dashboard Widget!", "understrap-child" );
     $feed_url = get_field('feed_url', 'option');
    if( function_exists('base_rss_feed') ) echo base_rss_feed(3, $feed_url, true);
 
 }
 
 add_filter( 'gform_enable_password_field', '__return_true' );
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+ 
+function my_acf_json_save_point( $path ) {
+    
+    // update path
+    $path = get_stylesheet_directory() . '/acf-json';
+    
+    
+    // return
+    return $path;
+    
+}
+
+add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+
+function my_acf_json_load_point( $paths ) {
+    
+    // remove original path (optional)
+    unset($paths[0]);
+    
+    
+    // append path
+    $paths[] = get_stylesheet_directory() . '/acf-json';
+    
+    
+    // return
+    return $paths;
+    
+}
 
 add_action( 'init', 'wpdocs_custom_init' );
 function wpdocs_custom_init() {
@@ -393,9 +423,12 @@ function fetch_blog_posts() {
 		}
 
 	}
+
 	wp_reset_query();
+
 	echo json_encode($return_content);
-	die();
+
+die();
 }
 
 
@@ -406,4 +439,4 @@ $myUpdateChecker = PucFactory::buildUpdateChecker('https://github.com/BizInk/wav
 // Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
 // Using a private repository, specify the access token 
-$myUpdateChecker->setAuthentication('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');			
+$myUpdateChecker->setAuthentication('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');
