@@ -31,7 +31,9 @@ $google_my_business = get_field('google_my_business', 'options');
 $threads = get_field('threads', 'options');
 
 $copyright_information = get_field('copyright_information', 'options'); ?>
-
+<?php
+echo get_field('custom_embed_code_after_body', 'options');
+?>
 <footer>
 	<svg xmlns="http://www.w3.org/2000/svg" width="2000" viewBox="0 0 1920 523.414" class="footer-shape-blue">
 		<path id="Path_152" data-name="Path 152" d="M0-24.427s348.259,76.692,963.854,0,956.146,0,956.146,0V464.9H0Z" transform="translate(0 58.512)" fill="<?= $footer_shape_color_1; ?>"/>
@@ -157,8 +159,10 @@ $copyright_information = get_field('copyright_information', 'options'); ?>
 	</div>
 </footer>
 </div><!-- #page we need this extra closing tag here -->
-<?php wp_footer(); ?>
-
+<?php 
+wp_footer();
+echo get_field('custom_embed_code_-_footer', 'options');
+?>
 <script type="text/javascript">
 	var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
 	function fetch_blog_posts(category='', pagenumber=1){

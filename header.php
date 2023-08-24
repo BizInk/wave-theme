@@ -34,7 +34,10 @@ $google_my_business = get_field('google_my_business', 'options');
 	if( !empty($header_custom_css) ){
 		echo '<style>'. $header_custom_css .'</style>';
 	} ?>
-	<?php wp_head(); ?>
+	<?php
+	wp_head(); 
+	echo get_field('custom_embed_code_head', 'options');
+	?>
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
