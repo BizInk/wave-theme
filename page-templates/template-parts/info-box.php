@@ -47,7 +47,7 @@ if( have_rows('information_box') ):
 
 		<div class="container">
 			<div class="infobox-warp">
-				<div class="row gy-5 g-md-5">
+				<div class="row gy-5 g-md-5 d-flex align-content-center justify-content-center flex-wrap">
 					<?php if( have_rows('information_box') ):
 
 						while( have_rows('information_box') ):
