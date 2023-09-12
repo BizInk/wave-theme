@@ -13,10 +13,10 @@ get_template_part('sidebar-templates/sidebar', 'footerfull');
 
 $footer_logo = get_field('footer_logo', 'options');
 $footer_text = get_field('footer_text', 'options');
-$column_1_title = get_field('column_1_title', 'options');
-$column_2_title = get_field('column_2_title', 'options');
-$column_3_title = get_field('column_3_title', 'options');
-$column_4_title = get_field('column_4_title', 'options');
+$column_1_title = get_field('column_1_title', 'options') ? get_field('column_1_title', 'options') : 'Who We Are';
+$column_2_title = get_field('column_2_title', 'options') ? get_field('column_2_title', 'options') : 'Contact Us';
+$column_3_title = get_field('column_3_title', 'options') ? get_field('column_3_title', 'options') : 'Follow Us On';
+$column_4_title = get_field('column_4_title', 'options') ? get_field('column_4_title', 'options') : 'Helpful Links';
 
 $footer_shape_color_1 = get_field('footer_shape_color_1', 'options');
 $footer_shape_color_2 = get_field('footer_shape_color_2', 'options');

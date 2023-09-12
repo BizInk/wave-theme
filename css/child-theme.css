@@ -17727,11 +17727,6 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-@media (max-width: 1400px) {
-  .navbar-dark img {
-    max-width: 150px;
-  }
-}
 .navbar-dark .dropdown-menu {
   -ms-box-shadow: -1px 1px 7px 3px rgba(0, 0, 0, 0.12);
   -o-box-shadow: -1px 1px 7px 3px rgba(0, 0, 0, 0.12);
@@ -17882,11 +17877,6 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
   .navbar {
     padding: 20px 0 20px;
   }
-  .navbar img {
-    max-width: 150px;
-  }
-}
-@media (max-width: 991.98px) {
   .navbar .navbar-collapse {
     position: fixed;
     top: 160px;
@@ -17903,6 +17893,11 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
   }
   .fixed .navbar .navbar-collapse {
     top: 140px;
+  }
+}
+@media (max-width: 650px) {
+  .navbar img {
+    max-width: 150px;
   }
 }
 
@@ -17985,7 +17980,6 @@ footer .shape-color {
   font-family: Poppins, sans-serif;
 }
 .footer-wrap .footer-content {
-  padding: 20px;
   max-width: 496px;
   padding-left: 0;
 }
