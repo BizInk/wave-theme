@@ -230,7 +230,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Who We Are",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -246,11 +246,11 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Contact Us",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -266,11 +266,11 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Social",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -290,7 +290,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Helpful Links",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
