@@ -217,6 +217,26 @@
             "delay": 0
         },
         {
+            "key": "field_63d763da748b1",
+            "label": "Column 1 Title",
+            "name": "column_1_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_63d763da748b2",
             "label": "Column 2 Title",
             "name": "column_2_title",
@@ -247,6 +267,26 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63d763e8748b4",
+            "label": "Column 4 Title",
+            "name": "column_4_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
                 "class": "",
                 "id": ""
             },

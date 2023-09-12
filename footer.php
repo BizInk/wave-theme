@@ -13,8 +13,10 @@ get_template_part('sidebar-templates/sidebar', 'footerfull');
 
 $footer_logo = get_field('footer_logo', 'options');
 $footer_text = get_field('footer_text', 'options');
+$column_1_title = get_field('column_1_title', 'options');
 $column_2_title = get_field('column_2_title', 'options');
 $column_3_title = get_field('column_3_title', 'options');
+$column_4_title = get_field('column_4_title', 'options');
 
 $footer_shape_color_1 = get_field('footer_shape_color_1', 'options');
 $footer_shape_color_2 = get_field('footer_shape_color_2', 'options');
@@ -44,17 +46,22 @@ echo get_field('custom_embed_code_after_body', 'options');
 	<div class="shape-color primary-bg" style="background-color: <?= $footer_shape_color_1; ?>;">
 	</div>
 	<div class="container">
-		<div class="row footer-wrap">
-			<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+		<div class="row footer-wrap mb-5 pb-5">
+			<div class="col-sm-12 d-flex align-items-center justify-content-center">
 				<div class="footer-logo">
 					<?php if($footer_logo): ?><a href="<?= site_url(); ?>"><img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>"></a><?php endif; ?>
-				</div>				
+				</div>	
+			</div>
+		</div>
+		<div class="row footer-wrap">
+			<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+				<h5><?= ($column_1_title ? $column_1_title : ''); ?></h5>
 				<div class="footer-content">
 					<?= $footer_text; ?>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-				<h5><?= $column_2_title; ?></h5>
+				<h5><?= ($column_2_title ? $column_2_title : ''); ?></h5>
 				<nav class="contact-details">
 					<ul>
 						<?php if( !empty($company_phone) ){ ?>
@@ -76,7 +83,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 				</nav>
 			</div>
 			<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-				<h5><?= $column_3_title; ?></h5>
+				<h5><?= ($column_3_title ? $column_3_title : ''); ?></h5>
 				<nav class="social-nav">
 					<ul>
 						<?php if( !empty($facebook) ){ ?>
@@ -131,6 +138,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 				</nav>	
 			</div>
 			<div class="col-md-6 col-lg-2">
+			<h5><?= ($column_4_title ? $column_4_title : ''); ?></h5>
 				<?php
 				wp_nav_menu(
 					array(
