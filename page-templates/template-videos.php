@@ -129,19 +129,24 @@ if( $videos->have_posts() ){ ?>
 
 						$video_url = get_field('video_url', get_the_id());
 
-						if( !empty($video_url) && has_post_thumbnail() ){ ?>
+						if( !empty($video_url) ){ ?>
 						
 							<div class="col-md-6 col-xl-4 team-member">
 								<div class="team-member-wrap">												
 									<a href="<?= $video_url; ?>" data-fancybox="" class="member-img">
 										<div class="video-wrap">
+											<?php if(has_post_thumbnail()): ?>
 											<img src="<?= get_the_post_thumbnail_url(); ?>" class="img-fluid lazyloaded" alt="<?php the_title(); ?>">
+											<?php else: ?>
+											<img src="<?= get_stylesheet_directory_uri() . '/images/default.jpg'; ?>" class="img-fluid lazyloaded" alt="<?php the_title(); ?>">
+											<?php endif; ?>
 											<i class="fa fa-play-circle" aria-hidden="true"></i>
 										</div>
 									</a>
 									<div class="member-details">							
 										<h4><?php the_title(); ?></h4>
 										<?php the_content(); ?>
+										<a href="<?= $video_url; ?>" data-fancybox="" class="button text-center"><?php _e('Watch Now','capsule'); ?></a>
 									</div>
 								</div>
 							</div>
