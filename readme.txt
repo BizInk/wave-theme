@@ -2,8 +2,8 @@
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 5.6
-Tested up to: 6.3.1
-Stable tag: 1.5.10
+Tested up to: 6.3.2
+Stable tag: 1.6
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,11 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.6 =
+* Change the infoboxes
+* Change Either 2 or 3 columns
+* Change colour of packages prices
 
 = 1.5.10 =
 * Bug Fix: Video thumbnail

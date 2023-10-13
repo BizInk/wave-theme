@@ -67,6 +67,31 @@
                             "custom_choice_button_text": "Add new choice"
                         },
                         {
+                            "key": "field_651fe7d3b51ae",
+                            "label": "Number of Columns",
+                            "name": "info_box_columns",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "col-md-6": "Two Columns",
+                                "col-md-6 col-lg-4": "Three Columns"
+                            },
+                            "default_value": "col-md-6 col-lg-4",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        },
+                        {
                             "key": "field_63d8e1c7b9cbe",
                             "label": "Shape Color",
                             "name": "info_box_shape_color",
@@ -2041,7 +2066,8 @@
                             "return_format": "object",
                             "multiple": 1,
                             "allow_null": 0,
-                            "ui": 1
+                            "ui": 1,
+                            "bidirectional_target": []
                         }
                     ],
                     "min": "",
@@ -2221,7 +2247,8 @@
                             "return_format": "object",
                             "multiple": 1,
                             "allow_null": 0,
-                            "ui": 1
+                            "ui": 1,
+                            "bidirectional_target": []
                         }
                     ],
                     "min": "",
@@ -2541,7 +2568,8 @@
                             "allow_null": 0,
                             "multiple": 1,
                             "return_format": "object",
-                            "ui": 1
+                            "ui": 1,
+                            "bidirectional_target": []
                         }
                     ],
                     "min": "",
@@ -3028,5 +3056,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684748218
+    "modified": 1696590613
 }

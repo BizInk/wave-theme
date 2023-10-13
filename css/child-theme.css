@@ -17727,6 +17727,11 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
+@media (max-width: 1400px) {
+  .navbar-dark img {
+    max-width: 150px;
+  }
+}
 .navbar-dark .dropdown-menu {
   -ms-box-shadow: -1px 1px 7px 3px rgba(0, 0, 0, 0.12);
   -o-box-shadow: -1px 1px 7px 3px rgba(0, 0, 0, 0.12);
@@ -17877,6 +17882,11 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
   .navbar {
     padding: 20px 0 20px;
   }
+  .navbar img {
+    max-width: 150px;
+  }
+}
+@media (max-width: 991.98px) {
   .navbar .navbar-collapse {
     position: fixed;
     top: 160px;
@@ -17893,11 +17903,6 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
   }
   .fixed .navbar .navbar-collapse {
     top: 140px;
-  }
-}
-@media (max-width: 650px) {
-  .navbar img {
-    max-width: 150px;
   }
 }
 
@@ -17980,6 +17985,7 @@ footer .shape-color {
   font-family: Poppins, sans-serif;
 }
 .footer-wrap .footer-content {
+  padding: 20px;
   max-width: 496px;
   padding-left: 0;
 }
@@ -18841,7 +18847,10 @@ input[type=submit]:hover {
     top: 6%;
   }
 }
-.infobox-section .info-box {
+.infobox-section .infobox-warp .row {
+  justify-content: center;
+}
+.infobox-section .infobox-warp .row .info-box {
   box-shadow: 0px 12px 16px rgba(40, 41, 61, 0.0364);
   border-radius: 12px;
   padding: 48px 40px;
@@ -18849,35 +18858,35 @@ input[type=submit]:hover {
   -ms-transition: 0.3s ease-in-out all;
   -o-transition: 0.3s ease-in-out all;
 }
-.infobox-section .info-box .info-description {
+.infobox-section .infobox-warp .row .info-box .info-description {
   font-size: 2.1rem;
   margin-bottom: 1rem;
 }
 @media (max-width: 1440px) {
-  .infobox-section .info-box .info-description {
+  .infobox-section .infobox-warp .row .info-box .info-description {
     font-size: 1.8rem;
   }
 }
-.infobox-section .info-box .btn, .infobox-section .info-box .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .infobox-section .info-box a.button, .infobox-section .info-box .woocommerce-info a.button, .woocommerce-info .infobox-section .info-box a.button, .infobox-section .info-box .wpcf7 input[type=submit], .wpcf7 .infobox-section .info-box input[type=submit] {
+.infobox-section .infobox-warp .row .info-box .btn, .infobox-section .infobox-warp .row .info-box .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .infobox-section .infobox-warp .row .info-box a.button, .infobox-section .infobox-warp .row .info-box .woocommerce-info a.button, .woocommerce-info .infobox-section .infobox-warp .row .info-box a.button, .infobox-section .infobox-warp .row .info-box .wpcf7 input[type=submit], .wpcf7 .infobox-section .infobox-warp .row .info-box input[type=submit] {
   margin-top: 2rem;
 }
-.infobox-section .info-box h4, .infobox-section .info-box .h4 {
+.infobox-section .infobox-warp .row .info-box h4, .infobox-section .infobox-warp .row .info-box .h4 {
   margin: 15px 0 20px;
   font-size: 3.1rem;
   font-weight: 600;
 }
 @media (max-width: 1440px) {
-  .infobox-section .info-box h4, .infobox-section .info-box .h4 {
+  .infobox-section .infobox-warp .row .info-box h4, .infobox-section .infobox-warp .row .info-box .h4 {
     font-size: 2.7rem;
   }
 }
 @media (max-width: 767.98px) {
-  .infobox-section .info-box h4, .infobox-section .info-box .h4 {
+  .infobox-section .infobox-warp .row .info-box h4, .infobox-section .infobox-warp .row .info-box .h4 {
     font-size: 3.1rem;
   }
 }
 @media (max-width: 767.98px) {
-  .infobox-section .info-box {
+  .infobox-section .infobox-warp .row .info-box {
     box-shadow: 3px 4px 9px rgba(40, 41, 61, 0.12);
   }
 }
@@ -19380,7 +19389,6 @@ section.infobox-section.resource-infobox {
   line-height: 6.1rem;
   padding-bottom: 30px;
   font-family: Poppins, sans-serif;
-  color: #427cd4;
 }
 @media (max-width: 991.98px) {
   .pricing-section .card .card-header h2, .pricing-section .card .card-header .h2 {

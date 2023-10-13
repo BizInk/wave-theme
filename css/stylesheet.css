@@ -402,8 +402,10 @@ nav.contact-details ul li a:hover {
   .testimonial-card .testimonial-card-inner .testimonial-header {
     border-bottom: 1px solid ; }
 
-.pricing-section .card {
-  border: 1px solid rgba(221, 153, 51, 0.3); }
+.pricing-section h2 {
+  color: #1e73be; }
+  .pricing-section .card {
+    border: 1px solid rgba(221, 153, 51, 0.3); }
   .pricing-section .card .card-header {
     border-bottom: 1px solid rgba(35, 35, 35, 0.2); }
     .pricing-section .card .card-header h5 {

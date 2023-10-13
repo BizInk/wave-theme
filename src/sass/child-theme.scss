@@ -3,7 +3,7 @@
 @import "assets/understrap/theme/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
 
 // Optional files - If you don´t use the corresponding scripts/fonts comment em out
-@import "assets/fontawesome/fontawesome";                           // <------- Font Awesome Icon font
+@import "assets/fontawesome/font-awesome";                           // <------- Font Awesome Icon font
 @import "assets/underscores";                            // <------- Underscores media styles
 
 // Any additional imported files //
@@ -14,7 +14,6 @@
 @import "assets/slick/slick-theme";
 @import "assets/slick/slick";
 
-@import "assets/fancybox/fancybox";
 
 @import "theme/child_theme_variables";
 @import "theme/fonts";
@@ -22,15 +21,11 @@
 @import "theme/common";
 @import "theme/typography";
 @import "theme/button";
-@import "theme/topnav";
 @import "theme/header";
-@import "theme/team";
-@import "theme/fourcol";
-@import "theme/blog";
-@import "theme/signup";
 @import "theme/footer";
 @import "theme/page_not-found.scss";
-@import "theme/single";
+
+
 
 // Templates
 @import "theme/templates/banner";

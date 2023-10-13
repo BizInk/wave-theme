@@ -5,6 +5,7 @@ $info_box_shape_color = get_sub_field('info_box_shape_color');
 $info_box_small_title = get_sub_field('info_box_small_title');
 $info_box_title = get_sub_field('info_box_title');
 $info_box_content = get_sub_field('info_box_content');
+$info_box_columns = get_sub_field('info_box_columns');
 $general_class = '';
 
 if( in_array('Add Common Padding', $general_settings) ){
@@ -47,7 +48,7 @@ if( have_rows('information_box') ):
 
 		<div class="container">
 			<div class="infobox-warp">
-				<div class="row gy-5 g-md-5 d-flex align-content-center justify-content-center flex-wrap">
+				<div class="row gy-5 g-md-5">
 					<?php if( have_rows('information_box') ):
 
 						while( have_rows('information_box') ):
@@ -58,7 +59,7 @@ if( have_rows('information_box') ):
 							$info_description = get_sub_field('info_description');
 							$info_button = get_sub_field('info_button');
 							?>
-							<div class="col-md-6 col-lg-4">
+							<div class="<?php echo $info_box_columns; ?>">
 								<div class="info-box text-center h-100">
 
 									<?php if( !empty($info_image) ) { ?>
