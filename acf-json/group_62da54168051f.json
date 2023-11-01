@@ -435,6 +435,23 @@
             "default_value": "",
             "placeholder": ""
         },
+		{
+            "key": "field_64e41d19e259e",
+            "label": "Threads",
+            "name": "threads",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
         {
             "key": "field_64393bee5d731",
             "label": "Google My Business",

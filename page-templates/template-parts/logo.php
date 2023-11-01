@@ -39,9 +39,16 @@ if( have_rows('logo') ): ?>
                         if( !empty($slider_image) ){ ?>
 
                             <div class="logo">
-                                <a href="<?= $logo_url ?>">
+                                <?php if( !empty($logo_url) ){ ?>
+
+                                    <a href="<?php echo $logo_url; ?>" target="_blank">
+                                <?php } ?>
+                                
                                     <img src="<?php echo $slider_image; ?>" class="img-fluid" alt="">
-                                </a>
+
+                                <?php if( !empty($logo_url) ){ ?>
+                                    </a>
+                                <?php } ?>
                             </div>
                         <?php }
                     endwhile;

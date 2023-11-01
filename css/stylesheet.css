@@ -118,6 +118,8 @@ button#dropdownMenuButton1 {
     color: #fff; }
     .top-nav .container .header-contact ul li a i {
       color: #1e73be; }
+    .top-nav .container .header-contact ul li a svg {
+      fill: #1e73be; }
     .top-nav .container .header-contact ul li a:hover {
       color: #1e73be; }
   .top-nav .social-nav ul li a {

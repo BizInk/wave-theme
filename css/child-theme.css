@@ -17970,7 +17970,8 @@ footer .shape-color {
 .footer-wrap nav li a {
   text-decoration: none;
   margin-bottom: 1.5rem;
-  display: block;
+  display: flex;
+  align-items: center;
   transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
