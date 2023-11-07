@@ -3,7 +3,7 @@ Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 5.6
 Tested up to: 6.3.2
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,12 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.6.2 =
+* Mobile Menu Fixes
+* Mobile Header Social Icon & Email Fixes
+* Pricing Buttons
+* Extend Resources Page
 
 = 1.6.1 =
 * UWP Updates

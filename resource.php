@@ -20,7 +20,7 @@ $content_types_small_title = get_field('content_types_small_title');
 $content_types_title = get_field('content_types_title');
 $content_types_content = get_field('content_types_content');
 
-$ppp = 3;
+$ppp = 18;
 $content_topics = get_terms(array(
     'taxonomy' => 'content-topic',
     'hide_empty' => false,

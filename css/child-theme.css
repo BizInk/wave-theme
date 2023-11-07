@@ -17492,10 +17492,6 @@ button:focus {
   box-shadow: none !important;
 }
 
-.top-nav {
-  padding: 5px 0;
-  transition: all 0.8s ease-in-out;
-}
 .top-nav .client-area-wrap {
   flex-wrap: wrap;
   order: 3;
@@ -17519,6 +17515,11 @@ button:focus {
 .top-nav .client-area-wrap .dropdown-toggle::after {
   display: none;
 }
+
+.top-nav {
+  padding: 5px 0;
+  transition: all 0.8s ease-in-out;
+}
 .top-nav .container {
   display: flex;
   justify-content: space-between;
@@ -17541,10 +17542,20 @@ button:focus {
 .top-nav ul li {
   margin: 0 2px;
 }
+@media (max-width: 991.98px) {
+  .top-nav ul li {
+    line-height: 1.5;
+  }
+}
 .top-nav ul li a {
   padding: 5px;
   font-size: 15px;
   text-decoration: none;
+}
+@media (max-width: 991.98px) {
+  .top-nav ul li a {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 767.98px) {
   .top-nav ul li a {
@@ -17556,43 +17567,54 @@ button:focus {
   margin-right: 5px;
   transition: all 0.3s ease-in-out;
 }
+.top-nav .social-nav ul {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991.98px) {
+  .top-nav .social-nav ul {
+    margin-top: 5px;
+  }
+}
 .top-nav .social-nav ul li a {
-  font-size: 23px;
+  font-size: 1.4rem;
+}
+.top-nav .social-nav ul li a svg {
+  height: 15px;
+  width: 13px;
+  margin-top: -2px;
 }
 .top-nav .header-contact {
   display: flex;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .top-nav .header-contact {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
-.top-nav .header-contact ul {
+.top-nav .header-contact > ul {
   display: flex;
 }
 @media (max-width: 991.98px) {
-  .top-nav .header-contact ul {
+  .top-nav .header-contact > ul {
     display: flex;
     flex-direction: column;
   }
 }
-.top-nav .header-contact ul li a i {
+.top-nav .header-contact > ul li a i {
   font-size: 18px;
   margin-right: 6px;
 }
-.top-nav .header-contact ul li a:hover {
-  text-decoration: underline;
-}
-@media (max-width: 767.98px) {
-  .top-nav .header-contact .social-nav {
-    position: absolute;
-    right: 0;
-    bottom: 5px;
+@media (max-width: 991.98px) {
+  .top-nav .header-contact > ul li a i {
+    font-size: 1.4rem;
   }
 }
-.top-nav .header-contact .social-nav ul {
-  flex-direction: row;
+.top-nav .header-contact > ul li a:hover {
+  text-decoration: underline;
 }
+
 header {
   transition: all 0.8s ease-in-out;
 }
@@ -17627,11 +17649,14 @@ header.fixed img {
 }
 @media (max-width: 991.98px) {
   header.fixed img {
-    max-width: 150px;
+    max-width: 100px;
+    min-height: 76px;
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 }
 header.fixed .navbar {
-  padding: 15px 0;
+  padding: 10px 0;
   transition: all 0.8s ease-in-out;
 }
 header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message header.fixed a.button, header.fixed .woocommerce-info a.button, .woocommerce-info header.fixed a.button, header.fixed .wpcf7 input[type=submit], .wpcf7 header.fixed input[type=submit] {
@@ -17871,6 +17896,36 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
   filter: unset;
   margin: 10px;
 }
+.navbar-dark .client-area-wrap {
+  flex-wrap: wrap;
+  order: 3;
+}
+.navbar-dark .client-area-wrap ul {
+  padding: 0;
+  min-width: 260px;
+  border: 0;
+}
+.navbar-dark .client-area-wrap ul li {
+  margin: 0;
+}
+.navbar-dark .client-area-wrap ul li a {
+  font-weight: 500;
+  padding: 7px 10px;
+  margin-bottom: 0;
+  white-space: normal;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-dark .client-area-wrap .dropdown-toggle {
+  font-size: 1.4rem;
+  margin-left: 12px;
+}
+.navbar-dark .client-area-wrap .dropdown-toggle a {
+  text-decoration: none;
+}
+.navbar-dark .client-area-wrap .dropdown-toggle a::after {
+  display: none;
+}
 
 .navbar {
   padding: 30px 0 30px;
@@ -17880,18 +17935,21 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
 }
 @media (max-width: 991.98px) {
   .navbar {
-    padding: 20px 0 20px;
+    padding: 10px 0 10px;
   }
   .navbar img {
-    max-width: 150px;
+    max-width: 100px;
+    min-height: 76px;
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 }
 @media (max-width: 991.98px) {
   .navbar .navbar-collapse {
     position: fixed;
-    top: 160px;
+    top: 199px;
     right: -100%;
-    height: 100vh;
+    height: 90vh;
     z-index: 11;
     width: 350px;
     padding: 20px 15px 140px 15px;
@@ -17902,7 +17960,7 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
     overflow-y: auto;
   }
   .fixed .navbar .navbar-collapse {
-    top: 140px;
+    top: 189px;
   }
 }
 

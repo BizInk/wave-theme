@@ -85,7 +85,7 @@ $columns_classes = 'col-md-6 col-lg-3';
                                             $price_button_url = get_field('price_button_url');
                                             
                                             if( $price_button_label ) { ?>
-                                            <a href="<?php echo $price_button_url; ?>" class="btn navyblue-btn mt-2 ms-5"><?php echo $price_button_label; ?></a>
+                                            <a href="<?php echo $price_button_url; ?>" class="btn navyblue-btn mt-2"><?php echo $price_button_label; ?></a>
                                             <?php } ?>
                                         </div>
                                     </div>

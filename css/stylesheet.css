@@ -193,6 +193,13 @@ header {
     background: #30d36c; }
   .navbar-dark .navbar-toggler:after {
     background: #30d36c; }
+  .navbar-dark .client-area-wrap ul {
+    box-shadow: -1px 1px 7px 3px rgba(0, 0, 0, 0.12); }
+    .navbar-dark .client-area-wrap ul li a {
+      color: #fff; }
+    .navbar-dark .client-area-wrap ul li a:hover {
+      color: #000;
+      background-color: #000; }
 
 .footer-wrap .footer-logo {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(257deg) brightness(105%) contrast(102%); }

@@ -184,4 +184,17 @@ header {
       background: $primary;
     }
   }
+
+  .client-area-wrap{
+    ul {
+        box-shadow: -1px 1px 7px 3px rgba($dark, 0.12);
+      li a {
+         color:$white;
+         &:hover{
+           color:$dark;
+           background-color:$dark;
+         }
+      }
+    }
+  }
 }
