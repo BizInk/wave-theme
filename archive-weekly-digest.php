@@ -40,13 +40,7 @@ if( $posts_loop->have_posts() ){ ?>
                     while ( $posts_loop->have_posts() ) {
                         $posts_loop->the_post();
 
-                        $post_content = get_the_content();
-                        $post_content = strip_tags($post_content);
-
-                        if ( strlen($post_content) > 100 ) {
-                            $post_content = substr($post_content, 0, 100); 
-                        } 
-
+                        $excerpt = get_the_excerpt();
                         $post_image = has_post_thumbnail() ? get_the_post_thumbnail_url() : get_stylesheet_directory_uri() . '/images/default.jpg';
                         ?>
 
@@ -62,7 +56,7 @@ if( $posts_loop->have_posts() ){ ?>
                                         <h4 class="member-name"><?php the_title(); ?></h4>
                                     </a>
 
-                                    <p><?= $post_content; ?></p>
+                                    <p><?php echo wp_trim_words($excerpt, 30, '...'); ?></p>
                                     <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                                 </div>
                             </div>

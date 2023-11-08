@@ -75,7 +75,7 @@ if ( $latest_posts_query->have_posts() ) { ?>
                                 </a>
                                     <?php if( !empty($excerpt) ){ ?>
                                         
-                                        <p><?php echo wp_trim_words($excerpt, 20, ''); ?></p>
+                                        <p><?php echo wp_trim_words($excerpt, 30, '...'); ?></p>
                                     <?php } ?>
                                     <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
                                 </div>
