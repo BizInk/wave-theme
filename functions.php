@@ -23,11 +23,7 @@ function understrap_remove_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
-/** Force Showing of ACF Meta Boxes */
-function my_acf_init() {
-    acf_update_setting('remove_wp_meta_box', false);
-}
-add_action('acf/init', 'my_acf_init');
+
 
 /**
  * Enqueue our stylesheet and javascript file
@@ -56,10 +52,12 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 /**
  * Load the child theme's text domain
  */
-function add_child_theme_textdomain() {
-	load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
+function add_child_theme_text_domain() {
+	load_child_theme_text_domain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
-add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+add_action( 'after_setup_theme', 'add_child_theme_understrap-child' );
+
+
 
 /**
  * Overrides the theme_mod to default to Bootstrap 5
@@ -75,6 +73,8 @@ function understrap_default_bootstrap_version( $current_mod ) {
 }
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
 
+
+
 /**
  * Loads javascript for showing customizer warning dialog.
  */
@@ -89,7 +89,7 @@ function understrap_child_customize_controls_js() {
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
 
-/* Website Settings */
+/*Website Settings*/
 if( function_exists('acf_add_options_sub_page') ) {
 	
 	acf_add_options_page(array(
@@ -105,22 +105,6 @@ if( function_exists('acf_add_options_sub_page') ) {
 		'capability' => 'manage_options',
 		'icon_url' => 'dashicons-carrot'
 	));
-
-	/*
-	$parent = acf_add_options_sub_page(array(
-            'page_title'  => __('Website Settings'),
-            'menu_title'  => __('Website Settings'),
-            'parent'     => 'options-general.php',
-            'redirect'    => false,
-    ));
-
-	$parent = acf_add_options_sub_page(array(
-            'page_title'  => __('Admin Settings'),
-            'menu_title'  => __('Admin Settings'),
-            'parent'     => 'options-general.php',
-            'redirect'    => false,
-    ));
-	*/
 }
 
 
@@ -147,7 +131,8 @@ function wpdocs_add_dashboard_widgets() {
 }
 add_action( 'wp_dashboard_setup', 'wpdocs_add_dashboard_widgets' );
 
-/*
+
+  /*
 *	Re-usable RSS feed reader with shortcode
 */
 if ( !function_exists('base_rss_feed') ) {
@@ -206,15 +191,9 @@ if ( !function_exists('base_rss_feed') ) {
 			// echo '</ul>';
            
             $html .= "</ul>";
-
-             
-
 		} else {
- 
 			$html = "An error occurred while parsing your RSS feed. Check that it's a valid XML file.";
- 
 		}
- 
 
 		return $html;
 
@@ -253,11 +232,8 @@ add_filter( 'gform_enable_password_field', '__return_true' );
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
  
 function my_acf_json_save_point( $path ) {
-    
     // update path
     $path = get_stylesheet_directory() . '/acf-json';
-    
-    
     // return
     return $path;
     
@@ -269,12 +245,8 @@ function my_acf_json_load_point( $paths ) {
     
     // remove original path (optional)
     unset($paths[0]);
-    
-    
     // append path
     $paths[] = get_stylesheet_directory() . '/acf-json';
-    
-    
     // return
     return $paths;
     
@@ -282,6 +254,7 @@ function my_acf_json_load_point( $paths ) {
 
 add_action( 'init', 'wpdocs_custom_init' );
 function wpdocs_custom_init() {
+	remove_post_type_support('post','excerpt');
 	remove_post_type_support('fixed-price-packages','excerpt');
 	remove_post_type_support('testimonial','excerpt');
 	remove_post_type_support('team-member','excerpt');

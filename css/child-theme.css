@@ -19470,7 +19470,10 @@ section.infobox-section.resource-infobox {
   line-height: 3rem;
   font-weight: 400;
   position: relative;
-  left: -30px;
+  left: -10px;
+}
+.pricing-section .card .card-header h2.show-decimals small, .pricing-section .card .card-header .show-decimals.h2 small, .pricing-section .card .card-header h2.show-decimals .small, .pricing-section .card .card-header .show-decimals.h2 .small {
+  left: -50px;
 }
 .pricing-section .card .card-body {
   margin: 40px 0 30px;

@@ -18,7 +18,7 @@ if( !empty($our_members) ){
 ?>
     <section class="teamlist-section comman-padding">
         <div class="container">
-            <div class="row g-lg-5">
+            <div class="row g-lg-5 justify-content-center">
                 <?php foreach( $our_members as $our_member ){ 
 
                     $member_image = get_field('member_image', $our_member);

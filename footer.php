@@ -38,57 +38,63 @@ echo get_field('custom_embed_code_after_body', 'options');
 ?>
 <footer>
 	<svg xmlns="http://www.w3.org/2000/svg" width="2000" viewBox="0 0 1920 523.414" class="footer-shape-blue">
-		<path id="Path_152" data-name="Path 152" d="M0-24.427s348.259,76.692,963.854,0,956.146,0,956.146,0V464.9H0Z" transform="translate(0 58.512)" fill="<?= $footer_shape_color_1; ?>"/>
+		<path id="Path_152" data-name="Path 152" d="M0-24.427s348.259,76.692,963.854,0,956.146,0,956.146,0V464.9H0Z" transform="translate(0 58.512)" fill="<?php echo $footer_shape_color_1; ?>"/>
 	</svg>
 	<svg xmlns="http://www.w3.org/2000/svg" width="2000" viewBox="0 0 1920 523.414" class="footer-shape-yellow">
-		<path id="Path_153" data-name="Path 153" d="M0-13.07s176.422-27.809,673.333,0S1920-29.939,1920-29.939V493.474H0Z" transform="translate(0 29.939)" fill="<?= $footer_shape_color_2; ?>"/>
+		<path id="Path_153" data-name="Path 153" d="M0-13.07s176.422-27.809,673.333,0S1920-29.939,1920-29.939V493.474H0Z" transform="translate(0 29.939)" fill="<?php echo $footer_shape_color_2; ?>"/>
 	</svg>
-	<div class="shape-color primary-bg" style="background-color: <?= $footer_shape_color_1; ?>;">
+	<div class="shape-color primary-bg" style="background-color: <?php echo $footer_shape_color_1; ?>;">
 	</div>
 	<div class="container">
 		<div class="row footer-wrap mb-5 pb-5">
 			<div class="col-sm-12 d-flex align-items-center justify-content-center">
 				<div class="footer-logo">
-					<?php if($footer_logo): ?><a href="<?= site_url(); ?>"><img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>"></a><?php endif; ?>
+					<?php if($footer_logo): ?><a href="<?php echo site_url(); ?>"><img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>"></a><?php endif; ?>
 				</div>	
 			</div>
 		</div>
 		<div class="row footer-wrap">
 			<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-				<h5><?= ($column_1_title ? $column_1_title : ''); ?></h5>
+				<h5><?php echo ($column_1_title ? $column_1_title : ''); ?></h5>
 				<div class="footer-content">
-					<?= $footer_text; ?>
+					<?php echo $footer_text; ?>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-				<h5><?= ($column_2_title ? $column_2_title : ''); ?></h5>
+				<h5><?php echo ($column_2_title ? $column_2_title : ''); ?></h5>
 				<nav class="contact-details">
 					<ul>
 						<?php if( !empty($company_phone) ){ ?>
 							<li>
-								<a href="tel:<?= $company_phone; ?>" target="_blank">
-									<i class="fa fa-phone" aria-hidden="true"></i><?= $company_phone; ?>
+								<a href="tel:<?php echo $company_phone; ?>" target="_blank">
+									<i class="fa fa-phone" aria-hidden="true"></i><?php echo $company_phone; ?>
 								</a>
 							</li>						
 						<?php }
 						
 						if( !empty($company_email) ){ ?>
 							<li>
-								<a href="mailto:<?= $company_email; ?>" target="_blank">
-									<i class="fa fa-envelope" aria-hidden="true"></i><?= $company_email; ?>
+								<a href="mailto:<?php echo $company_email; ?>" target="_blank">
+									<i class="fa fa-envelope" aria-hidden="true"></i><?php echo $company_email; ?>
 								</a>
 							</li>
-						<?php } ?>
+						<?php 
+						}
+						if( !empty($company_address) ){ ?>
+							<li><a href="https://maps.google.com?q=<?php echo urlencode($company_address); ?>" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $company_address; ?></a></li>
+						<?php 
+						} 
+						?>
 					</ul>
 				</nav>
 			</div>
 			<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-				<h5><?= ($column_3_title ? $column_3_title : ''); ?></h5>
+				<h5><?php echo ($column_3_title ? $column_3_title : ''); ?></h5>
 				<nav class="social-nav">
 					<ul>
 						<?php if( !empty($facebook) ){ ?>
 							<li>
-								<a href="<?= $facebook; ?>" target="_blank">
+								<a href="<?php echo $facebook; ?>" target="_blank">
 									<i class="fa fa-facebook-square" aria-hidden="true"></i>
 								</a>
 							</li>
@@ -96,15 +102,18 @@ echo get_field('custom_embed_code_after_body', 'options');
 
 						if( !empty($twitter) ){ ?>
 							<li>
-								<a href="<?= $twitter; ?>" target="_blank">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
+								<a href="<?php echo $twitter; ?>" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+										<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
+									</svg>
+									<!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
 								</a>
 							</li>
 						<?php }
 
 						if( !empty($linkedin) ){ ?>
 							<li>
-								<a href="<?= $linkedin; ?>" target="_blank">
+								<a href="<?php echo $linkedin; ?>" target="_blank">
 									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 								</a>
 							</li>
@@ -112,7 +121,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 
 						if( !empty($instagram) ){ ?>
 							<li>
-								<a href="<?= $instagram; ?>" target="_blank">
+								<a href="<?php echo $instagram; ?>" target="_blank">
 									<i class="fa fa-instagram" aria-hidden="true"></i>
 								</a>
 							</li>
@@ -120,7 +129,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 
 						if( !empty($youtube) ){ ?>
 							<li>
-								<a href="<?= $youtube; ?>" target="_blank">
+								<a href="<?php echo $youtube; ?>" target="_blank">
 									<i class="fa fa-youtube-square" aria-hidden="true"></i>
 								</a>
 							</li>
@@ -128,7 +137,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 
 						if( !empty($google_my_business) ){ ?>
 							<li>
-								<a href="<?= $google_my_business; ?>" target="_blank">
+								<a href="<?php echo $google_my_business; ?>" target="_blank">
 									<i class="fa fa-building" aria-hidden="true"></i>
 								</a>
 							</li>
@@ -138,7 +147,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 				</nav>	
 			</div>
 			<div class="col-md-6 col-lg-2">
-			<h5><?= ($column_4_title ? $column_4_title : ''); ?></h5>
+			<h5><?php echo ($column_4_title ? $column_4_title : ''); ?></h5>
 				<?php
 				wp_nav_menu(
 					array(
@@ -159,7 +168,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 			<div class="row">
 				<div class="col-md-12">
 					<div class="copyright-wrap" style="color:<?php echo get_field('copyright_color', 'options') ? get_field('copyright_color', 'options') : '#fefefe'; ?>;">
-						<?= do_shortcode($copyright_information); ?> | <a style="color:<?php echo get_field('copyright_color', 'options') ? get_field('copyright_color', 'options') : '#fefefe'; ?>;" href="https://www.bizinkonline.com"><?php _e('Website By Bizink','wave-theme');?></a>
+						<?php echo do_shortcode($copyright_information); ?> | <a style="color:<?php echo get_field('copyright_color', 'options') ? get_field('copyright_color', 'options') : '#fefefe'; ?>;" href="https://www.bizinkonline.com"><?php _e('Website By Bizink','wave-theme');?></a>
 					</div>
 				</div>
 			</div>

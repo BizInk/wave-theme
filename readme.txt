@@ -2,8 +2,8 @@
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 5.6
-Tested up to: 6.4
-Stable tag: 1.6.3
+Tested up to: 6.4.1
+Stable tag: 1.6.4
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,12 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.6.4 =
+* Team Members - can you please change it so if only 2 team members are on the team page
+* Pricing - Show Decimials
+* Packages - We have fixed the "Most popular", "Price From" and "+VAT" options
+* Wave - Options Show Wave in wave
 
 = 1.6.3 =
 * Blogs Excerpt Fix

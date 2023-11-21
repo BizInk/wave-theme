@@ -1554,11 +1554,11 @@
                                 "Image": "Image",
                                 "Color": "Color"
                             },
+                            "default_value": "Image",
+                            "return_format": "value",
                             "allow_null": 0,
                             "other_choice": 0,
-                            "default_value": "Image",
-                            "layout": "vertical",
-                            "return_format": "value",
+                            "layout": "horizontal",
                             "save_other_choice": 0
                         },
                         {
@@ -1621,13 +1621,33 @@
                             "return_format": "string"
                         },
                         {
+                            "key": "field_65572da340f8f",
+                            "label": "Show wave?",
+                            "name": "show_wave",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Show wave element?",
+                            "default_value": 1,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_642166c2820fe",
                             "label": "Wave Color",
                             "name": "cta_wave_color",
                             "aria-label": "",
                             "type": "color_picker",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -3056,5 +3076,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696590613
+    "modified": 1700212171
 }

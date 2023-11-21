@@ -19,7 +19,7 @@
             "placement": "left",
             "endpoint": 0
         },
-        {
+		{
             "key": "field_62da542955264",
             "label": "Company Name",
             "name": "company_name",
@@ -98,7 +98,7 @@
             "prepend": "",
             "append": ""
         },
-        {
+		{
             "key": "field_62da545f55268",
             "label": "Copyright",
             "name": "copyright",
@@ -216,7 +216,7 @@
             "media_upload": 1,
             "delay": 0
         },
-        {
+		{
             "key": "field_63d763da748b1",
             "label": "Column 1 Title",
             "name": "column_1_title",
@@ -276,7 +276,7 @@
             "prepend": "",
             "append": ""
         },
-        {
+		{
             "key": "field_63d763e8748b4",
             "label": "Column 4 Title",
             "name": "column_4_title",
@@ -435,7 +435,7 @@
             "default_value": "",
             "placeholder": ""
         },
-		{
+        {
             "key": "field_64e41d19e259e",
             "label": "Threads",
             "name": "threads",
@@ -716,5 +716,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686724634
+    "modified": 1698321870
 }

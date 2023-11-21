@@ -413,6 +413,8 @@ nav.contact-details ul li a:hover {
 
 .pricing-section h2 {
   color: #1e73be; }
+  .pricing-section .highlighted .card {
+    background-color: #e6f0ff; }
   .pricing-section .card {
     border: 1px solid rgba(221, 153, 51, 0.3); }
   .pricing-section .card .card-header {
