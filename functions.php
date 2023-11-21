@@ -52,10 +52,10 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 /**
  * Load the child theme's text domain
  */
-function add_child_theme_text_domain() {
-	load_child_theme_text_domain( 'understrap-child', get_stylesheet_directory() . '/languages' );
+function add_child_theme_wave() {
+	load_child_theme_textdomain( 'wave', get_stylesheet_directory() . '/languages' );
 }
-add_action( 'after_setup_theme', 'add_child_theme_understrap-child' );
+add_action( 'after_setup_theme', 'add_child_theme_wave' );
 
 
 
@@ -110,17 +110,10 @@ if( function_exists('acf_add_options_sub_page') ) {
 
 // This theme uses wp_nav_menu() in two locations.  
 register_nav_menus( array(  
-  'footer-menu' => __( 'Footer Menu', 'understrap-child' ),
-  'client-area' => __( 'Client Area', 'understrap-child' )
+  'footer-menu' => __( 'Footer Menu', 'wave' ),
+  'client-area' => __( 'Client Area', 'wave' )
 ) );
 
-
-//$new_color = get_field('primary_color', 'option');
-// require_once(get_stylesheet_directory() . '/inc/scssphp/scss.inc.php');
-// use ScssPhp\ScssPhp\Compiler;
-// $compiler = new Compiler();
-// echo $compiler->compileString('
-//   $primary: '.$new_color.'')->getCss();
 
 /**
  * Add a new dashboard widget.
@@ -222,7 +215,7 @@ if( function_exists('base_rss_feed') && !function_exists('base_rss_shortcode') )
  * Output the contents of the dashboard widget
  */
 function dashboard_widget_function( $post, $callback_args ) {
-    // esc_html_e( "Hello World, this is my first Dashboard Widget!", "understrap-child" );
+    // esc_html_e( "Hello World, this is my first Dashboard Widget!", "wave" );
     $feed_url = get_field('feed_url', 'option');
    if( function_exists('base_rss_feed') ) echo base_rss_feed(3, $feed_url, true);
 

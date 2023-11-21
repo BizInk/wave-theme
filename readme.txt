@@ -3,7 +3,7 @@ Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 5.6
 Tested up to: 6.4.1
-Stable tag: 1.6.4
+Stable tag: 1.6.5
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,10 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.6.5 =
+* Bug Fix: Fixes an error with the theme not loading
+* Update Packages - Change to the way most popular works
 
 = 1.6.4 =
 * Team Members - can you please change it so if only 2 team members are on the team page
