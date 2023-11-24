@@ -58,7 +58,6 @@ function add_child_theme_wave() {
 add_action( 'after_setup_theme', 'add_child_theme_wave' );
 
 
-
 /**
  * Overrides the theme_mod to default to Bootstrap 5
  *

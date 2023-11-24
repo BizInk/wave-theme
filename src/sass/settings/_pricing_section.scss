@@ -8,9 +8,15 @@
     }   
   }
   .card {
-      border:1px solid rgba($neutral-blue, 0.3);
+    .card-inner{
+      border:2px solid rgba($neutral-blue, 0.75);
+    }
+    .most_popular_header{
+      background-color:$primary;
+      color:$light-gray;
+    }
     .card-header {
-      border-bottom: 1px solid rgba(35, 35, 35, 0.2);
+      border-bottom: 1px solid rgba(35, 35, 35, 0.5);
       h5{
         color:$primary;
       }
@@ -22,7 +28,12 @@
     }
     .card-body{
       ul {
-        color: $dark;              
+        color: $dark;
+        li{
+          svg .check{
+            fill:$primary;
+          }
+        }            
       }
     }
     &:hover{

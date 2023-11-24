@@ -794,7 +794,7 @@
                 "layout_62e3a06727268": {
                     "key": "layout_62e3a06727268",
                     "name": "logo",
-                    "label": "Logo",
+                    "label": "Logos - Partners Logo",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -824,7 +824,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -839,6 +839,55 @@
                             "return_format": "value",
                             "save_custom": 0,
                             "custom_choice_button_text": "Add new choice"
+                        },
+                        {
+                            "key": "field_655d88f3f5e64",
+                            "label": "Grid Layout",
+                            "name": "logo_grid_layout",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Show Logos in Grid Layout",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_655d891bf5e65",
+                            "label": "Grid Layout Width",
+                            "name": "logo_grid_layout_width",
+                            "aria-label": "",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_655d88f3f5e64",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 5,
+                            "min": 2,
+                            "max": 12,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
                         },
                         {
                             "key": "field_6369d2408ccc0",

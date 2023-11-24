@@ -98,6 +98,26 @@
             "prepend": "",
             "append": ""
         },
+        {
+            "key": "field_655d60007a686",
+            "label": "Currency Symbol",
+            "name": "currency_symbol",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "$",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
 		{
             "key": "field_62da545f55268",
             "label": "Copyright",

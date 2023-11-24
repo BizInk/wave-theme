@@ -18077,6 +18077,10 @@ footer .shape-color {
 .footer-wrap .social-nav ul li a i {
   font-size: 27px;
 }
+.footer-wrap .social-nav ul li a bi{
+  height:25px;
+  width:25px;
+}
 
 .social-wrap {
   position: relative;
@@ -19172,6 +19176,43 @@ section.infobox-section.resource-infobox {
   margin: 0 auto;
 }
 
+.logo-section .logo-grid{
+  display: grid;
+}
+.logo-section .logo-grid.logo-grid-5{
+  grid-template-columns: repeat(5, 1fr);
+}
+.logo-section .logo-grid.logo-grid-4{
+  grid-template-columns: repeat(4, 1fr);
+}
+.logo-section .logo-grid.logo-grid-3{
+  grid-template-columns: repeat(3, 1fr);
+}
+.logo-section .logo-grid.logo-grid-2{
+  grid-template-columns: repeat(2, 1fr);
+}
+.logo-section .logo-grid.logo-grid-6{
+  grid-template-columns: repeat(6, 1fr);
+}
+.logo-section .logo-grid.logo-grid-7{
+  grid-template-columns: repeat(7, 1fr);
+}
+.logo-section .logo-grid.logo-grid-8{
+  grid-template-columns: repeat(8, 1fr);
+}
+.logo-section .logo-grid.logo-grid-9{
+  grid-template-columns: repeat(9, 1fr);
+}
+.logo-section .logo-grid.logo-grid-10{
+  grid-template-columns: repeat(10, 1fr);
+}
+.logo-section .logo-grid.logo-grid-11{
+  grid-template-columns: repeat(11, 1fr);
+}
+.logo-section .logo-grid.logo-grid-12{
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .call-to-action-section {
   padding: 180px 0 180px;
   overflow: hidden;
@@ -19424,15 +19465,24 @@ section.infobox-section.resource-infobox {
     font-size: 2rem;
   }
 }
-.pricing-section .card {
-  border: 0;
+.pricing-section .card .most_popular_header{
+  border-radius: 12px;
+  margin: auto;
+  width: 90%;
+  margin-bottom: -18px;
+  padding: 0.5rem;
+  z-index: 10;
+}
+.pricing-section .card{
+  border:none;
+}
+.pricing-section .card .card-inner{
   border-radius: 12px;
   padding: 20px 25px 30px;
   height: 100%;
 }
 .pricing-section .card .card-header {
   background: transparent;
-  border: none;
   padding: 20px 0 0 0;
   text-align: center;
 }
@@ -19473,7 +19523,7 @@ section.infobox-section.resource-infobox {
   left: -10px;
 }
 .pricing-section .card .card-header h2.show-decimals small, .pricing-section .card .card-header .show-decimals.h2 small, .pricing-section .card .card-header h2.show-decimals .small, .pricing-section .card .card-header .show-decimals.h2 .small {
-  left: -50px;
+  left: -10px;
 }
 .pricing-section .card .card-body {
   margin: 40px 0 30px;

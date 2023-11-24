@@ -16,6 +16,9 @@ The Wave theme
 = 1.6.5 =
 * Bug Fix: Fixes an error with the theme not loading
 * Update Packages - Change to the way most popular works
+* Icon in grid layout
+* Footer - Bizink link opens in new tab
+* Enabled / Disable Features
 
 = 1.6.4 =
 * Team Members - can you please change it so if only 2 team members are on the team page

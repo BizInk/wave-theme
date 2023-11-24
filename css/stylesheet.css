@@ -217,6 +217,17 @@ header {
     color: #1e73be; }
     .footer-wrap .social-nav ul li a i:hover {
       color: #fff; }
+    .footer-wrap .social-nav ul li a .bi-twitter-x{
+      height: 22px;
+      width: 22px;
+      margin-top: 3px;
+    }
+    .footer-wrap .social-nav ul li a .bi-twitter-x path{
+      fill: #ffdf35;
+    }
+    .footer-wrap .social-nav ul li a .bi-twitter-x:hover path{
+      fill: #ffffff;
+    }
 
 .social-wrap .container {
   border-top: 1px solid rgba(0, 0, 0, 0.5); }
@@ -416,9 +427,9 @@ nav.contact-details ul li a:hover {
   .pricing-section .highlighted .card {
     background-color: #e6f0ff; }
   .pricing-section .card {
-    border: 1px solid rgba(221, 153, 51, 0.3); }
+    border: 1px solid rgb(221, 153, 51); }
   .pricing-section .card .card-header {
-    border-bottom: 1px solid rgba(35, 35, 35, 0.2); }
+    border-bottom: 1px solid rgba(35, 35, 35, .5); }
     .pricing-section .card .card-header h5 {
       color: #30d36c; }
     .pricing-section .card .card-header h2 small {

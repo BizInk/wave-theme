@@ -16,6 +16,9 @@ if( in_array('Add Common Margin', $general_settings) ){
 $logo_title = get_sub_field('logo_title');
 $logo_description = get_sub_field('logo_description');
 
+$logo_grid = get_sub_field('logo_grid_layout') ? true : false;
+$logo_grid_cols = get_sub_field('logo_grid_layout_width') ? get_sub_field('logo_grid_layout_width') : 5;
+
 if( have_rows('logo') ): ?>
 
     <section class="logo-section text-center<?= $general_class; ?>">
@@ -27,7 +30,7 @@ if( have_rows('logo') ): ?>
             </div>
         </div>
         <div class="container">
-            <div class="logo-slider">
+            <div class="<?php echo ($logo_grid ? "logo-grid logo-grid-".$logo_grid_cols : "logo-slider"); ?>">
                 <?php if( have_rows('logo') ):
 
                     while( have_rows('logo') ):

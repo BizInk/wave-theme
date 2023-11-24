@@ -25,7 +25,12 @@
 		}
 	}
 	.social-nav ul li a {
-		i{
+		.bi{
+			height: 22px;
+			width: 22px;
+			margin-top: 3px;
+		}
+		i,.bi{
 		  color:$yellow;
 		  &:hover{
 		   color:$white;

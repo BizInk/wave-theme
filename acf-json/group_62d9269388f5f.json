@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_62d9347a6648b",
-                    "label": "TItle",
+                    "label": "Title",
                     "name": "check_title",
                     "type": "text",
                     "instructions": "",

@@ -30,12 +30,12 @@ $google_my_business = get_field('google_my_business', 'options');
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php
+	wp_head();
 	$header_custom_css = get_field('header_custom_css', 'option');
 	if( !empty($header_custom_css) ){
 		echo '<style>'. $header_custom_css .'</style>';
 	} ?>
 	<?php
-	wp_head(); 
 	echo get_field('custom_embed_code_head', 'options');
 	?>
 </head>

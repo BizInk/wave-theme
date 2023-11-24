@@ -1,0 +1,36 @@
+.logo-section .logo-grid {
+  display: grid;
+}
+.logo-section .logo-grid.logo-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.logo-section .logo-grid.logo-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.logo-section .logo-grid.logo-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.logo-section .logo-grid.logo-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.logo-section .logo-grid.logo-grid-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.logo-section .logo-grid.logo-grid-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+.logo-section .logo-grid.logo-grid-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+.logo-section .logo-grid.logo-grid-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+.logo-section .logo-grid.logo-grid-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+.logo-section .logo-grid.logo-grid-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+.logo-section .logo-grid.logo-grid-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
