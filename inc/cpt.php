@@ -4,7 +4,7 @@ function wave_custompost_type() {
 	/**
 	 * Post Type: Weekly Digests
 	 */
-	$enable_weeklydigests = get_field('enable_weeklydigests', 'option') ? true: false;
+	$enable_weeklydigests = get_field('enable_weeklydigests', 'option') ?? true;
 	$labels = array(
 		'name'                  => _x( 'Weekly Digests', 'Weekly Digest General Name', 'wave-theme' ),
 		'singular_name'         => _x( 'Weekly Digest', 'Weekly Digest Singular Name', 'wave-theme' ),
@@ -163,7 +163,7 @@ function wave_custompost_type() {
 	/**
 	 * Post Type: Fixed Price Packages.
 	 */
-	$enable_fixedpricepackages = get_field('enable_packages', 'option') ? true: false;
+	$enable_fixedpricepackages = get_field('enable_packages', 'option') ?? true;
 	$labels = [
 		"name" => esc_html__( "Fixed Price Packages", "wave-theme" ),
 		"singular_name" => esc_html__( "Fixed Price Package", "wave-theme" ),
@@ -203,7 +203,7 @@ function wave_custompost_type() {
 	/**
 	 * Post Type: Team Members.
 	 */
-	$enable_teammembers = get_field('enable_teammembers', 'option') ? true: false;
+	$enable_teammembers = get_field('enable_teammembers', 'option') ?? true;
 	$labels = [
 		"name" => esc_html__( "Team Members", "wave-theme" ),
 		"singular_name" => esc_html__( "Team Member", "wave-theme" ),
@@ -243,7 +243,7 @@ function wave_custompost_type() {
 	/**
 	 * Post Type: Mail Templates.
 	 */
-	$enable_mailtemplates = get_field('enable_mail_posts_mail_templates', 'option') ? true: false;
+	$enable_mailtemplates = get_field('enable_mail_posts_mail_templates', 'option') ?? true;
 	$labels = [
 		"name" => esc_html__( "Mail Templates", "wave-theme" ),
 		"singular_name" => esc_html__( "Mail Template", "wave-theme" ),
@@ -284,7 +284,7 @@ function wave_custompost_type() {
 	/**
 	 * Post Type: Landing Pages.
 	 */
-	$enable_landingpages = get_field('enable_landingpages', 'option') ? true: false;
+	$enable_landingpages = get_field('enable_landingpages', 'option') ?? true;
 	$labels = [
 		"name" => esc_html__( "Landing Pages", "wave-theme" ),
 		"singular_name" => esc_html__( "Landing Page", "wave-theme" ),
@@ -319,7 +319,7 @@ function wave_custompost_type() {
 	/**
 	 * Post Type: Testimonials.
 	 */
-	$enable_testimonials = get_field('enable_testimonials', 'option') ? true: false;
+	$enable_testimonials = get_field('enable_testimonials', 'option') ?? true;
 	$labels = [
 		"name" => esc_html__( "Testimonials", "wave-theme" ),
 		"singular_name" => esc_html__( "Testimonial", "wave-theme" ),
@@ -360,7 +360,7 @@ function wave_custompost_type() {
 	/**
 	 * Post Type: Checklists.
 	 */
-	$enable_checklists = get_field('enable_checklists', 'option') ? true: false;
+	$enable_checklists = get_field('enable_checklists', 'option') ?? true;
 	$labels = [
 		"name" => esc_html__( "Checklists", "wave-theme" ),
 		"singular_name" => esc_html__( "Checklist", "wave-theme" ),
@@ -400,7 +400,7 @@ function wave_custompost_type() {
 	/**
 	 * Post Type: Resources.
 	 */
-	$enable_resources = get_field('enable_resources', 'option') ? true: false;
+	$enable_resources = get_field('enable_resources', 'option') ?? true;
 	$labels = [
 		"name" => esc_html__( "Resources", "wave-theme" ),
 		"singular_name" => esc_html__( "Resource", "wave-theme" ),
@@ -717,7 +717,7 @@ function wave_custompost_type() {
 	register_taxonomy( "content-type", [ "resource" ], $args );
 
 	// Video registration
-	$enable_videos = get_field('enable_videos', 'option') ? true: false;
+	$enable_videos = get_field('enable_videos', 'option') ?? true;
 	$videos_labels = array(
 		'name'                  => _x( 'Videos', 'Post type general name', 'wave-theme' ),
 		'singular_name'         => _x( 'Video', 'Post type singular name', 'wave-theme' ),

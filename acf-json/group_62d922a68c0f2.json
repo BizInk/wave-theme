@@ -438,7 +438,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#aaa",
+            "default_value": "#eeeeee",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -474,7 +474,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#ed553b",
+            "default_value": "#173f5f",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -492,7 +492,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#ed553b",
+            "default_value": "#eeeeee",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -510,7 +510,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#ed553b",
+            "default_value": "#eeeeee",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -528,7 +528,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#ed553b",
+            "default_value": "#173f5f",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -571,7 +571,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#1e73be",
+            "default_value": "#fefefe",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -589,7 +589,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#ffffff",
+            "default_value": "#fefefe",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -607,7 +607,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#424242",
+            "default_value": "#173f5f",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -625,7 +625,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#1e73be",
+            "default_value": "#fefefe",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -643,7 +643,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#173f5f",
+            "default_value": "#fefefe",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -661,7 +661,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#aaa",
+            "default_value": "#eeeeee",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -679,7 +679,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#fefefe",
+            "default_value": "#eeeeee",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -715,7 +715,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#b21e1e",
+            "default_value": "#eeeeee",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -733,7 +733,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#b21e1e",
+            "default_value": "#eeeeee",
             "enable_opacity": 0,
             "return_format": "string"
         },
@@ -751,7 +751,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#b21e1e",
+            "default_value": "#fefefe",
             "enable_opacity": 0,
             "return_format": "string"
         }

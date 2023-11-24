@@ -151,7 +151,7 @@ $columns_classes = 'col-md-6 col-lg-3';
                         ?>
                         <div id="package-<?php echo $post->ID; ?>" class="<?php echo $columns_classes; ?>">
 
-                            <div class="card box-shadow">
+                            <div class="card box-shadow <?php if($most_popular == false): echo 'mt-4'; endif; ?>">
                                 <?php if( $most_popular ) { ?>
                                     <div class="most_popular_header text-center">
                                         <?php echo get_field('most_popular_item_text') ? get_field('most_popular_item_text'):"Most Popular"; ?>
