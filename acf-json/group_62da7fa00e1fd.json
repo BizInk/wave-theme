@@ -188,6 +188,24 @@
             "return_format": "string"
         },
         {
+            "key": "field_647fd7b7d85c1",
+            "label": "Copyright Color",
+            "name": "copyright_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#fefefe",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
             "key": "field_62da85b882311",
             "label": "Custom Embed Code - Head",
             "name": "custom_embed_code_head",
