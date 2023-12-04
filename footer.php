@@ -147,7 +147,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 				</nav>	
 			</div>
 			<div class="col-md-6 col-lg-2">
-			<h5><?php echo ($column_4_title ? $column_4_title : ''); ?></h5>
+				<h5><?php echo ($column_4_title ? $column_4_title : ''); ?></h5>
 				<?php
 				wp_nav_menu(
 					array(
