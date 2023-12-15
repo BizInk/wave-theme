@@ -654,11 +654,6 @@
                 "id": ""
             },
             "choices": {
-                "5": "Get in Touch Member",
-                "4": "Lead Magnet",
-                "3": "Newsletter Form",
-                "1": "Request a Quote",
-                "2": "Sign up"
             },
             "default_value": false,
             "return_format": "value",
