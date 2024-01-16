@@ -244,28 +244,6 @@ function my_acf_json_load_point( $paths ) {
     
 }
 
-add_action( 'init', 'wpdocs_custom_init' );
-function wpdocs_custom_init() {
-	remove_post_type_support('post','excerpt');
-	remove_post_type_support('fixed-price-packages','excerpt');
-	remove_post_type_support('testimonial','excerpt');
-	remove_post_type_support('team-member','excerpt');
-	remove_post_type_support('mail-template','excerpt');
-	remove_post_type_support('checklist','excerpt');
-
-	// Remove editor from only flexible page template
-	if ( isset($_GET['post']) ) {
-
-        $page_id = $_GET['post'];
-		$template = get_post_meta($page_id, '_wp_page_template', true);
-		
-		if( $template == 'page-templates/flexible-content.php' ){	
-
-	        remove_post_type_support('page', 'editor');
-		}
-	}
-}
-
 // Adding option to select gravity form in ACF
 add_filter( 'acf/load_field/name=gravity_forms', 'luca_acf_populate_gf_forms_ids' );
 function luca_acf_populate_gf_forms_ids( $field ) {
@@ -317,8 +295,6 @@ add_shortcode('current-year', 'current_year_cb');
 function current_year_cb(){
     return date('Y');
 }
-
-
 
 // Ajax callback function to fetch and load more posts on blog page
 add_action("wp_ajax_fetch_blog_posts", "fetch_blog_posts");
