@@ -1242,7 +1242,15 @@ class scssc {
 			// [3] - blue component
 			// [4] - optional alpha component
 			list(, $r, $g, $b) = $value;
-
+			if(empty($r)){
+				$r = 0;
+			}
+			if(empty($g)){
+				$g = 0;
+			}
+			if(empty($b)){
+				$b = 0;
+			}
 			$r = round($r);
 			$g = round($g);
 			$b = round($b);
