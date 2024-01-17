@@ -436,7 +436,7 @@ nav.contact-details ul li a:hover {
       color: #000; }
   .pricing-section .card .card-body ul {
     color: #000; }
-  .pricing-section .card:hover {
+  .pricing-section .card:hover .card-inner{
     background-color: #e6f0ff; }
   @media (max-width: 767px) {
     .pricing-section .card {
