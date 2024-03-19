@@ -20,6 +20,7 @@ $posts_args = array(
     'posts_per_page' => -1,
     'order'  => 'ASC', 
 	'cat' => get_queried_object()->term_id,
+    'post_type' => is_archive() ? get_queried_object()->name : false,
 );
 
 $posts_loop = new WP_Query( $posts_args );
