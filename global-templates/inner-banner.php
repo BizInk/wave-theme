@@ -4,7 +4,7 @@
 	$inner_banner_shape_2_color = get_field('inner_banner_shape_2_color');
 	$inner_banner_title = get_field('inner_banner_title');
 	$inner_banner_content = get_field('inner_banner_content'); 
-    $inner_banner_image = get_field('inner_banner_image');
+    $inner_banner_image = get_field('inner_banner_image') ? get_field('inner_banner_image') : get_field('inner_banner_image', 'option');
     if(empty($inner_banner_title)){
         $inner_banner_title = get_the_title();
     }
