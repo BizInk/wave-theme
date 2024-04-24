@@ -47,7 +47,7 @@ if( have_rows('logo') ): ?>
                                     <a href="<?php echo $logo_url; ?>" target="_blank">
                                 <?php } ?>
                                 
-                                    <img src="<?php echo $slider_image; ?>" class="img-fluid" alt="">
+                                    <img src="<?php echo $slider_image['url']; ?>" class="img-fluid" alt="<?php echo $slider_image['alt'] ? esc_attr($slider_image['alt']):'slider-img'; ?>">
 
                                 <?php if( !empty($logo_url) ){ ?>
                                     </a>
