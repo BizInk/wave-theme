@@ -29,13 +29,15 @@ $google_my_business = get_field('google_my_business', 'options');
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<?php
 	wp_head();
 	$header_custom_css = get_field('header_custom_css', 'option');
 	if( !empty($header_custom_css) ){
 		echo '<style>'. $header_custom_css .'</style>';
-	} ?>
-	<?php
+	}
 	echo get_field('custom_embed_code_head', 'options');
 	?>
 </head>

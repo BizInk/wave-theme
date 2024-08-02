@@ -48,8 +48,8 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-font-sans-serif: "Montserrat", "Roboto Slab", "Helvetica Neue", Arial, sans-serif;
+  --bs-font-monospace: "Roboto Slab", "Courier New", serif;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
@@ -101,6 +101,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  font-family: var(--bs-font-sans-serif);
 }
 
 h1, .h1 {
@@ -16221,7 +16222,7 @@ body.compensate-for-scrollbar {
 .fancybox-container {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, "Hind", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 100%;
   left: 0;
   position: fixed;
@@ -17084,55 +17085,6 @@ body.compensate-for-scrollbar {
   }
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Light.woff2") format("woff2"), url("../fonts/Poppins-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../fonts/Poppins-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "Roboto Slab";
   src: url("../fonts/RobotoSlab-Black.woff2") format("woff2"), url("../fonts/RobotoSlab-Black.woff") format("woff");
   font-weight: 900;
@@ -17376,7 +17328,7 @@ section, footer {
 body {
   font-size: 2rem;
   line-height: 2.8rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -17384,10 +17336,6 @@ body {
   body {
     font-size: 1.6rem;
   }
-}
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Roboto Slab", serif;
 }
 
 h1, .h1 {
@@ -18041,7 +17989,7 @@ footer .shape-color {
 }
 .footer-wrap h5, .footer-wrap .h5 {
   margin-bottom: 2rem;
-  font-family: Poppins, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .footer-wrap .footer-content {
   padding: 20px;
@@ -19174,6 +19122,8 @@ section.infobox-section.resource-infobox {
 }
 .logo-section .logo-slider .logo img {
   margin: 0 auto;
+  object-fit: contain;
+  height: 150px;
 }
 
 .logo-section .logo-grid{
@@ -19497,7 +19447,7 @@ section.infobox-section.resource-infobox {
   font-size: 6rem;
   line-height: 6.1rem;
   padding-bottom: 30px;
-  font-family: Poppins, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 991.98px) {
   .pricing-section .card .card-header h2, .pricing-section .card .card-header .h2 {

@@ -236,11 +236,11 @@ $columns_classes = 'col-md-6 col-lg-3';
                                         </div>
                                     <?php } ?>
     
-                                    <div class="card-footer">
+                                    <div class="card-footer d-flex justify-content-center">
                                         <?php                                            
                                         if( !empty($price_button['url']) && !empty($price_button['title']) ) { ?>
                                             
-                                            <a href="<?php echo $price_button['url']; ?>" class="btn navyblue-btn mt-2 ms-5"><?php echo $price_button['title']; ?></a>
+                                            <a href="<?php echo $price_button['url']; ?>" class="btn navyblue-btn mt-2"><?php echo $price_button['title']; ?></a>
                                         <?php } ?>
                                     </div>
                                 </div>

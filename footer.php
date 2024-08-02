@@ -49,19 +49,23 @@ echo get_field('custom_embed_code_after_body', 'options');
 		<div class="row footer-wrap mb-5 pb-5">
 			<div class="col-sm-12 d-flex align-items-center justify-content-center">
 				<div class="footer-logo">
-					<?php if($footer_logo): ?><a href="<?php echo site_url(); ?>"><img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>"></a><?php endif; ?>
+					<?php if($footer_logo): ?>
+						<a href="<?php echo site_url(); ?>">
+							<img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>" />
+						</a>
+					<?php endif; ?>
 				</div>	
 			</div>
 		</div>
 		<div class="row footer-wrap">
 			<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-				<h5><?php echo ($column_1_title ? $column_1_title : ''); ?></h5>
+				<?php if($column_1_title): echo '<h5>'.$column_1_title.'</h5>'; endif; ?>
 				<div class="footer-content">
 					<?php echo $footer_text; ?>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-				<h5><?php echo ($column_2_title ? $column_2_title : ''); ?></h5>
+				<?php if($column_2_title): echo '<h5>'.$column_2_title.'</h5>'; endif; ?>
 				<nav class="contact-details">
 					<ul>
 						<?php if( !empty($company_phone) ){ ?>
@@ -89,7 +93,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 				</nav>
 			</div>
 			<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-				<h5><?php echo ($column_3_title ? $column_3_title : ''); ?></h5>
+				<?php if($column_3_title): echo '<h5>'.$column_3_title.'</h5>'; endif; ?>
 				<nav class="social-nav">
 					<ul>
 						<?php if( !empty($facebook) ){ ?>
@@ -106,7 +110,6 @@ echo get_field('custom_embed_code_after_body', 'options');
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
 										<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
 									</svg>
-									<!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
 								</a>
 							</li>
 						<?php }
@@ -147,8 +150,8 @@ echo get_field('custom_embed_code_after_body', 'options');
 				</nav>	
 			</div>
 			<div class="col-md-6 col-lg-2">
-				<h5><?php echo ($column_4_title ? $column_4_title : ''); ?></h5>
-				<?php
+				<?php 
+				if($column_4_title): echo '<h5>'.$column_4_title.'</h5>'; endif;
 				wp_nav_menu(
 					array(
 						'container'		  => 'nav',
