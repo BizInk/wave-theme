@@ -78,7 +78,7 @@ if( have_rows('information_box') ):
 									<?php }
 
 									if( !empty($info_button['url']) && !empty($info_button['title']) ) { ?>
-
+										
 										<a href="<?php echo $info_button['url']; ?>" class="btn btn-sm navyblue-btn mt-2"><?php echo $info_button['title']; ?></a>
 									<?php } ?>
 								</div>
