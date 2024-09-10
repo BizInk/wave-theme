@@ -95,6 +95,19 @@ class scssc {
 
 	protected $formatter = "scss_formatter_nested";
 
+	protected $indentLevel = -1;
+	protected $commentsSeen = array();
+	protected $extends = array();
+	protected $extendsMap = array();
+	protected $parsedFiles = array();
+	protected $env = null;
+	protected $scope = null;
+
+	protected $parser;
+	protected $sourceName;
+	protected $rootParser;
+	protected $count;
+
 	/**
 	 * Compile scss
 	 *
@@ -1758,8 +1771,10 @@ class scssc {
 
 		foreach ($args as $arg) {
 			list($key, $value) = $arg;
-			$key = $key[1];
-			if (empty($key)) {
+			if(!empty($key[1])){
+				$key = $key[1];
+			}
+			if(empty($key)) {
 				$posArgs[] = $value;
 			} else {
 				$keyArgs[$key] = $value;
@@ -2695,6 +2710,15 @@ class scss_parser {
 	static protected $commentMultiLeft = "/*";
 	static protected $commentMultiRight = "*/";
 
+	protected $sourceName;
+	protected $rootParser;
+	protected $buffer;
+	protected $count;
+	protected $env;
+	protected $inParens;
+	protected $eatWhiteDefault;
+	protected $insertComments;
+
 	/**
 	 * Constructor
 	 *
@@ -3566,7 +3590,7 @@ class scss_parser {
 
 			$num = hexdec($num);
 			foreach (array(3,2,1) as $i) {
-				$t = $num % $width;
+				$t = (int)$num % $width;
 				$num /= $width;
 
 				$color[$i] = $t * (256/$width) + $t * floor(16/$width);

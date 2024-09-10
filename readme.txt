@@ -3,7 +3,7 @@ Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 5.6
 Tested up to: 6.6.1
-Stable tag: 1.7.5
+Stable tag: 1.7.6
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,11 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.7.6 =
+* Fix Wave SVG Fix
+* Fixed Currency sysbol
+* Allows for seperate currency per pricing page
 
 = 1.7.5 =
 * Partner Logos Size Fix

@@ -17931,6 +17931,7 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
 }
 
 footer {
+  margin-top:60px;
   padding: 200px 0 0;
   background-position: center;
   background-size: cover;
@@ -18819,29 +18820,29 @@ input[type=submit]:hover {
 }
 
 .infobox-section {
-  padding: 280px 0 40px;
+  padding: 155px 0 40px;
   overflow: hidden;
 }
 @media (max-width: 1440px) {
   .infobox-section {
-    padding: 180px 0 40px;
+    padding: 190px 0 40px;
   }
 }
 @media (max-width: 1199.98px) {
   .infobox-section {
-    padding: 100px 0 40px;
+    padding: 155px 0 40px;
   }
 }
 @media (max-width: 991.98px) {
   .infobox-section {
-    padding: 100px 0 50px;
+    padding: 155px 0 50px;
   }
 }
 .infobox-section .shape-blue {
   position: absolute;
   top: 0;
   z-index: -1;
-  width: 110%;
+  width: 105%;
 }
 @media (max-width: 991.98px) {
   .infobox-section .shape-color {
@@ -18864,10 +18865,15 @@ input[type=submit]:hover {
 .infobox-section .infobox-warp .row .info-box {
   box-shadow: 0px 12px 16px rgba(40, 41, 61, 0.0364);
   border-radius: 12px;
-  padding: 48px 40px;
+  padding: 30px;
   transition: 0.3s ease-in-out all;
   -ms-transition: 0.3s ease-in-out all;
   -o-transition: 0.3s ease-in-out all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
 .infobox-section .infobox-warp .row .info-box .info-description {
   font-size: 2.1rem;
@@ -19183,7 +19189,7 @@ section.infobox-section.resource-infobox {
   position: absolute;
   left: 0;
   z-index: 1;
-  bottom: -20px;
+  bottom: -22px;
 }
 @media (max-width: 991.98px) {
   .call-to-action-section {
@@ -19380,8 +19386,7 @@ section.infobox-section.resource-infobox {
   }
 }
 .full-width-section .full-width-wysiwyg .editor-design {
-  max-width: 1040px;
-  margin: 0 auto 30px;
+  margin: 30px;
 }
 .full-width-section .full-width-wysiwyg .editor-design a:not(.btn) {
   text-decoration: none;
@@ -19895,7 +19900,7 @@ section.infobox-section.resource-infobox {
 
 .full-width-wysiwyg {
   position: relative;
-  margin-bottom: 60px;
+  margin: 60px;
 }
 @media (max-width: 767.98px) {
   .full-width-wysiwyg {

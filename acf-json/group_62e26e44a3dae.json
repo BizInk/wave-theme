@@ -38,7 +38,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea3edd7506",
@@ -124,7 +125,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63d8e3de90cea",
@@ -201,7 +203,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62e2850be8f2d",
@@ -222,6 +225,7 @@
                             "max": 0,
                             "layout": "row",
                             "button_label": "Add Row",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_62e28519e8f2e",
@@ -308,8 +312,7 @@
                                     "return_format": "array",
                                     "parent_repeater": "field_62e2850be8f2d"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -336,7 +339,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63fc3c69ce707",
@@ -405,7 +409,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63fc3c69ce70a",
@@ -512,7 +517,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea4d8ddfda",
@@ -555,7 +561,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62e387c1bcd2a",
@@ -576,6 +583,7 @@
                             "max": 0,
                             "layout": "row",
                             "button_label": "Add Row",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_62e387c1bcd2e",
@@ -593,7 +601,8 @@
                                     },
                                     "placement": "top",
                                     "endpoint": 0,
-                                    "parent_repeater": "field_62e387c1bcd2a"
+                                    "parent_repeater": "field_62e387c1bcd2a",
+                                    "selected": 0
                                 },
                                 {
                                     "key": "field_62e3882a9fe28",
@@ -699,6 +708,16 @@
                                         "id": ""
                                     },
                                     "choices": {
+                                        "8": "7 Steps to growing your business",
+                                        "9": "Client Feedback Survey",
+                                        "3": "Contact Form",
+                                        "10": "Contact Form - SG",
+                                        "2": "Job Application",
+                                        "1": "Newsletter Signup",
+                                        "7": "Onboarding Form",
+                                        "4": "Request a Consultation",
+                                        "5": "Secure File Send",
+                                        "6": "What's your Biggest Business Challenge?"
                                     },
                                     "default_value": false,
                                     "return_format": "value",
@@ -725,7 +744,8 @@
                                     },
                                     "placement": "top",
                                     "endpoint": 0,
-                                    "parent_repeater": "field_62e387c1bcd2a"
+                                    "parent_repeater": "field_62e387c1bcd2a",
+                                    "selected": 0
                                 },
                                 {
                                     "key": "field_62e387c1bcd2c",
@@ -779,8 +799,7 @@
                                     "mime_types": "",
                                     "parent_repeater": "field_62e387c1bcd2a"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -807,7 +826,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea4f4ddfdc",
@@ -899,7 +919,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_6369d24e8ccc1",
@@ -936,7 +957,8 @@
                                 "id": ""
                             },
                             "placement": "left",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62e3a0772726a",
@@ -957,6 +979,7 @@
                             "max": 0,
                             "layout": "row",
                             "button_label": "Add Row",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_6369d2358ccbf",
@@ -974,7 +997,8 @@
                                     },
                                     "placement": "top",
                                     "endpoint": 0,
-                                    "parent_repeater": "field_62e3a0772726a"
+                                    "parent_repeater": "field_62e3a0772726a",
+                                    "selected": 0
                                 },
                                 {
                                     "key": "field_62e3a08c2726b",
@@ -1020,8 +1044,7 @@
                                     "placeholder": "",
                                     "parent_repeater": "field_62e3a0772726a"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -1048,7 +1071,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea521ddfdf",
@@ -1091,7 +1115,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_6401bf2a81b89",
@@ -1148,7 +1173,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62e3a6c66d47a",
@@ -1169,6 +1195,7 @@
                             "max": 0,
                             "layout": "table",
                             "button_label": "Add Row",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_62e3a73afa651",
@@ -1233,8 +1260,7 @@
                                     "delay": 0,
                                     "parent_repeater": "field_62e3a6c66d47a"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -1261,7 +1287,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea53cddfe1",
@@ -1304,7 +1331,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62e3b9107a3b9",
@@ -1386,6 +1414,16 @@
                                 "id": ""
                             },
                             "choices": {
+                                "8": "7 Steps to growing your business",
+                                "9": "Client Feedback Survey",
+                                "3": "Contact Form",
+                                "10": "Contact Form - SG",
+                                "2": "Job Application",
+                                "1": "Newsletter Signup",
+                                "7": "Onboarding Form",
+                                "4": "Request a Consultation",
+                                "5": "Secure File Send",
+                                "6": "What's your Biggest Business Challenge?"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -1440,7 +1478,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea571ddfe4",
@@ -1483,7 +1522,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62e3c2cf242ae",
@@ -1540,7 +1580,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62e3c3b7242b1",
@@ -1573,7 +1614,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_636ce491105c8",
@@ -1722,7 +1764,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_646b35ac052a4",
@@ -1787,7 +1830,8 @@
                                     },
                                     "placement": "top",
                                     "endpoint": 0,
-                                    "parent_repeater": "field_646b35f5052af"
+                                    "parent_repeater": "field_646b35f5052af",
+                                    "selected": 0
                                 },
                                 {
                                     "key": "field_646b35ac052a6",
@@ -1864,7 +1908,8 @@
                                     },
                                     "placement": "top",
                                     "endpoint": 0,
-                                    "parent_repeater": "field_646b35f5052af"
+                                    "parent_repeater": "field_646b35f5052af",
+                                    "selected": 0
                                 },
                                 {
                                     "key": "field_646b35ac052ab",
@@ -1999,7 +2044,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea583ddfe6",
@@ -2042,7 +2088,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63d8eb7ec809f",
@@ -2153,7 +2200,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea595ddfe8",
@@ -2196,7 +2244,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62e8fd271ada4",
@@ -2268,7 +2317,7 @@
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -2278,12 +2327,34 @@
                                 "5": "5"
                             },
                             "default_value": 3,
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
                             "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 1,
+                            "ui": 0,
                             "ajax": 0,
                             "placeholder": ""
+                        },
+                        {
+                            "key": "field_66dfbf29b85a2",
+                            "label": "Currency Symbol",
+                            "name": "currency_symbol",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Number of columns for Pricing Packages.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
                         },
                         {
                             "key": "field_6401c9cf69625",
@@ -2334,7 +2405,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea5a8ddfea",
@@ -2377,7 +2449,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62fcb16f233a4",
@@ -2454,7 +2527,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_62fcb292fcfdf",
@@ -2521,7 +2595,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea5c9ddfed",
@@ -2564,7 +2639,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_6319b50659f4e",
@@ -2655,7 +2731,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea5deddfef",
@@ -2698,7 +2775,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63be92d295809",
@@ -2735,7 +2813,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63be92f39580b",
@@ -2756,6 +2835,7 @@
                             "max": 0,
                             "layout": "row",
                             "button_label": "Add Row",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_63be93169580c",
@@ -2799,8 +2879,7 @@
                                     "delay": 0,
                                     "parent_repeater": "field_63be92f39580b"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -2827,7 +2906,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63bea5f3ddff1",
@@ -2870,7 +2950,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63be9832da27a",
@@ -2905,7 +2986,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_63d8edac40ebf",
@@ -3066,6 +3148,16 @@
                                 "id": ""
                             },
                             "choices": {
+                                "8": "7 Steps to growing your business",
+                                "9": "Client Feedback Survey",
+                                "3": "Contact Form",
+                                "10": "Contact Form - SG",
+                                "2": "Job Application",
+                                "1": "Newsletter Signup",
+                                "7": "Onboarding Form",
+                                "4": "Request a Consultation",
+                                "5": "Secure File Send",
+                                "6": "What's your Biggest Business Challenge?"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -3110,5 +3202,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700212171
+    "modified": 1725940718
 }

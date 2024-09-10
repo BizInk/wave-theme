@@ -4,12 +4,10 @@ $choose_pricing_packeges = get_sub_field('choose_pricing_packeges');
 $general_class = '';
 
 if( in_array('Add Common Padding', $general_settings) ){
-  
   $general_class .= ' comman-padding';
 }
 
 if( in_array('Add Common Margin', $general_settings) ){
-  
   $general_class .= ' comman-margin';
 }
 
@@ -19,8 +17,10 @@ $pricing_description = get_sub_field('pricing_description');
 $columns_number = get_sub_field('columns_number');
 $columns_classes = 'col-md-6 col-lg-4';
 if( $columns_number == 4 ){
-$columns_classes = 'col-md-6 col-lg-3';
+    $columns_classes = 'col-md-6 col-lg-3';
 }
+$currency_symbol_global = get_field('currency_symbol', 'option') ?? '$';
+$currency_symbol = get_sub_field('currency_symbol') ?? $currency_symbol_global;
 ?>
 
 <?php get_template_part('global-templates/inner-banner'); ?>
@@ -166,11 +166,10 @@ $columns_classes = 'col-md-6 col-lg-3';
                                         if( $price ) {
                                             echo $price_from ? '<span class="pricefrom">From: </span>' : null; 
                                             $decimals = floatval($price) - floor(floatval($price));
-                                            $currency_symbol = get_field('currency_symbol');
-                                            $currency_symbol = $currency_symbol ? $currency_symbol : '$';
+
                                             ?>
                                             <h2 class="mb-1 pb-0 card-title pricing-card-title<?php echo $show_decimals ? ' show-decimals' : null; ?>">
-                                                <span class="currency_symbol"><?php echo get_field('currency_symbol') ? get_field('currency_symbol'):"$"; ?></span>
+                                                <span class="currency_symbol"><?php echo $currency_symbol; ?></span>
                                                 <span class="price"><?php if($show_decimals): echo str_replace(" ","",floor(floatval($price))); else: echo $price; endif; ?></span>
 
                                             <?php if( $show_decimals ){ ?>
