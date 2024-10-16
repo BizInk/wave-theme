@@ -55,7 +55,7 @@ get_template_part('global-templates/inner-banner');
 				<div class="text-left">
 					<div class="container">
 						<div class="editor-design mb-5">
-							<h2>Related Posts</h2>
+							<h2><?php _e('Related Posts','wave-theme'); ?></h2>
 						</div>
 					</div>
 				</div>
@@ -90,7 +90,7 @@ get_template_part('global-templates/inner-banner');
 											</a>
 
 											<p><?= $post_content; ?></p>
-											<a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+											<a href="<?php the_permalink(); ?>" class="readmore"><?php _e('Read More','wave-theme'); ?></a>
 										</div>
 									</div>
 								</div>
