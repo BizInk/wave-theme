@@ -23,7 +23,23 @@ function understrap_remove_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
-
+/**
+ * Show BizInk logo on login page
+ */
+add_action('login_head', 'wave_login_page_styles');
+function wave_login_page_styles() { 
+	?>
+	<style>
+		#login h1 a {
+			background: url(<?php echo get_stylesheet_directory_uri() . '/images/login-logo.png' ?>) no-repeat center center;
+			padding-bottom: 30px;
+			height: 70px;
+			width: 310px;
+			background-size: 310px 80px;
+		}
+	</style>
+	<?php 
+}
 
 /**
  * Enqueue our stylesheet and javascript file

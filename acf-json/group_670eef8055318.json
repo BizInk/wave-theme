@@ -3,6 +3,27 @@
     "title": "Testimonials",
     "fields": [
         {
+            "key": "field_672811a3fbfab",
+            "label": "Enable Links",
+            "name": "enable_links",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This will enable the induvial testimonials to link to a page displaying the full testimonial",
+            "default_value": 1,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
             "key": "field_670f59dc3dda4",
             "label": "Tesimonials",
             "name": "tesimonials_post_obj",
@@ -50,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729059589
+    "modified": 1730679279
 }

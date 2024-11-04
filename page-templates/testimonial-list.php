@@ -14,6 +14,7 @@ get_header();
 get_template_part('global-templates/inner-banner');
 
 $tesimonials_post_obj = get_field('tesimonials_post_obj');
+$enable_links = get_field('enable_links') ?? true;
 ?>
 <section class="comman-padding">
     <div class="container">
@@ -38,9 +39,16 @@ if ( !empty($tesimonials_post_obj) ) {
                     $reviewer_designation = get_field('reviewer_designation');
                     $review_content = get_field('review_content');
                     $rating_count = get_field('rating_count');
+                    
+                    if($enable_links){
+                        echo '<a href="'.get_the_permalink().'" class="col-md-6 col-lg-4 our-word text-decoration-none d-block">';
+                    }
+                    else{
+                        echo '<div class="col-md-6 col-lg-4 our-word text-decoration-none d-block">';
+                    }
                     ?>
 
-                    <a href="<?php the_permalink();?>" class="col-md-6 col-lg-4 our-word text-decoration-none d-block">
+                    
                         <div class="card-wrap">
                             <div class="star-wrap">
 
@@ -67,8 +75,13 @@ if ( !empty($tesimonials_post_obj) ) {
                                 </div>
                             </div>
                         </div>
-                    </a>
-                <?php 
+                <?php
+                if($enable_links){
+                    echo '</a>';
+                }
+                else{
+                    echo '</div>';
+                }
                 endforeach;
                 wp_reset_postdata(); 
                 ?>

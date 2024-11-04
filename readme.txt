@@ -2,8 +2,8 @@
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Requires at least: 5.6
-Tested up to: 6.6.1
-Stable tag: 1.7.7
+Tested up to: 6.6.2
+Stable tag: 1.7.8
 Requires PHP: 7.4
 
 The Wave theme
@@ -12,6 +12,10 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.7.8 =
+* Testimoinals Enable links
+* Login Logo
 
 = 1.7.7 =
 * Fix for Testimonials
