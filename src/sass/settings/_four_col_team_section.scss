@@ -9,16 +9,40 @@
            h4{
                 color:$primary;
                 &:hover{
-                  color:$yellow;  
+                  color:$yellow;
                 }
             }   
             a{
-                color:$yellow;
+                color:$primary;
                 &:hover{
-                  color:$primary;
+                  color:$yellow;
                 }
             }                
         }   
+    }
+}
+.blog-listing-section{
+    .team-member-wrap{
+        .member-details{
+            h4{
+                color:$primary;
+                &:hover{
+                  color:$dark;
+                }
+                a{
+                    color:$primary;
+                    &:hover{
+                      color:$dark;
+                    }
+                }
+            }
+            a{
+                color:$primary;
+                &:hover{
+                  color:$white;
+                }
+            }  
+        }
     }
 }
 .pagination {    

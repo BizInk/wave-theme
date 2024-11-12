@@ -67,3 +67,23 @@
   }
 }
 
+.post-navigation{
+  .nav-links{
+    .page-numbers{
+      background-color:$primary;
+      color:$white;
+    }
+  }
+  .page-numbers{
+      background-color:$primary;
+      color:$white;
+      &:hover,&.current{
+          background-color:$dark;
+          color:$white;
+      }
+      &.dots{
+        background-color: transparent;
+        color: $dark;
+      }
+  }
+}

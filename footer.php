@@ -183,56 +183,5 @@ echo get_field('custom_embed_code_after_body', 'options');
 wp_footer();
 echo get_field('custom_embed_code_-_footer', 'options');
 ?>
-<script type="text/javascript">
-	var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-	function fetch_blog_posts(category='', pagenumber=1){
-		// Check if we are on correct page
-		if( jQuery('.blog-posts-cont').length ){
-			if( pagenumber == 1 ){
-
-				jQuery('.blog-posts-cont').html('Loading...');
-			}else{
-				jQuery('.load-more').text('Loading...');
-			}
-           
-			jQuery.ajax({
-				type : "post",
-				url  :  ajaxurl,
-				data : {action: "fetch_blog_posts", category: category, pagenumber: pagenumber},
-				success: function(response) {
-					var result = JSON.parse(response);
-
-					if( pagenumber == 1 ){
-						
-						jQuery('.blog-posts-cont').html(result.content);
-					}else{
-						jQuery('.load-more').remove();
-						jQuery('.blog-posts-cont .row').append(result.content);
-					}
-					jQuery('.blog-posts-cont').append(result.load_more);
-				}
-			}); 
-		}
-	}
-	
-	fetch_blog_posts(); 
-
-	jQuery(document).on('click', '.filter-wrap li', function(e){
-		e.preventDefault();
-
-		jQuery('.filter-wrap li.active').removeClass('active');
-		jQuery(this).addClass('active');
-
-		fetch_blog_posts(jQuery(this).attr('data-cat'));
-
-		console.log("data cat ", jQuery(this).attr('data-cat') )
-	});
-
-	jQuery(document).on('click', '.load-more', function(e){
-		e.preventDefault();
-
-		fetch_blog_posts(jQuery('.filter-wrap li.active').attr('data-cat'), jQuery(this).attr('data-pagenumber'));
-	});
-</script>
 </body>
 </html>

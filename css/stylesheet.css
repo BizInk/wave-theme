@@ -46,6 +46,19 @@
 .inner-banner-section h1 {
   color: #fff; }
 
+.post-navigation .nav-links .page-numbers {
+  background-color: #f27267;
+  color: #fff; }
+  .post-navigation .page-numbers {
+    background-color: #f27267;
+    color: #fff; }
+    .post-navigation .page-numbers:hover, .post-navigation .page-numbers.current {
+      background-color: #516365;
+      color: #fff; }
+    .post-navigation .page-numbers.dots {
+      background-color: transparent;
+      color: #516365; }
+
 body {
   color: #516365; }
 
@@ -516,11 +529,24 @@ nav.contact-details ul li a:hover {
   .four-col-team-section .team-member-wrap .member-details h4 {
     color: #f27267; }
   .four-col-team-section .team-member-wrap .member-details h4:hover {
-    color: #bcdad7; }
+    color: #516365; }
   .four-col-team-section .team-member-wrap .member-details a {
-    color: #bcdad7; }
-  .four-col-team-section .team-member-wrap .member-details a:hover {
     color: #f27267; }
+  .four-col-team-section .team-member-wrap .member-details a:hover {
+    color: #516365; }
+
+.blog-listing-section .team-member-wrap .member-details h4 {
+  color: #f27267; }
+  .blog-listing-section .team-member-wrap .member-details h4:hover {
+    color: #516365; }
+  .blog-listing-section .team-member-wrap .member-details h4 a {
+    color: #f27267; }
+  .blog-listing-section .team-member-wrap .member-details h4 a:hover {
+    color: #516365; }
+  .blog-listing-section .team-member-wrap .member-details a {
+    color: #f27267; }
+  .blog-listing-section .team-member-wrap .member-details a:hover {
+    color: #fff; }
 
 .pagination li .page-link {
   background: #fff;

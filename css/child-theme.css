@@ -18358,6 +18358,15 @@ footer .shape-color {
 .post-navigation .nav-links {
   align-items: center;
 }
+.post-navigation .nav-links .page-numbers{
+  width: 4rem;
+  border-radius: 6px;
+  padding:1rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
 .post-navigation .nav-previous,
 .post-navigation .nav-next {
   width: 50%;
