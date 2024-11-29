@@ -11,6 +11,8 @@ defined( 'ABSPATH' ) || exit;
 define('DEFAULT_IMG', get_stylesheet_directory_uri().'/images/default.jpg');
 
 require_once 'inc/cpt.php';
+include 'inc/savecss.php';
+
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
  */
@@ -62,7 +64,6 @@ function theme_enqueue_styles() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
 
 
 /**
@@ -281,12 +282,9 @@ function fetch_blog_posts() {
 die();
 }
 
-
 // Theme Updater
 require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker('https://github.com/BizInk/wave-theme',__FILE__,'wave-theme');
-// Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
-// Using a private repository, specify the access token 
 $myUpdateChecker->setAuthentication('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');
