@@ -17702,7 +17702,7 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
 }
 @media (max-width: 1400px) {
   .navbar-dark img {
-    max-width: 150px;
+    max-width: 250px;
   }
 }
 .navbar-dark .dropdown-menu {
@@ -17886,7 +17886,7 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
     padding: 10px 0 10px;
   }
   .navbar img {
-    max-width: 100px;
+    max-width: 250px;
     min-height: 76px;
     -o-object-fit: contain;
     object-fit: contain;
