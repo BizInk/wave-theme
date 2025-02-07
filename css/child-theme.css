@@ -19909,7 +19909,7 @@ section.infobox-section.resource-infobox {
 
 .full-width-wysiwyg {
   position: relative;
-  margin: 60px;
+  margin:10px;
 }
 @media (max-width: 767.98px) {
   .full-width-wysiwyg {
