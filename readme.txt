@@ -13,6 +13,9 @@ The Wave theme
 
 == Changelog ==
 
+= 1.8.5 =
+* Fix for Large Screens
+
 = 1.8.4 =
 * Better Mobile Buttons
 
