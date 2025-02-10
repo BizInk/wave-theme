@@ -2,7 +2,7 @@
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Tested up to: 6.7.1
-Stable tag: 1.8.2
+Stable tag: 1.8.3
 Requires PHP: 7.4
 Requires at least: 6.0
 
@@ -13,8 +13,11 @@ The Wave theme
 
 == Changelog ==
 
+= 1.8.3 =
+* Mobile Menu Fixes
+
 = 1.8.2 =
-* 
+* Width Margin
 
 = 1.8.1 =
 * Fix for header image on mobile

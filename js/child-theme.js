@@ -11623,8 +11623,25 @@
 	  jQuery(".client-area-anchor").click(function () {
 	    jQuery(".client-area-cont").slideToggle();
 	  });
+
+	  function menuSizeToggle(){
+
+	  }
+
 	  jQuery(".navbar-toggler").click(function () {
-	    jQuery("body").toggleClass("menu-open");
+	    
+		var headerHeight = jQuery('#wrapper-navbar').height();
+		if(jQuery('#wrapper-navbar').hasClass('fixed')){
+			jQuery('.navbar .navbar-collapse').css('top',headerHeight);
+		}
+		else{
+			if(jQuery('body').hasClass('admin-bar')){
+				headerHeight = headerHeight + jQuery('#wpadminbar').height();
+			}
+			jQuery('.navbar .navbar-collapse').css('top',headerHeight);
+		}
+
+		jQuery("body").toggleClass("menu-open");
 	  });
 
 	  if (window.matchMedia("(max-width:992px)").matches) {

@@ -17418,9 +17418,11 @@ h6, .h6 {
   border-radius: 3px;
   font-weight: 500;
   min-width: 228px;
+  display:block;
   transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+
 }
 @media (max-width: 991.98px) {
   .btn, .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button, .wpcf7 input[type=submit], .button {
@@ -17908,7 +17910,23 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
     overflow-y: auto;
   }
   .fixed .navbar .navbar-collapse {
-    top: 189px;
+    top: 118px;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar img {
+    max-width: 250px;
+    height:100%;
+    max-height: 120px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  .navbar .navbar-collapse{
+    top: 175px;
+  }
+  header.fixed img{
+    height:100%;
+    max-height: 100px;
   }
 }
 
@@ -18865,7 +18883,7 @@ input[type=submit]:hover {
 @media (max-width: 767.98px) {
   .infobox-section .shape-color {
     height: 96%;
-    top: 6%;
+    top: 5%;
   }
 }
 .infobox-section .infobox-warp .row {
