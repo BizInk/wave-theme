@@ -661,6 +661,11 @@ progress {
     max-width: 1320px;
   }
 }
+@media (min-width: 1800px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1500px;
+  }
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -17429,6 +17434,7 @@ h6, .h6 {
     font-size: 1.6rem;
     min-width: auto;
     display:block;
+    text-align: center;
   }
 }
 .btn-sm, .btn-group-sm > .btn, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button, .woocommerce-info .btn-group-sm > a.button, .wpcf7 .btn-group-sm > input[type=submit] {
@@ -18847,22 +18853,22 @@ input[type=submit]:hover {
 }
 
 .infobox-section {
-  padding: 155px 0 40px;
+  padding: 18rem 0 5rem;
   overflow: hidden;
 }
 @media (max-width: 1440px) {
   .infobox-section {
-    padding: 190px 0 40px;
+    padding: 20rem 0 5rem;
   }
 }
 @media (max-width: 1199.98px) {
   .infobox-section {
-    padding: 155px 0 40px;
+    padding: 16rem 0 5rem;
   }
 }
 @media (max-width: 991.98px) {
   .infobox-section {
-    padding: 155px 0 50px;
+    padding: 16rem 0 6rem;
   }
 }
 .infobox-section .shape-blue {
@@ -19198,7 +19204,6 @@ section.infobox-section.resource-infobox {
 
 .call-to-action-section {
   padding: 180px 0 180px;
-  overflow: hidden;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -19216,7 +19221,13 @@ section.infobox-section.resource-infobox {
   position: absolute;
   left: 0;
   z-index: 1;
-  bottom: -22px;
+  bottom: -30px;
+  width: 100%;
+}
+@media (min-width: 2000px) {
+  .call-to-action-section .call-to-action-shape {
+    bottom: -4rem;
+  }
 }
 @media (max-width: 991.98px) {
   .call-to-action-section {
@@ -19927,7 +19938,7 @@ section.infobox-section.resource-infobox {
 
 .full-width-wysiwyg {
   position: relative;
-  margin:10px;
+  margin:1rem;
 }
 @media (max-width: 767.98px) {
   .full-width-wysiwyg {
