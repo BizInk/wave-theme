@@ -17418,7 +17418,6 @@ h6, .h6 {
   border-radius: 3px;
   font-weight: 500;
   min-width: 228px;
-  display:block;
   transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -17429,6 +17428,7 @@ h6, .h6 {
     padding: 10px 40px;
     font-size: 1.6rem;
     min-width: auto;
+    display:block;
   }
 }
 .btn-sm, .btn-group-sm > .btn, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button, .woocommerce-info .btn-group-sm > a.button, .wpcf7 .btn-group-sm > input[type=submit] {
