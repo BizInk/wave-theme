@@ -15,6 +15,7 @@ The Wave theme
 
 = 1.8.6 =
 * Enable Categories on Blog Page
+* New section - Ording section
 
 = 1.8.5 =
 * Fix for Large Screens
