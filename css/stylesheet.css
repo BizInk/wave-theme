@@ -165,12 +165,6 @@ button#dropdownMenuButton1 {
   border: 0;
 }
 
-.blog-posts-cont .category_links .category_link.active {
-  background-color: #0a0a0a;
-  color: #fff;
-  border-color: #0a0a0a;
-}
-
 .top-nav {
   background-color: #0a0a0a;
   color: #fff;
@@ -1090,4 +1084,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #0a0a0a;
   color: #fff;
+}
+
+.ordered-block{
+  background-color: #f9f9f9;
+}
+.ordered-blocks .ordered-block:nth-child(even){
+  background-color: #969696;
+  color: #f9f9f9;
 }

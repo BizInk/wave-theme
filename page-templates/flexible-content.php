@@ -74,6 +74,10 @@ if( have_rows('page_flexible_content') ):
       case 'full_width_section_contents':
         get_template_part('page-templates/template-parts/full-width-contents');
         break;
+      case 'ordered_content':
+        get_template_part('page-templates/template-parts/ordering-content');
+        break;
+
     }
 
   endwhile;

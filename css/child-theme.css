@@ -19610,6 +19610,30 @@ section.infobox-section.resource-infobox {
   flex-wrap: wrap;
 }
 
+.ordered-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:6rem 3rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.ordered-block .ordered-number{
+  font-size: 6rem;
+  font-weight: 600;
+  padding-bottom: 0.8rem;
+}
+.ordered-block .ordered-number{
+  font-weight: 300;
+}
+
+.ordered-block .ordered-content h1,
+.ordered-block .ordered-content h2,
+.ordered-block .ordered-content h3{
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
 .team-section .team-wrap {
   max-width: 100%;
   text-align: center;
