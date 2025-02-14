@@ -31,7 +31,7 @@
 
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-    $inner_banner_title = __('Blogs','wave-theme');
+    $inner_banner_title = __('Blog','wave-theme');
     $inner_banner_content = get_field('inner_banner_content', 'option');
     $inner_banner_image = get_field('inner_banner_image', 'option');
 }else if( is_archive() ){
@@ -88,6 +88,7 @@ if( empty($inner_banner_image) || !$inner_banner_image ){
     $inner_banner_image = get_field('inner_banner_image', 'option');
 }
 
+$background_html = '';
 if( !empty($inner_banner_image) ){
 
     $background_html = 'style="background-image: url('. $inner_banner_image .');"';

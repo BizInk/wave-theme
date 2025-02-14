@@ -7,13 +7,37 @@ get_template_part('global-templates/inner-banner');
 ?>
 <section class="four-col-team-section blog-listing-section comman-padding">
   <div class="container">
-    <div class="team-wrap">
+    <div class="team-wrap blog-posts-cont">
+      <?php
+      if (have_posts()):
+        $enable_categories = get_field('enable_categories', 'option') ?? true;
+				if($enable_categories):
+				$categories = get_categories();
+        ?>
+				<div class="row">
+					<div class="col m-4 pb-4 text-center category_links">
+						<?php
+						$count = count($categories);
+						$i = 0;
+						foreach($categories as $category) {
+							$i++;
+							echo sprintf( 
+								'<a class="category_link btn btn-sm m-1" href="%1$s" alt="%2$s">%3$s</a>',
+								esc_url( get_category_link( $category->term_id ) ),
+								esc_attr( sprintf( __( 'View all posts in %s', 'wave-theme' ), $category->name ) ),
+								esc_html( $category->name )
+							);
+						}		
+						?>
+					</div>
+				</div>
+				<?php
+				endif;
+      ?>
       <div class="row g-lg-5">
         <?php
-        if (have_posts()):
           while (have_posts()):
             the_post();
-
             $post_image = has_post_thumbnail() ? get_the_post_thumbnail_url() : get_stylesheet_directory_uri() . '/images/default.jpg';
         ?>
             <div class="col-md-6 col-xl-4 team-member">

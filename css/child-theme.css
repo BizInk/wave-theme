@@ -17707,6 +17707,7 @@ header.fixed .btn, header.fixed .woocommerce-notices-wrapper .woocommerce-messag
   transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+  max-height: 120px;
 }
 @media (max-width: 1400px) {
   .navbar-dark img {
@@ -19238,6 +19239,9 @@ section.infobox-section.resource-infobox {
   .call-to-action-section {
     padding: 40px 0px;
   }
+  .call-to-action-section .call-to-action-shape {
+    bottom: -5px;
+  }
 }
 .call-to-action-section .btn, .call-to-action-section .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .call-to-action-section a.button, .call-to-action-section .woocommerce-info a.button, .woocommerce-info .call-to-action-section a.button, .call-to-action-section .wpcf7 input[type=submit], .wpcf7 .call-to-action-section input[type=submit] {
   font-size: 2.5rem;
@@ -19600,6 +19604,12 @@ section.infobox-section.resource-infobox {
   margin-bottom: 10px;
 }
 
+.blog-posts-cont .category_links{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .team-section .team-wrap {
   max-width: 100%;
   text-align: center;
@@ -19632,6 +19642,9 @@ section.infobox-section.resource-infobox {
   transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+}
+.team-wrap .category_link{
+  text-decoration: none !important;
 }
 .team-section .team-wrap .team-member .team-member-wrap .member-img img:hover {
   transform: scale(1.2);
