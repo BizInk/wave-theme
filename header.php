@@ -154,3 +154,6 @@ $google_my_business = get_field('google_my_business', 'options');
 			</div>
 			<?php get_template_part('global-templates/navbar', $navbar_type . '-' . $bootstrap_version); ?>
 		</header>
+		<?php
+		include get_stylesheet_directory() . '/inc/password-check.php';
+		?>

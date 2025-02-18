@@ -1,8 +1,8 @@
 === Wave ===
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
-Tested up to: 6.7.1
-Stable tag: 1.8.6
+Tested up to: 6.7.2
+Stable tag: 1.8.7
 Requires PHP: 7.4
 Requires at least: 6.0
 
@@ -12,6 +12,9 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.8.7 =
+* Password Protected Page
 
 = 1.8.6 =
 * Enable Categories on Blog Page
