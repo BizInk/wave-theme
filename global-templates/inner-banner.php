@@ -7,6 +7,9 @@
     $inner_banner_image = get_field('inner_banner_image') ? get_field('inner_banner_image') : get_field('inner_banner_image', 'option');
     if(empty($inner_banner_title)){
         $inner_banner_title = get_the_title();
+        // No title set, use the default colors as well
+        $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
+	    $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
     }
 }else if( is_singular('team-member') ){
 
@@ -95,7 +98,9 @@ if( !empty($inner_banner_image) ){
 }else if( !empty($inner_banner_shape_1_color) ){
 
     $background_html = 'style="background-color: '. $inner_banner_shape_1_color .';"';
-} ?>
+}
+
+?>
 
 <!-- call-to-action-section-start -->
 <section class="call-to-action-section" <?= $background_html; ?>>   
