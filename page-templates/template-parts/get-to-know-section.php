@@ -12,6 +12,11 @@ $general_class .= ' comman-margin';
 $team_members = get_sub_field('team_members');
 $get_to_know_title = get_sub_field('get_to_know_title');
 $get_to_know_subtitle = get_sub_field('get_to_know_subtitle');
+
+$enable_team_link = get_sub_field('enable_teammember_link') ? true : false;
+$show_social = get_sub_field('show_social') ? true : false;
+$show_position = get_sub_field('show_position') ? true : false;
+$show_company = get_sub_field('show_company') ? true : false;
 ?>
 <section class="teamlist-section<?= $general_class; ?>">   
     <div class="full-width-wysiwyg text-center">
@@ -30,20 +35,60 @@ $get_to_know_subtitle = get_sub_field('get_to_know_subtitle');
             <div class="row g-lg-5">
                 <?php foreach( $team_members as $team_member  ):
                 $member_image = get_field('member_image', $team_member);
+                $member_image_hover = get_field('member_image_hover', $team_member);
                 $member_position = get_field('member_position', $team_member);
                 if( $member_image ){
-                $get_to_know_member_image = $member_image;
-                }else{
-                $get_to_know_member_image = get_stylesheet_directory_uri().'/images/team4.jpg';
+                    $get_to_know_member_image = $member_image;
+                }
+                else{
+                    $get_to_know_member_image = get_stylesheet_directory_uri().'/images/team4.jpg';
                 } ?>
                 <div class="col-md-4 col-lg-3 team-member">
                     <div class="team-member-wrap">
-                        <div class="member-img">
-                            <img src="<?php echo $get_to_know_member_image; ?>" alt="member-img">
+                        <?php if($enable_team_link){ ?>
+                            <a href="<?= get_the_permalink($our_member); ?>" class="member-link">
+                        <?php } ?>
+                        <div class="member-img <?php if( !empty($member_image_hover) ){echo "img-hover";}?>">
+                            <img src="<?php echo $get_to_know_member_image; ?>" alt="<?= $our_member->post_title; ?>" class="img-fluid main-img" />
+                            <?php if( !empty($member_image_hover) ){ ?>
+                                <img src="<?php echo $member_image_hover; ?>" class="img-fluid hover-img" alt="<?= $our_member->post_title; ?>" />
+                            <?php } ?>
                         </div>
+                        <?php if($enable_team_link){ ?>
+                            </a>
+                        <?php } ?>
                         <div class="member-details">
+                            <?php if($enable_team_link){ ?>
+                                <a href="<?= get_the_permalink($our_member); ?>" class="member-link">
+                            <?php } ?>
                             <h4 class="member-name"><?php echo $team_member->post_title; ?></h4>
-                            <h6 class="designation"><?php echo $member_position ? $member_position : 'Web Designer'; ?></h6>
+                            <?php if( !empty($member_position) && $show_position ){ ?>
+                                <h6 class="designation"><?= $member_position; ?></h6>
+                            <?php }
+                            if( !empty($member_company) && $show_company ){ ?>
+                                <p><?= $member_company; ?></p>
+                            <?php }
+                            if($enable_team_link){ ?>
+                                </a>
+                            <?php }
+                            $facebook = get_field('member_facebook', $team_member);
+                            $twitter = get_field('member_twitter', $team_member);
+                            $linkedin = get_field('member_linkedin', $team_member);
+                                if( $show_social && ($facebook || $twitter || $linkedin) ){ ?>
+                                <div class="social-nav">
+                                    <?php 
+                                    if( $facebook ){ 
+                                        ?><a href="<?php echo $facebook; ?>" target="_blank"><i aria-label="Facebook" class="fa fa-facebook-square" aria-hidden="true"></i></a><?php 
+                                    }
+                                    if( $twitter ){ 
+                                        ?><a href="<?php echo $twitter; ?>" target="_blank"><i aria-label="Twitter (X)" class="fa fa-twitter" aria-hidden="true"></i></a><?php 
+                                    }
+                                    if( $linkedin ){
+                                        ?><a href="<?php echo $linkedin; ?>" target="_blank"><i aria-label="LinkedIn" class="fa fa-linkedin-square" aria-hidden="true"></i></a><?php 
+                                    } 
+                                    ?>
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

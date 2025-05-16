@@ -1,10 +1,12 @@
 === Wave ===
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
-Tested up to: 6.8
-Stable tag: 1.9.1
+Tested up to: 6.8.2
+Stable tag: 1.9.2
 Requires PHP: 7.4
 Requires at least: 6.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The Wave theme
 
@@ -12,6 +14,9 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 1.9.2 =
+* Teammember Link, Details & Img Hover
 
 = 1.9.1 =
 * Fix for Bizpress Glossary
