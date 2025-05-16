@@ -17,6 +17,7 @@ The Wave theme
 
 = 1.9.2 =
 * Teammember Link, Details & Img Hover
+* Mobile Logo Sizing
 
 = 1.9.1 =
 * Fix for Bizpress Glossary
