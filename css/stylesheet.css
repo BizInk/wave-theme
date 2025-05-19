@@ -24,7 +24,7 @@
   color: #444; }
 
 .light-blue {
-  color: #90D5FF; }
+  color: ; }
 
 .white {
   color: #ddd; }
@@ -37,7 +37,7 @@
   background-color: #ddd; }
 
 .light-blue-bg {
-  background-color: #90D5FF; }
+  background-color: ; }
 
 .editor-design blockquote {
   border-left: 2px solid #1e73be; }
@@ -288,6 +288,8 @@ nav.contact-details ul li a:hover {
     border-color: #444;
     color: #ddd; }
 
+.single .wrapper .entry-title, .archive .wrapper .entry-title {
+  color: ; }
   .single .wrapper .content-area a, .archive .wrapper .content-area a {
     color: #1e73be; }
   .single .wrapper .entry-meta a, .archive .wrapper .entry-meta a {
@@ -451,7 +453,7 @@ nav.contact-details ul li a:hover {
     border-color: #ddd; }
 
 .user-avtar {
-  background-color: #ddd; }
+  background-color: ; }
 
 .testimonial-left-content h3 {
   color: #444; }

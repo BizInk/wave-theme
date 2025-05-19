@@ -77,6 +77,9 @@ if( have_rows('page_flexible_content') ):
       case 'ordered_content':
         get_template_part('page-templates/template-parts/ordering-content');
         break;
+      case 'multi_column':
+        get_template_part('page-templates/template-parts/multi-column');
+        break;
 
     }
 
