@@ -46,12 +46,12 @@ $show_company = get_sub_field('show_company') ? true : false;
                 <div class="col-md-4 col-lg-3 team-member">
                     <div class="team-member-wrap">
                         <?php if($enable_team_link){ ?>
-                            <a href="<?= get_the_permalink($our_member); ?>" class="member-link">
+                            <a href="<?= get_the_permalink($team_member); ?>" class="member-link">
                         <?php } ?>
                         <div class="member-img <?php if( !empty($member_image_hover) ){echo "img-hover";}?>">
-                            <img src="<?php echo $get_to_know_member_image; ?>" alt="<?= $our_member->post_title; ?>" class="img-fluid main-img" />
+                            <img src="<?php echo $get_to_know_member_image; ?>" alt="<?= $team_member->post_title; ?>" class="img-fluid main-img" />
                             <?php if( !empty($member_image_hover) ){ ?>
-                                <img src="<?php echo $member_image_hover; ?>" class="img-fluid hover-img" alt="<?= $our_member->post_title; ?>" />
+                                <img src="<?php echo $member_image_hover; ?>" class="img-fluid hover-img" alt="<?= $team_member->post_title; ?>" />
                             <?php } ?>
                         </div>
                         <?php if($enable_team_link){ ?>
@@ -59,7 +59,7 @@ $show_company = get_sub_field('show_company') ? true : false;
                         <?php } ?>
                         <div class="member-details">
                             <?php if($enable_team_link){ ?>
-                                <a href="<?= get_the_permalink($our_member); ?>" class="member-link">
+                                <a href="<?= get_the_permalink($team_member); ?>" class="member-link">
                             <?php } ?>
                             <h4 class="member-name"><?php echo $team_member->post_title; ?></h4>
                             <?php if( !empty($member_position) && $show_position ){ ?>
