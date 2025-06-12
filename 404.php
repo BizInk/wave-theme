@@ -35,15 +35,15 @@ get_template_part( 'global-templates/inner-banner');
 
                                 <h2><?php echo get_field('404_sub_title','option'); ?></h2>
                             <?php }
-
-                            if(get_field('404_description','option')) { ?>
-
-                                <p><?php echo get_field('404_description','option'); ?></p>
+                            $description_404 = get_field('404_description','option');
+                            if(!empty($description_404)) {
+                            ?>
+                                <p><?php echo $description_404; ?></p>
                             <?php }
 
                             $error_button = get_field('error_button','option');
 
-                            if($error_button['title']) { ?>
+                            if(!empty($error_button) && !empty($error_button['url']) && !empty($error_button['url'])) { ?>
                                 
                                 <a href="<?php echo $error_button['url']; ?>" class="btn btn-sm btn-outline-primary mt-4"><?php echo $error_button['title']; ?></a>
                             <?php } ?>
