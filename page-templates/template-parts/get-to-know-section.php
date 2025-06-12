@@ -74,20 +74,28 @@ $show_company = get_sub_field('show_company') ? true : false;
                             $facebook = get_field('member_facebook', $team_member);
                             $twitter = get_field('member_twitter', $team_member);
                             $linkedin = get_field('member_linkedin', $team_member);
-                                if( $show_social && ($facebook || $twitter || $linkedin) ){ ?>
-                                <div class="social-nav">
-                                    <?php 
-                                    if( $facebook ){ 
-                                        ?><a href="<?php echo $facebook; ?>" target="_blank"><i aria-label="Facebook" class="fa fa-facebook-square" aria-hidden="true"></i></a><?php 
-                                    }
-                                    if( $twitter ){ 
-                                        ?><a href="<?php echo $twitter; ?>" target="_blank"><i aria-label="Twitter (X)" class="fa fa-twitter" aria-hidden="true"></i></a><?php 
-                                    }
-                                    if( $linkedin ){
-                                        ?><a href="<?php echo $linkedin; ?>" target="_blank"><i aria-label="LinkedIn" class="fa fa-linkedin-square" aria-hidden="true"></i></a><?php 
-                                    } 
-                                    ?>
-                                </div>
+                            $member_phone = get_field('member_phone', $our_member); 
+                            $member_email = get_field('member_email', $our_member); 
+                            if( $show_social && ($facebook || $twitter || $linkedin || $member_phonea || $member_email ) ){ ?>
+                            <div class="social-nav">
+                                <?php 
+                                if( !empty($facebook) ){ 
+                                    ?><a href="<?php echo $facebook; ?>" target="_blank"><i aria-label="Facebook" class="fa fa-facebook-square" aria-hidden="true"></i></a><?php 
+                                }
+                                if( !empty($twitter) ){ 
+                                    ?><a href="<?php echo $twitter; ?>" target="_blank"><i aria-label="Twitter (X)" class="fa fa-twitter" aria-hidden="true"></i></a><?php 
+                                }
+                                if( !empty($linkedin) ){
+                                    ?><a href="<?php echo $linkedin; ?>" target="_blank"><i aria-label="LinkedIn" class="fa fa-linkedin-square" aria-hidden="true"></i></a><?php 
+                                }
+                                if( !empty($member_phone) ){ 
+                                    ?><a href="tel:<?= $member_phone; ?>" target="_blank" title="<?= $member_phone; ?>"><i class="fa fa-phone" aria-hidden="true"></i></a><?php
+                                }
+                                if( !empty($member_email) ){
+                                    ?><a href="mailto:<?= $member_email; ?>" target="_blank" title="<?= $member_email; ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a><?php
+                                }
+                                ?>
+                            </div>
                             <?php } ?>
                         </div>
                     </div>
