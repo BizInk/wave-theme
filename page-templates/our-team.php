@@ -28,6 +28,7 @@ $show_company = get_field('show_company') ? true : false;
                     $member_image_hover = get_field('member_image_hover', $our_member);
                     $member_position = get_field('member_position', $our_member);
                     $member_company = get_field('member_company', $our_member); 
+                    
                     ?>
                     <div class="col-md-6 col-lg-4 team-member">
                         <div class="team-member-wrap">
@@ -60,7 +61,9 @@ $show_company = get_field('show_company') ? true : false;
                                 $facebook = get_field('member_facebook', $our_member);
                                 $twitter = get_field('member_twitter', $our_member);
                                 $linkedin = get_field('member_linkedin', $our_member);
-                                if( $show_social && ($facebook || $twitter || $linkedin) ){ ?>
+                                $member_phone = get_field('member_phone', $our_member); 
+                                $member_email = get_field('member_email', $our_member); 
+                                if( $show_social && ($facebook || $twitter || $linkedin || $member_phonea || $member_email) ){ ?>
                                     <div class="social-nav">
                                         <?php 
                                         if( $facebook ){ 
@@ -71,7 +74,13 @@ $show_company = get_field('show_company') ? true : false;
                                         }
                                         if( $linkedin ){
                                             ?><a href="<?php echo $linkedin; ?>" target="_blank"><i aria-label="LinkedIn" class="fa fa-linkedin-square" aria-hidden="true"></i></a><?php 
-                                        } 
+                                        }
+                                        if( !empty($member_phone) ){ 
+                                            ?><a href="tel:<?= $member_phone; ?>" target="_blank" title="<?= $member_phone; ?>"><i class="fa fa-phone" aria-hidden="true"></i></a><?php
+                                        }
+                                        if( !empty($member_email) ){
+                                            ?><a href="mailto:<?= $member_email; ?>" target="_blank" title="<?= $member_email; ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a><?php
+                                        }
                                         ?>
                                     </div>
                                 <?php } ?>
