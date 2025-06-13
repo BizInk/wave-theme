@@ -2,7 +2,7 @@
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Tested up to: 6.8.1
-Stable tag: 1.9.7
+Stable tag: 1.9.8
 Requires PHP: 7.4
 Requires at least: 6.0
 License: GNU General Public License v2 or later
