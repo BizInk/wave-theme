@@ -46,14 +46,14 @@ $show_company = get_field('show_company') ? true : false;
                             <?php } ?>
                             <div class="member-details">
                                 <?php if($enable_team_link){ ?>
-                                    <a href="<?= get_the_permalink($our_member); ?>" class="member-link">
+                                    <a href="<?php echo get_the_permalink($our_member); ?>" class="member-link">
                                 <?php } ?>
-                                <h4><?= $our_member->post_title; ?></h4>
+                                <h4><?php echo $our_member->post_title; ?></h4>
                                 <?php if( !empty($member_position) && $show_position ){ ?>
-                                    <h6><?= $member_position; ?></h6>
+                                    <h6><?php echo $member_position; ?></h6>
                                 <?php }
                                 if( !empty($member_company) && $show_company ){ ?>
-                                    <p><?= $member_company; ?></p>
+                                    <p><?php echo $member_company; ?></p>
                                 <?php }
                                 if($enable_team_link){ ?>
                                     </a>
@@ -63,7 +63,7 @@ $show_company = get_field('show_company') ? true : false;
                                 $linkedin = get_field('member_linkedin', $our_member);
                                 $member_phone = get_field('member_phone', $our_member); 
                                 $member_email = get_field('member_email', $our_member); 
-                                if( $show_social && ($facebook || $twitter || $linkedin || $member_phonea || $member_email) ){ ?>
+                                if( $show_social && ($facebook || $twitter || $linkedin || $member_phone || $member_email) ){ ?>
                                     <div class="social-nav">
                                         <?php 
                                         if( !empty($facebook) ){ 
@@ -76,10 +76,10 @@ $show_company = get_field('show_company') ? true : false;
                                             ?><a href="<?php echo $linkedin; ?>" target="_blank"><i aria-label="LinkedIn" class="fa fa-linkedin-square" aria-hidden="true"></i></a><?php 
                                         }
                                         if( !empty($member_phone) ){ 
-                                            ?><a href="tel:<?= $member_phone; ?>" target="_blank" title="<?= $member_phone; ?>"><i class="fa fa-phone" aria-hidden="true"></i></a><?php
+                                            ?><a href="tel:<?php echo $member_phone; ?>" target="_blank" title="<?php echo $member_phone; ?>"><i aria-label="Phone" class="fa fa-phone" aria-hidden="true"></i></a><?php
                                         }
                                         if( !empty($member_email) ){
-                                            ?><a href="mailto:<?= $member_email; ?>" target="_blank" title="<?= $member_email; ?>"><i class="fa fa-envelope" aria-hidden="true"></i></a><?php
+                                            ?><a href="mailto:<?php echo $member_email; ?>" target="_blank" title="<?php echo $member_email; ?>"><i aria-label="Email" class="fa fa-envelope" aria-hidden="true"></i></a><?php
                                         }
                                         ?>
                                     </div>
