@@ -20516,24 +20516,7 @@ footer .shape-color {
   ::-webkit-input-placeholder {
   color: #707070;
 }
-.gform_wrapper.gravity-theme
-  form
-  .gform_body
-  .gform_fields
-  .gfield
-  .ginput_container
-  :-moz-placeholder {
-  /* Firefox 18- */
-}
-.gform_wrapper.gravity-theme
-  form
-  .gform_body
-  .gform_fields
-  .gfield
-  .ginput_container
-  ::-moz-placeholder {
-  /* Firefox 19+ */
-}
+
 .gform_wrapper.gravity-theme
   form
   .gform_body
@@ -20575,6 +20558,24 @@ footer .shape-color {
     font-size: 1.6rem;
     min-width: auto;
   }
+}
+
+.gform_wrapper.gravity-theme .gfield .gfield--type-time .ginput_container_time input{
+  width: 30px;
+  height: 50px;
+  padding: 10px;
+}
+.gform_wrapper.gravity-theme .hour_minute_colon{
+  line-height: 2.5;
+  padding: 0 10px;
+}
+.gform_wrapper.gravity-theme .gfield .gfield--type-time .gfield_time_ampm select{
+  border: 1px solid #c3cad9;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.8rem;
+    display: block;
+    border-radius: 8px;
 }
 
 .gform_confirmation_message {
