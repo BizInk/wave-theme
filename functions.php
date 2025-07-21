@@ -155,8 +155,8 @@ function my_acf_json_load_point( $paths ) {
 }
 
 // Adding option to select gravity form in ACF
-add_filter( 'acf/load_field/name=gravity_forms', 'luca_acf_populate_gf_forms_ids' );
-function luca_acf_populate_gf_forms_ids( $field ) {
+add_filter( 'acf/load_field/name=gravity_forms', 'wave_acf_populate_gf_forms_ids' );
+function wave_acf_populate_gf_forms_ids( $field ) {
 	if ( class_exists( 'GFFormsModel' ) ) {
 		$choices = [];
 
