@@ -501,6 +501,46 @@
             "ui_on_text": "On",
             "ui_off_text": "Off",
             "ui": 1
+        },
+        {
+            "key": "field_655f51be2548d",
+            "label": "Website Search",
+            "name": "website_search",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "On",
+            "ui_off_text": "Off",
+            "ui": 1
+        },
+        {
+            "key": "field_644fa1be2548d",
+            "label": "Recommend Posts",
+            "name": "recommend_posts",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "On",
+            "ui_off_text": "Off",
+            "ui": 1
         }
     ],
     "location": [

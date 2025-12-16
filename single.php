@@ -38,7 +38,14 @@ get_template_part('global-templates/inner-banner');
 			</div>
 		</div><!-- .row -->
 
-		<?php 
+		<?php
+		if(function_exists('get_field')){
+			$recommend_posts = get_field('recommend_posts', 'option');
+		}
+		else {
+			$recommend_posts = true;
+		}
+		if( $recommend_posts ){
 		$categories = wp_get_post_categories( get_the_id() );
 		$related_args = array(
 			'post_status' => 'publish',
@@ -100,7 +107,9 @@ get_template_part('global-templates/inner-banner');
 					</div>				
 				</div>
 			</section>
-		<?php } ?>
+		<?php } 
+		}
+		?>
 	</div><!-- #content -->
 
 </div><!-- #single-wrapper -->

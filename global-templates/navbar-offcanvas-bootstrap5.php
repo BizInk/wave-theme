@@ -79,7 +79,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 
 				<a href="<?= $header_client_button2['url']; ?>" class="btn" target="<?= $header_client_button2['target']; ?>"><?= $header_client_button2['title']; ?></a>
-			<?php } ?>
+			<?php }
+			
+			?>
 		</div><!-- .offcanvas -->
 
 	</div><!-- .container(-fluid) -->

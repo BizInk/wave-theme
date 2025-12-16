@@ -68,8 +68,16 @@ $google_my_business = get_field('google_my_business', 'options');
 								'theme_location' => 'client-area', 
 							) ); ?> 
 						</div>
-						<?php endif; ?>
-					</div>
+						<?php endif; 
+						$enable_search = get_field('website_search', 'option');
+							if ($enable_search) {
+							?>
+								<div class="header-search-form">
+									<?php get_search_form(); ?>
+								</div>
+							<?php }
+							?>
+						</div>
 					
 					<div class="header-contact">
 						<ul>

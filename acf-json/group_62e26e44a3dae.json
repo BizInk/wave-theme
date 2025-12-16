@@ -84,10 +84,7 @@
                             },
                             "choices": {
                                 "col-md-6": "Two Columns",
-                                "col-md-6 col-lg-4": "Three Columns",
-                                "col-md-6 col-lg-3": "Four Columns",
-                                "col-md-6 col-lg-2": "Five Columns",
-                                "col-md-6 col-lg-1": "Six Columns"
+                                "col-md-6 col-lg-4": "Three Columns"
                             },
                             "default_value": "col-md-6 col-lg-4",
                             "return_format": "value",
@@ -112,7 +109,10 @@
                             },
                             "default_value": "#272343",
                             "enable_opacity": 0,
-                            "return_format": "string"
+                            "return_format": "string",
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true
                         },
                         {
                             "key": "field_63be8ea4067da",
@@ -1836,7 +1836,7 @@
                         },
                         {
                             "key": "field_636ce491105c8",
-                            "label": "Background Image\/Color",
+                            "label": "Background Type",
                             "name": "background_imagecolor",
                             "aria-label": "",
                             "type": "radio",
@@ -1850,12 +1850,14 @@
                             },
                             "choices": {
                                 "Image": "Image",
-                                "Color": "Color"
+                                "Color": "Color",
+                                "Video": "Video"
                             },
-                            "default_value": "Image",
+                            "default_value": "Color",
                             "return_format": "value",
                             "allow_null": 0,
                             "other_choice": 0,
+                            "allow_in_bindings": 1,
                             "layout": "horizontal",
                             "save_other_choice": 0
                         },
@@ -1916,7 +1918,102 @@
                             },
                             "default_value": "#d1dbe3",
                             "enable_opacity": 0,
-                            "return_format": "string"
+                            "return_format": "string",
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true
+                        },
+                        {
+                            "key": "field_693fae679b5eb",
+                            "label": "Video Type",
+                            "name": "video_type",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_636ce491105c8",
+                                        "operator": "==",
+                                        "value": "Video"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "external": "External Url",
+                                "upload": "Website Upload"
+                            },
+                            "default_value": "upload",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_693faeb59b5ec",
+                            "label": "External Url",
+                            "name": "external_url",
+                            "aria-label": "",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_693fae679b5eb",
+                                        "operator": "==",
+                                        "value": "external"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": "",
+                            "allow_in_bindings": 0
+                        },
+                        {
+                            "key": "field_693faf8d9b5ed",
+                            "label": "Video File",
+                            "name": "video_file",
+                            "aria-label": "",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_693fae679b5eb",
+                                        "operator": "==",
+                                        "value": "upload"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": 50,
+                            "mime_types": "mp4,ogg,webm",
+                            "allow_in_bindings": 0
                         },
                         {
                             "key": "field_65572da340f8f",
@@ -1954,7 +2051,10 @@
                             },
                             "default_value": "#ffd803",
                             "enable_opacity": 0,
-                            "return_format": "string"
+                            "return_format": "string",
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true
                         }
                     ],
                     "min": "",
@@ -2213,7 +2313,10 @@
                                     "default_value": "#d1dbe3",
                                     "enable_opacity": 0,
                                     "return_format": "string",
-                                    "parent_repeater": "field_646b35f5052af"
+                                    "parent_repeater": "field_646b35f5052af",
+                                    "custom_palette_source": "",
+                                    "palette_colors": "",
+                                    "show_color_wheel": true
                                 },
                                 {
                                     "key": "field_646b35ac052ae",
@@ -2232,7 +2335,10 @@
                                     "default_value": "#ffd803",
                                     "enable_opacity": 0,
                                     "return_format": "string",
-                                    "parent_repeater": "field_646b35f5052af"
+                                    "parent_repeater": "field_646b35f5052af",
+                                    "custom_palette_source": "",
+                                    "palette_colors": "",
+                                    "show_color_wheel": true
                                 }
                             ]
                         }
@@ -3254,7 +3360,10 @@
                             },
                             "default_value": "#f9f9f9",
                             "enable_opacity": 0,
-                            "return_format": "string"
+                            "return_format": "string",
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true
                         },
                         {
                             "key": "field_63be9844da27b",
@@ -3376,7 +3485,10 @@
                             },
                             "default_value": "#f9f9f9",
                             "enable_opacity": 0,
-                            "return_format": "string"
+                            "return_format": "string",
+                            "custom_palette_source": "",
+                            "palette_colors": "",
+                            "show_color_wheel": true
                         },
                         {
                             "key": "field_63d8eff7392df",
@@ -3798,5 +3910,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747619985
+    "display_title": "",
+    "modified": 1765783533
 }
