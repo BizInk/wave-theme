@@ -71,7 +71,7 @@ header {
   @media (max-width: 991px) {
     .navbar-collapse{
       background-color:$primary;
-      .btn{
+      .btn,input[type="button"],input[type="reset"],input[type="submit"]{
         background-color:$yellow;
         color:$primary;
         border-color:$primary;

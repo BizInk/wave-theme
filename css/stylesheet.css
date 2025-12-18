@@ -70,7 +70,7 @@ h2 {
 h6 {
   color: #8224e3; }
 
-.btn, .btn-secondary, button {
+.btn, .btn-secondary, button ,input[type="button"],input[type="reset"],input[type="submit"]{
   background-color: #8224e3;
   color: #1e73be;
   border-color: #8224e3; }

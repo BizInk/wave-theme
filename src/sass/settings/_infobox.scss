@@ -34,7 +34,7 @@
 .checklist-infobox{
   .info-box{
     &:hover{
-    .btn{
+    .btn,input[type="button"],input[type="reset"],input[type="submit"]{
         background-color: $primary;
         color:$white;
         border-color:$primary;

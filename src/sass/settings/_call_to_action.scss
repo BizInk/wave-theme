@@ -4,7 +4,7 @@
              color: rgba($white, 0.8);
         }
     }
-     .btn{
+     .btn,input[type="button"],input[type="reset"],input[type="submit"]{
         &:hover{
             background-color:$white;
             color:$primary;

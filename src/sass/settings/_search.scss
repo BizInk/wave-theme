@@ -35,7 +35,7 @@
     }
     article{        
         border-bottom: 1px solid $dark;
-        .btn{           
+        .btn,input[type="button"],input[type="reset"],input[type="submit"]{           
             background-color:$dark;
             color:$white;
             border:1px solid $dark;           
