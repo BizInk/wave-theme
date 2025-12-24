@@ -65,6 +65,9 @@ if( have_rows('page_flexible_content') ):
       case 'accordions':
         get_template_part('page-templates/template-parts/accordions');
         break;
+      case 'realated-posts':
+        get_template_part('page-templates/template-parts/related-posts');
+        break;
       case 'latest-posts':
         get_template_part('page-templates/template-parts/latest-posts');
         break;
