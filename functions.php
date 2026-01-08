@@ -148,6 +148,7 @@ function my_acf_json_load_point( $paths ) {
 
 // Adding option to select gravity form in ACF
 add_filter( 'acf/load_field/name=gravity_forms', 'wave_acf_populate_gf_forms_ids' );
+add_filter( 'acf/load_field/name=newsletter_gravity_forms', 'wave_acf_populate_gf_forms_ids' );
 function wave_acf_populate_gf_forms_ids( $field ) {
 	if ( class_exists( 'GFFormsModel' ) ) {
 		$choices = [];
@@ -273,6 +274,11 @@ function fetch_blog_posts() {
 
 die();
 }
+
+function copyright_year_shortcode() {
+    return date('Y');
+}
+add_shortcode('copyright_year', 'copyright_year_shortcode');
 
 // Theme Updater
 require 'plugin-update-checker/plugin-update-checker.php';

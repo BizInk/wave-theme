@@ -317,6 +317,68 @@
                                     "parent_repeater": "field_62e2850be8f2d"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_695f1bdb2e3f6",
+                            "label": "Background",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0,
+                            "selected": 0
+                        },
+                        {
+                            "key": "field_695f1bef2e3f7",
+                            "label": "Show Wave",
+                            "name": "show_wave",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_695f1cc32e3f9",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": 0,
+                            "return_format": "string",
+                            "allow_in_bindings": 0,
+                            "show_custom_palette": 0,
+                            "show_color_wheel": 1,
+                            "custom_palette_source": "",
+                            "palette_colors": ""
                         }
                     ],
                     "min": "",
@@ -711,7 +773,10 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "choices": [],
+                                    "choices": {
+                                        "1": "Contact Us",
+                                        "2": "Newsletter"
+                                    },
                                     "default_value": false,
                                     "return_format": "value",
                                     "multiple": 0,
@@ -1639,7 +1704,10 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": [],
+                            "choices": {
+                                "1": "Contact Us",
+                                "2": "Newsletter"
+                            },
                             "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
@@ -3711,6 +3779,27 @@
                             "show_color_wheel": true
                         },
                         {
+                            "key": "field_695f1b9c2e3f5",
+                            "label": "Show Wave",
+                            "name": "show_wave",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "allow_in_bindings": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
                             "key": "field_63d8eff7392df",
                             "label": "Title",
                             "name": "newsletter_title",
@@ -3764,7 +3853,10 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": [],
+                            "choices": {
+                                "1": "Contact Us",
+                                "2": "Newsletter"
+                            },
                             "default_value": false,
                             "return_format": "value",
                             "multiple": 0,
@@ -4131,5 +4223,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1766563576
+    "modified": 1767842472
 }
