@@ -94,27 +94,6 @@
                             "save_other_choice": 0
                         },
                         {
-                            "key": "field_63d8e1c7b9cbe",
-                            "label": "Shape Color",
-                            "name": "info_box_shape_color",
-                            "aria-label": "",
-                            "type": "color_picker",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "#272343",
-                            "enable_opacity": 0,
-                            "return_format": "string",
-                            "custom_palette_source": "",
-                            "palette_colors": "",
-                            "show_color_wheel": true
-                        },
-                        {
                             "key": "field_63be8ea4067da",
                             "label": "Title & Content",
                             "name": "",
@@ -358,9 +337,9 @@
                             "ui_off_text": ""
                         },
                         {
-                            "key": "field_695f1cc32e3f9",
-                            "label": "Background Color",
-                            "name": "background_color",
+                            "key": "field_63d8e1c7b9cbe",
+                            "label": "Shape Color",
+                            "name": "info_box_shape_color",
                             "aria-label": "",
                             "type": "color_picker",
                             "instructions": "",
@@ -371,14 +350,12 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
+                            "default_value": "#272343",
                             "enable_opacity": 0,
                             "return_format": "string",
-                            "allow_in_bindings": 0,
-                            "show_custom_palette": 0,
-                            "show_color_wheel": 1,
                             "custom_palette_source": "",
-                            "palette_colors": ""
+                            "palette_colors": "",
+                            "show_color_wheel": true
                         }
                     ],
                     "min": "",
@@ -4223,5 +4200,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1767842472
+    "modified": 1767849439
 }
