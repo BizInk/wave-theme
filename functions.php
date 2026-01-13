@@ -279,6 +279,7 @@ function copyright_year_shortcode() {
     return date('Y');
 }
 add_shortcode('copyright_year', 'copyright_year_shortcode');
+add_shortcode('copyright-year', 'copyright_year_shortcode');
 
 // Theme Updater
 require 'plugin-update-checker/plugin-update-checker.php';
