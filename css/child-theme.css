@@ -21197,6 +21197,19 @@ section.infobox-section.resource-infobox {
   display: none;
 }
 
+.bg-video{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.call-to-action-section-video-bg{
+
+}
+
 .book-appointment-section {
   padding: 0;
   margin: 70px 0 50px;

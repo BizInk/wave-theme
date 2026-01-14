@@ -193,11 +193,7 @@ function br_cb(){
     return '<br>';
 }
 
-// Shortcode for current year
-add_shortcode('current-year', 'current_year_cb');
-function current_year_cb(){
-    return date('Y');
-}
+
 
 // Ajax callback function to fetch and load more posts on blog page
 add_action("wp_ajax_fetch_blog_posts", "fetch_blog_posts");
@@ -275,11 +271,13 @@ function fetch_blog_posts() {
 die();
 }
 
+// Shortcode for current year
 function copyright_year_shortcode() {
     return date('Y');
 }
 add_shortcode('copyright_year', 'copyright_year_shortcode');
 add_shortcode('copyright-year', 'copyright_year_shortcode');
+add_shortcode('current-year', 'copyright_year_shortcode');
 
 // Theme Updater
 require 'plugin-update-checker/plugin-update-checker.php';

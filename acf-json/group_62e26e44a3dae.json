@@ -2010,9 +2010,9 @@
                             "label": "External Url",
                             "name": "external_url",
                             "aria-label": "",
-                            "type": "oembed",
-                            "instructions": "",
-                            "required": 1,
+                            "type": "url",
+                            "instructions": "Url to a mp4 video file",
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -2027,9 +2027,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "width": "",
-                            "height": "",
-                            "allow_in_bindings": 0
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": ""
                         },
                         {
                             "key": "field_693faf8d9b5ed",
@@ -2056,7 +2056,7 @@
                             "return_format": "array",
                             "library": "all",
                             "min_size": "",
-                            "max_size": 50,
+                            "max_size": 500,
                             "mime_types": "mp4,ogg,webm",
                             "allow_in_bindings": 0
                         },
@@ -4200,5 +4200,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1767849439
+    "modified": 1768370740
 }
