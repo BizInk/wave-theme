@@ -1,37 +1,5 @@
-<?php if( is_page() ){
-
-	$inner_banner_shape_1_color = get_field('inner_banner_shape_1_color');
-	$inner_banner_shape_2_color = get_field('inner_banner_shape_2_color');
-	$inner_banner_title = get_field('inner_banner_title');
-	$inner_banner_content = get_field('inner_banner_content'); 
-    $inner_banner_image = get_field('inner_banner_image') ? get_field('inner_banner_image') : get_field('inner_banner_image', 'option');
-    if(empty($inner_banner_title)){
-        $inner_banner_title = get_the_title();
-        // No title set, use the default colors as well
-        $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
-	    $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-    }
-}else if( is_singular('team-member') ){
-
-	$inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
-	$inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-	$inner_banner_title = get_the_title();
-	$inner_banner_content = '<p>'.get_field('member_position').'</p>';
-    $inner_banner_image = get_field('inner_banner_image', 'option');
-}else if( is_single() ){
-
-    global $post;
-    $author_id=$post->post_author;
-
-    $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
-    $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-    $inner_banner_title = get_the_title();
-    $inner_banner_content = '<p class="post-meta">
-            <span>'. get_the_author_meta('display_name', $author_id) .'</span> | <span>'. get_the_date('d M, Y') .'</span>
-        </p>';
-    $inner_banner_image = get_field('inner_banner_image', 'option');
-}
-else if( is_home() ){
+<?php 
+if( is_home() ){
 
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
@@ -48,6 +16,41 @@ else if( is_home() ){
 
     $inner_banner_image = get_field('inner_banner_image', 'option');
 }
+else if( is_page() ){
+
+	$inner_banner_shape_1_color = get_field('inner_banner_shape_1_color');
+	$inner_banner_shape_2_color = get_field('inner_banner_shape_2_color');
+	$inner_banner_title = get_field('inner_banner_title');
+	$inner_banner_content = get_field('inner_banner_content'); 
+    $inner_banner_image = get_field('inner_banner_image') ? get_field('inner_banner_image') : get_field('inner_banner_image', 'option');
+    if(empty($inner_banner_title)){
+        $inner_banner_title = get_the_title();
+        // No title set, use the default colors as well
+        $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
+	    $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
+    }
+}
+else if( is_singular('team-member') ){
+
+	$inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
+	$inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
+	$inner_banner_title = get_the_title();
+	$inner_banner_content = '<p>'.get_field('member_position').'</p>';
+    $inner_banner_image = get_field('inner_banner_image', 'option');
+}
+else if( is_single() ){
+
+    global $post;
+    $author_id=$post->post_author;
+
+    $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
+    $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
+    $inner_banner_title = get_the_title();
+    $inner_banner_content = '<p class="post-meta">
+            <span>'. get_the_author_meta('display_name', $author_id) .'</span> | <span>'. get_the_date('d M, Y') .'</span>
+        </p>';
+    $inner_banner_image = get_field('inner_banner_image', 'option');
+}
 else if( is_archive() ){
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
@@ -57,7 +60,8 @@ else if( is_archive() ){
     }
     $inner_banner_content = '';
     $inner_banner_image = get_field('inner_banner_image', 'option');
-}else if( is_404() ){
+}
+else if( is_404() ){
 
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
@@ -67,7 +71,8 @@ else if( is_archive() ){
     if(empty($inner_banner_title)){
         $inner_banner_title = __('Error 404','wave-theme');
     }
-}else if( is_search() ){
+}
+else if( is_search() ){
     $search_term = $_GET['s'];
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
