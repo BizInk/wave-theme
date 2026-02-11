@@ -220,7 +220,7 @@ function wave_custom_post_type() {
 	/**
 	 * Post Type: Resources.
 	 */
-	$enable_resources = get_field('enable_resources', 'option') ?? true;
+	$enable_resources = get_field('enable_resources', 'option') ? true : false;
 	$labels = [
 		"name" => esc_html__( "Resources", "wave-theme" ),
 		"singular_name" => esc_html__( "Resource", "wave-theme" ),
@@ -259,28 +259,17 @@ function wave_custom_post_type() {
 		"label" => esc_html__( "Resources", "wave-theme" ),
 		"labels" => $labels,
 		"description" => "",
-		"public" => $enable_resources,
-		"publicly_queryable" => $enable_resources,
+		"public" => true,
+		"publicly_queryable" => true,
 		"show_ui" => $enable_resources,
 		"show_in_rest" => $enable_resources,
-		"rest_base" => "",
-		"rest_controller_class" => "WP_REST_Posts_Controller",
-		"rest_namespace" => "wp/v2",
 		"has_archive" => false,
 		"show_in_menu" => $enable_resources,
 		"show_in_nav_menus" => $enable_resources,
-		"delete_with_user" => false,
-		"exclude_from_search" => false,
-		"capability_type" => "post",
-		"map_meta_cap" => true,
-		"hierarchical" => false,
-		"can_export" => $enable_resources,
-		"rewrite" => [ "slug" => "resource", "with_front" => $enable_resources ],
-		"query_var" => $enable_resources,
+		"capability_type" => "page",
 		"menu_icon" => "dashicons-book",
 		"supports" => [ "title", "editor", "thumbnail" ],
 		"taxonomies" => [ "content-topic", "content-type" ],
-		"show_in_graphql" => false,
 	];
 
 	register_post_type( "resource", $args );
@@ -343,7 +332,7 @@ function wave_custom_post_type() {
 	/**
 	 * Post Type: Testimonials.
 	 */
-	$enable_testimonials = get_field('enable_testimonials', 'option') ?? true;
+	$enable_testimonials = get_field('enable_testimonials', 'option') ? true : false;
 	$labels = [
 		"name" => esc_html__( "Testimonials", "wave-theme" ),
 		"singular_name" => esc_html__( "Testimonial", "wave-theme" ),
@@ -360,20 +349,12 @@ function wave_custom_post_type() {
 		"publicly_queryable" => $enable_testimonials,
 		"show_ui" => $enable_testimonials,
 		"show_in_rest" => $enable_testimonials,
-		"rest_base" => "",
-		"rest_controller_class" => "WP_REST_Posts_Controller",
-		"rest_namespace" => "wp/v2",
 		"has_archive" => false,
 		"show_in_menu" => $enable_testimonials,
 		"show_in_nav_menus" => $enable_testimonials,
-		"delete_with_user" => false,
-		"exclude_from_search" => false,
-		"capability_type" => "post",
+		"capability_type" => "page",
 		"map_meta_cap" => true,
-		"hierarchical" => false,
 		"can_export" => $enable_testimonials,
-		"rewrite" => [ "slug" => "testimonial", "with_front" => $enable_testimonials ],
-		"query_var" => $enable_testimonials,
 		"menu_icon" => "dashicons-testimonial",
 		"supports" => [ "title", "editor", "thumbnail", "excerpt", "custom-fields", "author" ],
 		"show_in_graphql" => false,
@@ -400,15 +381,12 @@ function wave_custom_post_type() {
 		"publicly_queryable" => $enable_teammembers,
 		"show_ui" => $enable_teammembers,
 		"show_in_rest" => $enable_teammembers,
-		"rest_base" => "",
-		"rest_controller_class" => "WP_REST_Posts_Controller",
-		"rest_namespace" => "wp/v2",
 		"has_archive" => false,
 		"show_in_menu" => $enable_teammembers,
 		"show_in_nav_menus" => $enable_teammembers,
 		"delete_with_user" => false,
 		"exclude_from_search" => false,
-		"capability_type" => "post",
+		"capability_type" => "page",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
 		"can_export" => $enable_teammembers,
@@ -416,7 +394,6 @@ function wave_custom_post_type() {
 		"query_var" => true,
 		"menu_icon" => "dashicons-groups",
 		"supports" => [ "title", "editor", "thumbnail", "excerpt", "custom-fields" ],
-		"show_in_graphql" => false,
 	];
 
 	register_post_type( "team-member", $args );
@@ -593,17 +570,12 @@ function wave_custom_post_type() {
 		"publicly_queryable" => $enable_checklists,
 		"show_ui" => $enable_checklists,
 		"show_in_rest" => $enable_checklists,
-		"rest_base" => "",
-		"rest_controller_class" => "WP_REST_Posts_Controller",
-		"rest_namespace" => "wp/v2",
 		"has_archive" => false,
 		"show_in_menu" => $enable_checklists,
 		"show_in_nav_menus" => $enable_checklists,
 		"delete_with_user" => false,
 		"exclude_from_search" => false,
-		"capability_type" => "post",
-		"map_meta_cap" => true,
-		"hierarchical" => false,
+		"capability_type" => "page",
 		"can_export" => $enable_checklists,
 		"rewrite" => [ "slug" => "checklist", "with_front" => $enable_checklists ],
 		"query_var" => $enable_checklists,

@@ -30,15 +30,25 @@
             <span>'. get_the_author_meta('display_name', $author_id) .'</span> | <span>'. get_the_date('d M, Y') .'</span>
         </p>';
     $inner_banner_image = get_field('inner_banner_image', 'option');
-}else if( is_home() ){
+}
+else if( is_home() ){
 
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-    $inner_banner_title = __('Blog','wave-theme');
-    $inner_banner_content = get_field('inner_banner_content', 'option');
-    $inner_banner_image = get_field('inner_banner_image', 'option');
-}else if( is_archive() ){
 
+    $inner_banner_title = get_field('inner_banner_title');
+	$inner_banner_content = get_field('inner_banner_content'); 
+
+    if(empty($inner_banner_title)){
+        $inner_banner_title = __('Blog','wave-theme');
+    }
+    if(empty($inner_banner_content)){
+        $inner_banner_content = get_field('inner_banner_content', 'option');
+    }
+
+    $inner_banner_image = get_field('inner_banner_image', 'option');
+}
+else if( is_archive() ){
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
     $inner_banner_title = single_cat_title( '', false );
@@ -58,12 +68,12 @@
         $inner_banner_title = __('Error 404','wave-theme');
     }
 }else if( is_search() ){
-
     $search_term = $_GET['s'];
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
     $inner_banner_title = !empty($search_term) ? 'Search results for "' . $search_term .'"' : 'Search results'; 
     $inner_banner_image = get_field('inner_banner_image', 'option');
+    $inner_banner_content = '';
 }
 
 if( empty($inner_banner_shape_1_color) || !$inner_banner_shape_1_color ){
