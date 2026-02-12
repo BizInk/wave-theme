@@ -1,19 +1,37 @@
 <?php 
 if( is_home() ){
-
+    $blogPage = get_option( 'page_for_posts' );
     $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
     $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-
-    $inner_banner_title = get_field('inner_banner_title');
-	$inner_banner_content = get_field('inner_banner_content'); 
-
+    if(!empty($blogPage)){
+        $inner_banner_title = get_field('inner_banner_title',$blogPage);
+	    $inner_banner_content = get_field('inner_banner_content',$blogPage);
+        $inner_banner_image = get_field('inner_banner_image', $blogPage);
+    }
+    else{
+        $inner_banner_title = get_field('inner_banner_title');
+	    $inner_banner_content = get_field('inner_banner_content');
+        $inner_banner_image = get_field('inner_banner_image');
+    }
+    
     if(empty($inner_banner_title)){
         $inner_banner_title = __('Blog','wave-theme');
     }
     if(empty($inner_banner_content)){
         $inner_banner_content = get_field('inner_banner_content', 'option');
     }
-
+    if(empty($inner_banner_image)){
+        $inner_banner_image = get_field('inner_banner_image', 'option');
+    }
+}
+else if( is_archive() ){
+    $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
+    $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
+    $inner_banner_title = single_cat_title( '', false );
+    if(empty($inner_banner_title) && is_post_type_archive()){
+        $inner_banner_title = post_type_archive_title( '', false );
+    }
+    $inner_banner_content = '';
     $inner_banner_image = get_field('inner_banner_image', 'option');
 }
 else if( is_page() ){
@@ -49,16 +67,6 @@ else if( is_single() ){
     $inner_banner_content = '<p class="post-meta">
             <span>'. get_the_author_meta('display_name', $author_id) .'</span> | <span>'. get_the_date('d M, Y') .'</span>
         </p>';
-    $inner_banner_image = get_field('inner_banner_image', 'option');
-}
-else if( is_archive() ){
-    $inner_banner_shape_1_color = get_field('inner_banner_shape_1_color', 'option');
-    $inner_banner_shape_2_color = get_field('inner_banner_shape_2_color', 'option');
-    $inner_banner_title = single_cat_title( '', false );
-    if(empty($inner_banner_title) && is_post_type_archive()){
-        $inner_banner_title = post_type_archive_title( '', false );
-    }
-    $inner_banner_content = '';
     $inner_banner_image = get_field('inner_banner_image', 'option');
 }
 else if( is_404() ){
