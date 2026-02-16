@@ -2,7 +2,7 @@
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
 Tested up to: 6.9.1
-Stable tag: 2.2.7
+Stable tag: 2.2.8
 Requires PHP: 7.4
 Requires at least: 6.0
 License: GNU General Public License v2 or later
@@ -14,6 +14,9 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 2.2.8 =
+* Footer Cols Update
 
 = 2.2.7 =
 * Blog Banner Update

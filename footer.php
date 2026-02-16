@@ -60,7 +60,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 			</div>
 		</div>
 		<div class="row footer-wrap">
-			<div class="col">
+			<div class="col col-md-9">
 				<div class="row">
 					<div class="col">
 						<?php if ($column_1_title): echo '<h5>' . $column_1_title . '</h5>';
@@ -164,7 +164,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 						$newsletter_content = get_field('newsletter_content', 'options');
 						$newsletter_gravity_forms = get_field('newsletter_gravity_forms', 'options');
 					?>
-						<div class="col-4">
+						<div class="col col-4">
 							<div class="full-width-wysiwyg text-left">
 								<div class="editor-design">
 
@@ -187,7 +187,7 @@ echo get_field('custom_embed_code_after_body', 'options');
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col col-md-3">
 				<?php
 				if ($column_4_title): echo '<h5>' . $column_4_title . '</h5>';
 				endif;
