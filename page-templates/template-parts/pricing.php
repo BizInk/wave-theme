@@ -21,10 +21,8 @@ if( $columns_number == 4 ){
 }
 $currency_symbol_global = get_field('currency_symbol', 'option') ?? '$';
 $currency_symbol = get_sub_field('currency_symbol') ?? $currency_symbol_global;
-?>
 
-<?php get_template_part('global-templates/inner-banner'); ?>
-
+get_template_part('global-templates/inner-banner'); ?>
 
 <section class="pricing-section<?php echo $general_class; ?>">
     <div class="full-width-wysiwyg text-center">

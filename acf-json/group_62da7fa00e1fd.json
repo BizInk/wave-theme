@@ -17,7 +17,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_62da7fea00916",
@@ -59,7 +60,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_62ed01c37e22d",
@@ -77,7 +79,10 @@
             },
             "default_value": "",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "string",
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_62ed01e07e22e",
@@ -95,7 +100,10 @@
             },
             "default_value": "",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "string",
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_62ed01e97e22f",
@@ -113,7 +121,10 @@
             },
             "default_value": "",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "string",
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_62ed01ff7e230",
@@ -131,7 +142,10 @@
             },
             "default_value": "",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "string",
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_62ed020f7e231",
@@ -149,7 +163,10 @@
             },
             "default_value": "",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "string",
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_62ed02177e232",
@@ -167,7 +184,10 @@
             },
             "default_value": "",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "string",
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_62ed0823ea9ad",
@@ -185,7 +205,10 @@
             },
             "default_value": "",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "string",
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_647fd7b7d85c1",
@@ -203,7 +226,31 @@
             },
             "default_value": "#fefefe",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "string",
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
+        },
+        {
+            "key": "field_69b0c88d2c00c",
+            "label": "Disable Wave",
+            "name": "disable_wave",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "This is a global disable for the wave effect, other wave disable options will have no effect when this is enabled.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         },
         {
             "key": "field_62da85b882311",
@@ -284,7 +331,7 @@
             "rows": "",
             "placeholder": "",
             "new_lines": ""
-        },        
+        },
         {
             "key": "field_655f50c535485",
             "label": "Enable Features",
@@ -300,7 +347,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_655f50e132481",
@@ -346,26 +394,6 @@
             "key": "field_655f510c35487",
             "label": "Packages",
             "name": "enable_packages",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 1,
-            "ui_on_text": "On",
-            "ui_off_text": "Off",
-            "ui": 1
-        },
-        {
-            "key": "field_655f513035488",
-            "label": "Testimonials",
-            "name": "enable_testimonials",
             "aria-label": "",
             "type": "true_false",
             "instructions": "",
@@ -501,46 +529,6 @@
             "ui_on_text": "On",
             "ui_off_text": "Off",
             "ui": 1
-        },
-        {
-            "key": "field_655f51be2548d",
-            "label": "Website Search",
-            "name": "website_search",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 1,
-            "ui_on_text": "On",
-            "ui_off_text": "Off",
-            "ui": 1
-        },
-        {
-            "key": "field_644fa1be2548d",
-            "label": "Recommend Posts",
-            "name": "recommend_posts",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 1,
-            "ui_on_text": "On",
-            "ui_off_text": "Off",
-            "ui": 1
         }
     ],
     "location": [
@@ -561,5 +549,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700460652
+    "display_title": "",
+    "modified": 1773195176
 }

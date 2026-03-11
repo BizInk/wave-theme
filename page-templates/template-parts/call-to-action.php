@@ -21,6 +21,7 @@ $call_to_action_title = get_sub_field('call_to_action_title');
 $call_to_action_description = get_sub_field('call_to_action_description');
 $cta_wave_color = get_sub_field('cta_wave_color');
 $show_wave = get_sub_field('show_wave');
+$global_disable_wave = get_field('disable_wave','option');
 
 $video_type = get_sub_field('video_type');
 $external_url = get_sub_field('external_url');

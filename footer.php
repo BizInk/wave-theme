@@ -36,14 +36,21 @@ $threads = get_field('threads', 'options');
 $copyright_information = get_field('copyright_information', 'options'); ?>
 <?php
 echo get_field('custom_embed_code_after_body', 'options');
+$global_disable_wave = get_field('disable_wave','option');
 ?>
 <footer>
+	<?php 
+	if($global_disable_wave == false):
+	?>
 	<svg xmlns="http://www.w3.org/2000/svg" width="2000" viewBox="0 0 1920 523.414" class="footer-shape-blue">
 		<path data-name="Path 152" d="M0-24.427s348.259,76.692,963.854,0,956.146,0,956.146,0V464.9H0Z" transform="translate(0 58.512)" fill="<?php echo $footer_shape_color_1; ?>" />
 	</svg>
 	<svg xmlns="http://www.w3.org/2000/svg" width="2000" viewBox="0 0 1920 523.414" class="footer-shape-yellow">
 		<path data-name="Path 153" d="M0-13.07s176.422-27.809,673.333,0S1920-29.939,1920-29.939V493.474H0Z" transform="translate(0 29.939)" fill="<?php echo $footer_shape_color_2; ?>" />
 	</svg>
+	<?php
+	endif;
+	?>
 	<div class="shape-color primary-bg" style="background-color: <?php echo $footer_shape_color_1; ?>;">
 	</div>
 
@@ -224,5 +231,4 @@ wp_footer();
 echo get_field('custom_embed_code_-_footer', 'options');
 ?>
 </body>
-
 </html>

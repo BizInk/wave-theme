@@ -8,6 +8,8 @@ $info_box_content = get_sub_field('info_box_content');
 $info_box_columns = get_sub_field('info_box_columns');
 $general_class = '';
 
+$global_disable_wave = get_field('disable_wave','option');
+
 if( in_array('Add Common Padding', $general_settings) ){
 
 	$general_class .= ' comman-padding';
@@ -17,13 +19,13 @@ if( in_array('Add Common Margin', $general_settings) ){
 
 	$general_class .= ' comman-margin';
 }
-
+$global_disable_wave = get_field('disable_wave','option');
 $show_wave = get_sub_field('show_wave') ? get_sub_field('show_wave') : true;
 
 if( have_rows('information_box') ):
 	?>
 	<section class="infobox-section<?= $general_class; ?>" <?php if( $show_wave ): ?> style="background-color: <?= $info_box_shape_color; ?>;" <?php endif; ?>>
-		<?php if( $show_wave ): ?>
+		<?php if( $show_wave && $global_disable_wave == false ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2068.956 1146.139" class="shape-blue">
 				<path id="Path_149" data-name="Path 149" d="M0,344S291.253,28.3,609.423,28.3s472.592,157.527,824.791,157.527c3.522,0,415.688-25.288,545.152-180.776s80.514,1065.735,80.514,1065.735-362.5-94.041-651.086-65.67c-229.912,22.6-463.99,132.394-680.577,132.394C238.2,1137.506,0,1034.171,0,1034.171Z" transform="translate(0 8.633)" fill="<?= $info_box_shape_color; ?>"/>
 			</svg>

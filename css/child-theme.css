@@ -18541,7 +18541,7 @@ ul,
 li {
   padding: 0px;
   margin: 0px;
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 
 img {
@@ -20688,22 +20688,6 @@ input[type="submit"]:hover {
     padding-left: 3rem;
   }
 }
-.two-col-section .default-content ul li:before {
-  width: 3rem;
-  height: 3rem;
-}
-@media (max-width: 991.98px) {
-  .two-col-section .default-content ul li:before {
-    width: 2rem;
-    height: 2rem;
-    top: 0.5rem;
-  }
-}
-@media (max-width: 767.98px) {
-  .two-col-section .default-content ul li:before {
-    font-size: 2rem;
-  }
-}
 @media (max-width: 767.98px) {
   .two-col-section {
     padding: 40px 0;
@@ -21927,6 +21911,7 @@ section.infobox-section.resource-infobox {
   margin: 0px 0 1rem;
   padding: 0px;
   text-align: left;
+  list-style-type: disc;
 }
 .default-content ul li,
 .editor-design ul li {
@@ -21935,25 +21920,12 @@ section.infobox-section.resource-infobox {
   position: relative;
   margin-bottom: 10px;
 }
-.default-content ul li:before,
-.editor-design ul li:before {
-  font-family: "Fontawesome";
-  content: "\f058";
-  font-size: 30px;
-  line-height: 1;
-  font-weight: 800;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 0;
-  top: 0.2rem;
-}
 .default-content ol,
 .editor-design ol {
   margin: 0px 0 1rem;
   padding: 0px;
   text-align: left;
-  counter-reset: li;
+  list-style-type: decimal;
 }
 .default-content ol li,
 .editor-design ol li {
@@ -21961,19 +21933,6 @@ section.infobox-section.resource-infobox {
   padding-left: 30px;
   position: relative;
   margin-bottom: 10px;
-}
-.default-content ol li::marker,
-.editor-design ol li::marker {
-  display: none;
-  content: none;
-}
-.default-content ol li:before,
-.editor-design ol li:before {
-  content: counters(li, ".") ". ";
-  counter-increment: li;
-  position: absolute;
-  left: 0;
-  top: 1rem;
 }
 
 .default-content blockquote,
@@ -23022,22 +22981,7 @@ section.infobox-section.resource-infobox {
     padding-left: 3rem;
   }
 }
-.two-col-section .default-content ul li:before {
-  width: 3rem;
-  height: 3rem;
-}
-@media (max-width: 991.98px) {
-  .two-col-section .default-content ul li:before {
-    width: 2rem;
-    height: 2rem;
-    top: 0.5rem;
-  }
-}
-@media (max-width: 767.98px) {
-  .two-col-section .default-content ul li:before {
-    font-size: 2rem;
-  }
-}
+
 @media (max-width: 767.98px) {
   .two-col-section {
     padding: 40px 0;
@@ -23407,11 +23351,6 @@ section.infobox-section.resource-infobox {
 }
 .bizpress-glossary .bizpress-glossary-component h2.bizpress-glossary-title {
   font-size: 5rem !important;
-}
-.bizpress-glossary .default-content ul li:before,
-.editor-design ul li:before {
-  content: "" !important;
-  display: none !important;
 }
 .bizpress-glossary
   .bizpress-glossary-header
