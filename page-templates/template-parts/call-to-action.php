@@ -44,7 +44,7 @@ else{
 <!-- call-to-action-section-start -->
 <section class="call-to-action-section <?php if($background_imagecolor == 'Video'): echo "call-to-action-section-video-bg"; endif; echo $general_class; ?>" <?= $background_html; ?>>
     <?php 
-    if( $show_wave ){ ?>
+    if( $show_wave && $global_disable_wave == false ){ ?>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 143.354" class="call-to-action-shape">
           <g id="Group_10972" data-name="Group 10972" transform="translate(0 -978.371)">
             <path id="Path_5617" data-name="Path 5617" d="M-11204-14102.437s92.412,44.744,262.622,52.714,288.14,5.086,288.14,5.086l49.01-3.355s115.889-5.456,270.481-36.54,259.3-56.565,404.6-69,318.238-14.437,455.516,7.214,189.628,44.1,189.628,44.1v61.873l-1920,20.313Z" transform="translate(11204 15141.763)" fill="#fff"/>
