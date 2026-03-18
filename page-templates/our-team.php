@@ -19,6 +19,7 @@ $enable_team_link = get_field('enable_teammember_link') ? true : false;
 $show_social = get_field('show_social') ? true : false;
 $show_position = get_field('show_position') ? true : false;
 $show_company = get_field('show_company') ? true : false;
+$number_of_columns = get_field('number_of_columns') ? get_field('number_of_columns') : 'col-md-6 col-lg-4';
 ?>
     <section class="teamlist-section comman-padding">
         <div class="container">
@@ -30,7 +31,7 @@ $show_company = get_field('show_company') ? true : false;
                     $member_company = get_field('member_company', $our_member); 
                     
                     ?>
-                    <div class="col-md-6 col-lg-4 team-member">
+                    <div class="<?php echo $number_of_columns; ?> team-member">
                         <div class="team-member-wrap">
                             <?php if($enable_team_link){ ?>
                                 <a href="<?= get_the_permalink($our_member); ?>" class="member-link">

@@ -91,6 +91,35 @@
             "ui_on_text": "",
             "ui_off_text": "",
             "ui": 1
+        },
+        {
+            "key": "field_69ba044fca7c3",
+            "label": "Number of Columns",
+            "name": "number_of_columns",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "col-md-6 col-lg-3": "4 Columns",
+                "col-md-6 col-lg-4": "3 Columns"
+            },
+            "default_value": "col-md-6 col-lg-4",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
         }
     ],
     "location": [
@@ -111,5 +140,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747380305
+    "display_title": "",
+    "modified": 1773798819
 }
