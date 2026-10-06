@@ -1,8 +1,8 @@
 === Wave ===
 Contributors: Bizink,Jayden Major
 Tags: Bizink, Wave
-Tested up to: 6.9.3
-Stable tag: 2.2.11
+Tested up to: 6.9.4
+Stable tag: 2.3
 Requires PHP: 7.4
 Requires at least: 6.0
 License: GNU General Public License v2 or later
@@ -14,6 +14,9 @@ The Wave theme
 The Wave theme
 
 == Changelog ==
+
+= 2.3 =
+* Testimonials After Content
 
 = 2.2.11 =
 * Teammember Layout 3 - 4 cols

@@ -33,7 +33,7 @@ function wave_login_page_styles() {
 	?>
 	<style>
 		#login h1 a {
-			background: url(<?php echo get_stylesheet_directory_uri() . '/images/login-logo.png' ?>) no-repeat center center;
+			background: url(<?php echo get_stylesheet_directory_uri() . '/images/login-logo.png' ?>) no-repeat center center !important;
 			padding-bottom: 30px;
 			height: 70px;
 			width: 310px;

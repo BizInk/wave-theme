@@ -2542,6 +2542,26 @@
                             "allow_null": 0,
                             "ui": 1,
                             "bidirectional_target": []
+                        },
+                        {
+                            "key": "field_63d8eb99c80a3",
+                            "label": "After Content",
+                            "name": "testimonial_section_content_after",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -4200,5 +4220,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1768370740
+    "modified": 1768370745
 }

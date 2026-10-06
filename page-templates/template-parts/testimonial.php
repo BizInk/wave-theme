@@ -16,6 +16,7 @@ if( in_array('Add Common Margin', $general_settings) ){
 $testimonial_section_small_title = get_sub_field('testimonial_section_small_title');
 $testimonial_section_title = get_sub_field('testimonial_section_title');
 $testimonial_section_content = get_sub_field('testimonial_section_content');
+$testimonial_section_content_after = get_sub_field('testimonial_section_content_after');
 $testimonial_args = array(
 	'post_type' => 'testimonial',
 	'posts_per_page'  => -1,
@@ -105,6 +106,13 @@ if ( $testimonial_query->have_posts() ) { ?>
 
 				?>
 			
+			</div>
+		</div>
+		<div class="full-width-wysiwyg text-center">
+			<div class="container">
+				<div class="editor-design">
+					<?php echo $testimonial_section_content; ?>
+				</div>
 			</div>
 		</div>
 	</section>
