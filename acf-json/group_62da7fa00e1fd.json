@@ -431,6 +431,26 @@
             "ui": 1
         },
         {
+            "key": "field_655f516c34479",
+            "label": "Testimonials",
+            "name": "enable_testimonials",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "On",
+            "ui_off_text": "Off",
+            "ui": 1
+        },
+        {
             "key": "field_655f516c35489",
             "label": "Resources",
             "name": "enable_resources",
