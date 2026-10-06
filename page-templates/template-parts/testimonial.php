@@ -111,7 +111,7 @@ if ( $testimonial_query->have_posts() ) { ?>
 		<div class="full-width-wysiwyg text-center">
 			<div class="container">
 				<div class="editor-design">
-					<?php echo $testimonial_section_content; ?>
+					<?php echo $testimonial_section_content_after; ?>
 				</div>
 			</div>
 		</div>
